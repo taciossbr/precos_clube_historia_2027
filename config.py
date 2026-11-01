@@ -126,7 +126,7 @@ PRODUTOS: List[Produto] = [
     Produto(
         id="alexandre-e-cesar-plutarco",
         nome="Alexandre e César — Plutarco",
-        prioridade=1,
+        prioridade=3,
         porcentagem_alvo=0.20,
         # categoria="1ª Fase (Roma)",
         links=[
@@ -138,7 +138,7 @@ PRODUTOS: List[Produto] = [
     Produto(
         id="o-jesus-historico-david-flusser",
         nome="O Jesus Histórico — David Flusser",
-        prioridade=1,
+        prioridade=2,
         porcentagem_alvo=0.20,
         # categoria="1ª Fase (Roma)",
         links=[
@@ -234,7 +234,7 @@ PRODUTOS: List[Produto] = [
     Produto(
         id="os-mitos-maias-vozes",
         nome="Os Mitos Maias — Coleção Editora Vozes",
-        prioridade=10,
+        prioridade=9,
         porcentagem_alvo=0.20,
         # categoria="Américas",
         links=[
@@ -246,7 +246,7 @@ PRODUTOS: List[Produto] = [
     Produto(
         id="o-quinto-sol-camilla-townsend",
         nome="O Quinto Sol: Uma Nova História dos Astecas — Camilla Townsend",
-        prioridade=3,
+        prioridade=2,
         porcentagem_alvo=0.20,
         # categoria="Américas",
         links=[
