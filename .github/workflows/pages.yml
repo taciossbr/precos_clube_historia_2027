@@ -36,6 +36,7 @@ jobs:
             consolidado.json
             historico.json
             erros_consecutivos.json
+            alertas_enviados.json
           key: precos-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
             precos-${{ github.ref_name }}-
@@ -44,13 +45,16 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Coletar preços e atualizar histórico
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
       - name: Commitar estado atualizado
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add consolidado.json historico.json erros_consecutivos.json
+          git add consolidado.json historico.json erros_consecutivos.json alertas_enviados.json
           if ! git diff --cached --quiet; then
             git commit -m "Atualiza histórico de preços [skip ci]"
             git push

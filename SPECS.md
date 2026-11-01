@@ -92,9 +92,9 @@ Quero duas ordenações nos produtos: por prioridade e pela ordem original no ar
 
 - Padrão: 20% abaixo da mediana
 - Pode ser configurado manualmente em cada produto
-- O envio só ocorre depois de registrar-mos ao menos **5 preços**
+- O envio por preço abaixo da mediana só ocorre depois de registrar ao menos **4 coletas válidas**
 - Também sempre enviamos a notificação se for o menor preço registrado 
-    - Nesse caso só a partir do 2o Registro e sendo assim só se for um preço menor que o 1o em no mínimo R$ 3,00
+    - Nesse caso, a partir da segunda coleta válida, se o preço for pelo menos R$ 0,70 menor que o primeiro preço válido
 
 
 

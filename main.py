@@ -10,6 +10,7 @@ from error_counter import registrar_resultado
 from persistence import persistir_resultados
 from processing import ProdutoProcessado, processar_produto
 from scrapers.amazon import ColetorAmazon
+from telegram_alerts import enviar_alertas
 
 
 def executar(
@@ -44,6 +45,9 @@ def executar(
         apresentar(processado)
 
     persistir_resultados(processados)
+    quantidade_alertas = enviar_alertas(processados)
+    if quantidade_alertas:
+        print(f"Alertas enviados pelo Telegram: {quantidade_alertas}")
     print("\nArquivos atualizados: consolidado.json e historico.json")
     return processados
 

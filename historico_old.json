@@ -1,0 +1,114 @@
+{
+  "roma-greg-woolf": {
+    "vencedor_geral": [
+      {
+        "timestamp": "2026-11-01T14:51:40-03:00",
+        "preco": 62.98,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8531613930"
+      }
+    ],
+    "por_plataforma": {
+      "amazon": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 62.98,
+          "url": "https://www.amazon.com.br/dp/8531613930"
+        }
+      ]
+    },
+    "por_link": {
+      "https://www.amazon.com.br/dp/8531613930": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 62.98,
+          "plataforma": "amazon"
+        }
+      ]
+    }
+  },
+  "alexandre-cesar-plutarco": {
+    "vencedor_geral": [
+      {
+        "timestamp": "2026-11-01T14:51:40-03:00",
+        "preco": 32.22,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6556405825"
+      }
+    ],
+    "por_plataforma": {
+      "amazon": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 32.22,
+          "url": "https://www.amazon.com.br/dp/6556405825"
+        }
+      ]
+    },
+    "por_link": {
+      "https://www.amazon.com.br/dp/6556405825": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 32.22,
+          "plataforma": "amazon"
+        }
+      ]
+    }
+  },
+  "jesus-historico-david-flusser": {
+    "vencedor_geral": [
+      {
+        "timestamp": "2026-11-01T14:51:40-03:00",
+        "preco": 78.99,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8527302829"
+      }
+    ],
+    "por_plataforma": {
+      "amazon": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 78.99,
+          "url": "https://www.amazon.com.br/dp/8527302829"
+        }
+      ]
+    },
+    "por_link": {
+      "https://www.amazon.com.br/dp/8527302829": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 78.99,
+          "plataforma": "amazon"
+        }
+      ]
+    }
+  },
+  "pompeia-mary-beard": {
+    "vencedor_geral": [
+      {
+        "timestamp": "2026-11-01T14:51:40-03:00",
+        "preco": 110.87,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8501092215"
+      }
+    ],
+    "por_plataforma": {
+      "amazon": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 110.87,
+          "url": "https://www.amazon.com.br/dp/8501092215"
+        }
+      ]
+    },
+    "por_link": {
+      "https://www.amazon.com.br/dp/8501092215": [
+        {
+          "timestamp": "2026-11-01T14:51:40-03:00",
+          "preco": 110.87,
+          "plataforma": "amazon"
+        }
+      ]
+    }
+  }
+}

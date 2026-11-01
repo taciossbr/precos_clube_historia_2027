@@ -1,0 +1,126 @@
+{
+  "ultima_atualizacao": "2026-11-01T14:51:40-03:00",
+  "estatisticas_gerais": {
+    "total_produtos": 4,
+    "produtos_com_preco": 4,
+    "produtos_com_falha": 0
+  },
+  "produtos": [
+    {
+      "id": "roma-greg-woolf",
+      "nome": "Roma: A História de um Império — Greg Woolf",
+      "prioridade": 1,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
+      "comentario": "É o primeiro compre logo",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 62.98,
+        "plataforma_vencedora": "amazon",
+        "media": 62.98,
+        "mediana": 62.98
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8531613930",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 62.98,
+          "titulo": "Roma: A história de um império",
+          "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "alexandre-cesar-plutarco",
+      "nome": "Alexandre e César — Plutarco",
+      "prioridade": 2,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 32.22,
+        "plataforma_vencedora": "amazon",
+        "media": 32.22,
+        "mediana": 32.22
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/6556405825",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 32.22,
+          "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
+          "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "jesus-historico-david-flusser",
+      "nome": "O Jesus Histórico — David Flusser",
+      "prioridade": 3,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 78.99,
+        "plataforma_vencedora": "amazon",
+        "media": 78.99,
+        "mediana": 78.99
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8527302829",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 78.99,
+          "titulo": "Jesus",
+          "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "pompeia-mary-beard",
+      "nome": "Pompeia: A Vida de uma Cidade Romana — Mary Beard",
+      "prioridade": 4,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 110.87,
+        "plataforma_vencedora": "amazon",
+        "media": 110.87,
+        "mediana": 110.87
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8501092215",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 110.87,
+          "titulo": "Pompeia: A vida de uma cidade romana",
+          "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    }
+  ]
+}

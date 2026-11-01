@@ -15,7 +15,7 @@ from scrapers.protocol import ResultadoColeta
 BASE_DIR = Path(__file__).resolve().parent
 ARQUIVO_CONSOLIDADO = BASE_DIR / "consolidado.json"
 ARQUIVO_HISTORICO = BASE_DIR / "historico.json"
-VARIACAO_MINIMA = Decimal("1.00")
+VARIACAO_MINIMA = Decimal("0.70")
 
 
 def persistir_resultados(processados: List[ProdutoProcessado]) -> None:

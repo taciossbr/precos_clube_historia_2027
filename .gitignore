@@ -3,3 +3,4 @@ __pycache__/
 *.py[cod]
 site/
 web/
+bot_id.txt
