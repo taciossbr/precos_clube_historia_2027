@@ -116,9 +116,11 @@ def _serializar_link(
         "erros_consecutivos": resultado.erros_consecutivos,
         "erro": resultado.erro,
     }
+    if resultado.extras is not None:
+        link_json["extras"] = resultado.extras
     if link.pesquisa:
         link_json["top_n"] = link.top_n
-        link_json["top_n_resultados"] = []
+        link_json["top_n_resultados"] = resultado.top_n_resultados or []
     return link_json
 
 

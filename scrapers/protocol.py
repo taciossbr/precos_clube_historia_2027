@@ -1,7 +1,7 @@
 """Contrato comum para coletores de plataformas."""
 
 from dataclasses import dataclass
-from typing import Optional, Protocol
+from typing import Any, Dict, List, Optional, Protocol
 
 from config import LinkConfig
 
@@ -16,6 +16,8 @@ class ResultadoColeta:
     capa_url: Optional[str] = None
     erro: Optional[str] = None
     erros_consecutivos: int = 0
+    extras: Optional[Dict[str, Any]] = None
+    top_n_resultados: Optional[List[Dict[str, Any]]] = None
 
 
 class Coletor(Protocol):

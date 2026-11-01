@@ -12,7 +12,9 @@ Devem ser utilizados dois arquivos de dados locais:
     - deve guardar separado por plataforma (quero poder sempre ver o melhor preço naquela plataforma)
     - deve guardar também um com o produto escolhido (o mais barato)
 
-A estante virtual costuma ter frete, some sempre ao valor obtido a não ser que esteja claramente escrito como frete gratis.
+A estante virtual costuma ter frete, some sempre R$ 16,00 ao valor obtido a não ser que esteja claramente escrito como frete gratis.
+
+Nas configurações existe um BLACKLIST_BOOKS, com os titulos de livros a serem descartados quando na busca (Estante virtual e mercado livre)
 
 ---
 
@@ -76,7 +78,7 @@ PRODUTOS = [
                 top_n=3
             ),
             EstanteLink(
-                'https://www.estantevirtual.com.br/livro/roma-a-historia-de-um-imperio-GLR-3518-000',
+                'https://www.estantevirtual.com.br/busca?q=roma-a-historia-de-um-imperio-greg-woolf',
                 pesquisa=True,
                 top_n=5
             )
@@ -139,9 +141,9 @@ Consolidado
       "comentario": "É o primeiro compre logo",
       "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 45.90,
+        "menor_preco_geral": 49.90,
         "plataforma_vencedora": "estante_virtual",
-        "media": 50.93,
+        "media": 52.27,
         "mediana": 52.00
       },
       "links": [
@@ -170,14 +172,13 @@ Consolidado
         },
         {
           "plataforma": "estante_virtual",
-          "url": "https://www.estantevirtual.com.br/livro/roma-a-historia-de-um-imperio-GLR-3518-000",
+          "url": "https://www.estantevirtual.com.br/busca?q=roma-a-historia-de-um-imperio-greg-woolf",
           "pesquisa": true,
-          "preco_livro": 33.90,
-          "frete": 12.00,
-          "preco_atual": 45.90,
+          "preco_atual": 49.90,
+          "extras": {"valor_sem_frete": 33.90, "frete_aplicado": 16.00, "frete_presumido": true},
           "top_n_resultados": [
-            {"titulo": "Roma A História de Um Império", "preco_livro": 33.90, "frete": 12.00, "preco_total": 45.90, "escolhido": true, "url": "..."},
-            {"titulo": "Roma: A Historia de um Imperio", "preco_livro": 35.00, "frete": 15.00, "preco_total": 50.00, "escolhido": false, "url": "..."}
+            {"titulo": "Roma A História de Um Império", "valor_sem_frete": 33.90, "preco_total": 49.90, "escolhido": true, "url": "..."},
+            {"titulo": "Roma: A Historia de um Imperio", "valor_sem_frete": 35.00, "preco_total": 51.00, "escolhido": false, "url": "..."}
           ],
           "status": "sucesso"
         }
@@ -201,9 +202,9 @@ Historico
       },
       {
         "timestamp": "2026-11-01T15:00:00-03:00",
-        "preco": 45.90,
+        "preco": 49.90,
         "plataforma": "estante_virtual",
-        "url": "https://www.estantevirtual.com.br/livro/roma-a-historia-de-um-imperio-GLR-3518-000"
+        "url": "https://www.estantevirtual.com.br/busca?q=roma-a-historia-de-um-imperio-greg-woolf"
       }
     ],
     "por_plataforma": {
@@ -229,8 +230,8 @@ Historico
       "estante_virtual": [
         {
           "timestamp": "2026-11-01T15:00:00-03:00",
-          "preco": 45.90,
-          "url": "https://www.estantevirtual.com.br/livro/roma-a-historia-de-um-imperio-GLR-3518-000"
+          "preco": 49.90,
+          "url": "https://www.estantevirtual.com.br/busca?q=roma-a-historia-de-um-imperio-greg-woolf"
         }
       ]
     },
@@ -311,3 +312,38 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
 - Rotacionar entre os perfis de navegador `chrome`, `firefox` e `safari` do `curl-cffi`, que fornecem User Agents associados aos respectivos fingerprints; evitar User Agents manuais que não correspondam ao fingerprint.
 - Não trocar IP/proxy nem responder automaticamente ao desafio CAPTCHA.
 - Intervalos e retries reduzem a frequência das requisições, mas não garantem que a Amazon não apresente bloqueios.
+
+## Implementação do scraping da Estante Virtual
+
+### Entendimento
+
+- A Estante Virtual é uma das três plataformas previstas e já existe como `Plataforma.ESTANTE_VIRTUAL` na configuração.
+- O novo coletor deve ficar separado em `scrapers/` e seguir o contrato comum de `Coletor` e `ResultadoColeta`.
+- Para cada link configurado da Estante Virtual, deve tentar obter o preço e metadados disponíveis, como título e capa, e representar falhas sem interromper a coleta dos outros links.
+- Em links da Estante Virtual, `valor_sem_frete` representa o preço do livro antes do frete. O preço comparado entre plataformas é `valor_sem_frete + frete`, usando frete presumido de R$ 16,00, exceto quando a página indicar claramente frete grátis, caso em que o frete é R$ 0,00.
+- Campos específicos de plataforma ficam em `extras`, um objeto opcional e genérico por link no `consolidado.json`. Na Estante Virtual, registrar ali `valor_sem_frete` e, quando útil, o valor de frete aplicado e se ele foi presumido. A ausência de `extras` é válida para links sem dados adicionais.
+- Os seletores e a forma de identificar preço, disponibilidade, título e capa serão definidos após inspecionar páginas reais da Estante Virtual; não se presume que a estrutura seja igual à da Amazon.
+
+### Etapas resumidas
+
+1. Inspecionar páginas reais dos links configurados e identificar estruturas para preço, disponibilidade, título e capa.
+2. Estender `ResultadoColeta` com campos opcionais para `extras` e `top_n_resultados`, preservando o resultado único usado por links diretos e consumidores atuais.
+3. Implementar `ColetorEstanteVirtual` em módulo próprio, validando que recebe somente links dessa plataforma e retornando o formato comum.
+4. Extrair e normalizar `valor_sem_frete`; calcular o preço comparável adicionando R$ 16,00, salvo indicação explícita de frete grátis.
+5. Tratar produto indisponível, preço ausente, resposta inesperada e falhas HTTP como resultado de erro por link, sem interromper os demais.
+6. Integrar o coletor ao fluxo principal, habilitar links da Estante Virtual na configuração e adaptar persistência e apresentação para os dados opcionais e resultados `top_n`.
+7. Validar com páginas representativas os casos de sucesso, frete presumido, frete grátis, indisponibilidade e HTML sem preço, revisando os seletores quando a estrutura da página mudar.
+
+### Campo opcional `extras` nos arquivos
+
+- Em `consolidado.json`, cada item de `produtos[].links[]` pode conter `extras`, um objeto chave/valor para informações adicionais específicas da plataforma. Não repetir em `extras` campos já definidos no formato comum do link, como `preco_atual`, `status`, `titulo` ou `url`.
+- Para a Estante Virtual, `extras.valor_sem_frete` guarda o preço extraído do livro antes do frete. O `preco_atual` comum guarda o total comparável: preço do livro mais R$ 16,00 presumidos, ou mais R$ 0,00 se houver indicação explícita de frete grátis. O objeto pode ainda registrar `frete_aplicado` e `frete_presumido`.
+- Em `historico.json`, manter os preços registrados como totais comparáveis. Assim, métricas, vencedor e histórico usam a mesma base de comparação entre plataformas.
+
+### Regra para `pesquisa` e `top_n`
+
+- `pesquisa=false` representa um link direto de produto e produz um preço escolhido entre as ofertas daquela página. `pesquisa=true` representa uma página de busca; descartar primeiro cards cujo título contenha, em minúsculas, algum texto de `BLACKLIST_BOOKS`, e então considerar até `top_n` cards restantes com preço.
+- Entre esses até `top_n` resultados, ignorar ofertas sem preço válido ou indisponíveis e escolher o menor preço comparável. Para a Estante Virtual, comparar preço do livro mais frete presumido de R$ 16,00, exceto quando houver indicação explícita de frete grátis.
+- Salvar os candidatos avaliados em `top_n_resultados`, incluindo preço, URL própria do anúncio e, na Estante, `valor_sem_frete`; marcar o selecionado com `escolhido: true`. O resultado do link guarda o preço do escolhido em `preco_atual` e os dados adicionais em `extras`. No histórico, `url` continua sendo a URL configurada para o link; as URLs dos anúncios ficam nos candidatos.
+- Cada `LinkConfig` conta uma única vez nas métricas do produto e gera no máximo um preço para o histórico por link e plataforma. `top_n_resultados` é detalhe dos candidatos daquela coleta; não transforma cada candidato em um link monitorado independente. Se nenhum candidato válido restar, o link fica com erro/sem preço e não gera evento de preço no histórico.
+- A configuração de exemplo deve usar URL de busca quando `pesquisa=true`; URLs diretas de produto devem usar `pesquisa=false`.

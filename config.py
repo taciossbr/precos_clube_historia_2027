@@ -5,6 +5,22 @@ from enum import Enum
 from typing import List
 
 
+# Títulos/trechos que devem ser ignorados nos resultados de busca.
+BLACKLIST_BOOKS: List[str] = [
+    "Em busca de Jesus",
+    "O Novo Testamento Ilustrado",
+    "Portugal a Terra e o Homem",
+    "A farsa sobre Jesus",
+    "Siga-Me",
+    "O Diabólico Cérebro Eletrônico",
+    "O Mundo Jesus Cristo",
+    "A Escolha dos Discípulos",
+    "A Juventude de Jesus",
+    "Kit A Visão dos Vencidos",
+    "Combo A Visão dos Vencidos",
+]
+
+
 class Plataforma(Enum):
     AMAZON = "amazon"
     MERCADO_LIVRE = "mercado_livre"
@@ -114,37 +130,38 @@ PRODUTOS: List[Produto] = [
         id="roma-greg-woolf",
         nome="Roma: A História de um Império — Greg Woolf",
         prioridade=1,
-        porcentagem_alvo=0.15,
+        porcentagem_alvo=0.10,
         # categoria="1ª Fase (Roma)",
         comentario="É o primeiro, prioridade máxima antes da viagem",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8531613930"),
             # MercadoLink("https://lista.mercadolivre.com.br/roma-a-historia-de-um-imperio-greg-woolf", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=roma-a-historia-de-um-imperio-greg-woolf", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
     Produto(
         id="alexandre-e-cesar-plutarco",
         nome="Alexandre e César — Plutarco",
         prioridade=3,
-        porcentagem_alvo=0.20,
+        porcentagem_alvo=0.15,
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6556405825"),
             # MercadoLink("https://lista.mercadolivre.com.br/alexandre-e-cesar-plutarco", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=alexandre-e-cesar-plutarco", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"),
         ]
     ),
     Produto(
         id="o-jesus-historico-david-flusser",
         nome="O Jesus Histórico — David Flusser",
         prioridade=2,
-        porcentagem_alvo=0.20,
+        porcentagem_alvo=0.15,
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8527302829"),
             # MercadoLink("https://lista.mercadolivre.com.br/o-jesus-historico-david-flusser", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=o-jesus-historico-david-flusser", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=3),
+            EstanteLink("https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"),
         ]
     ),
     Produto(
@@ -156,7 +173,7 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8501092215"),
             # MercadoLink("https://lista.mercadolivre.com.br/pompeia-a-vida-de-uma-cidade-romana-mary-beard", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=pompeia-mary-beard", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"),
         ]
     ),
 
@@ -172,7 +189,7 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6589705585"),
             # MercadoLink("https://lista.mercadolivre.com.br/teogonia-hesiodo", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=teogonia-hesiodo", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"),
         ]
     ),
     Produto(
@@ -196,7 +213,8 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8515017857"),
             # MercadoLink("https://lista.mercadolivre.com.br/o-que-e-a-filosofia-antiga-pierre-hadot", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=o-que-e-a-filosofia-antiga-pierre-hadot", top_n=5),
+            # EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Que%20%C3%A9%20a%20Filosofia%20Antiga%3F%20%E2%80%94%20Pierre%20Hadot&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"),
         ]
     ),
 
@@ -212,7 +230,7 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/B0D4WQ179K"),
             # MercadoLink("https://lista.mercadolivre.com.br/o-anticristo-uma-biografia-philip-c-almond", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=o-anticristo-uma-biografia-philip-c-almond", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
 
@@ -223,12 +241,12 @@ PRODUTOS: List[Produto] = [
         id="piratas-no-brasil-carvalho",
         nome="Piratas no Brasil — Jean Marcel Carvalho",
         prioridade=2,
-        porcentagem_alvo=0.20,
+        porcentagem_alvo=0.15,
         # categoria="Américas",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8525058270"),
             # MercadoLink("https://lista.mercadolivre.com.br/piratas-no-brasil-jean-marcel-carvalho", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=piratas-no-brasil-jean-marcel-carvalho", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
     Produto(
@@ -240,19 +258,19 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/B0GH289VSL"),
             # MercadoLink("https://lista.mercadolivre.com.br/os-mitos-maias-editora-vozes", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=os-mitos-maias-editora-vozes", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"),
         ]
     ),
     Produto(
         id="o-quinto-sol-camilla-townsend",
         nome="O Quinto Sol: Uma Nova História dos Astecas — Camilla Townsend",
         prioridade=2,
-        porcentagem_alvo=0.20,
+        porcentagem_alvo=0.15,
         # categoria="Américas",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8532674275"),
             # MercadoLink("https://lista.mercadolivre.com.br/o-quinto-sol-camilla-townsend", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=o-quinto-sol-camilla-townsend", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor", pesquisa=True, top_n=5),
         ]
     ),
 
@@ -268,7 +286,13 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8542217497"),
             # MercadoLink("https://lista.mercadolivre.com.br/o-coracao-do-mundo-peter-frankopan", top_n=3),
-            # EstanteLink("https://www.estantevirtual.com.br/busca?q=o-coracao-do-mundo-peter-frankopan", top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"),
         ]
     ),
+]
+
+
+BLACKLIST_BOOKS = [
+    'em busca de jesus',
+    'o novo testamento ilustrado: a história de jesus e os primeiros discí',
 ]

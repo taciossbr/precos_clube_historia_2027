@@ -5,11 +5,12 @@ import time
 from dataclasses import replace
 from typing import List
 
-from config import PRODUTOS, Produto
+from config import PRODUTOS, Produto, Plataforma
 from error_counter import registrar_resultado
 from persistence import persistir_resultados
 from processing import ProdutoProcessado, processar_produto
 from scrapers.amazon import ColetorAmazon
+from scrapers.estante_virtual import ColetorEstanteVirtual
 from telegram_alerts import enviar_alertas
 
 
@@ -20,7 +21,11 @@ def executar(
     if intervalo_entre_produtos < 0:
         raise ValueError("intervalo_entre_produtos não pode ser negativo")
 
-    coletor = ColetorAmazon()
+    coletor_padrao = ColetorAmazon()
+    coletores = {
+        Plataforma.AMAZON: coletor_padrao,
+        Plataforma.ESTANTE_VIRTUAL: ColetorEstanteVirtual(),
+    }
     processados: List[ProdutoProcessado] = []
 
     for indice, produto in enumerate(produtos):
@@ -34,6 +39,7 @@ def executar(
 
         resultados = []
         for link in produto.links:
+            coletor = coletores.get(link.plataforma, coletor_padrao)
             resultado = coletor.coletar(link)
             erros = registrar_resultado(
                 link.url, sucesso=resultado.status == "sucesso"
