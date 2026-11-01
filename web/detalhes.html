@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>Detalhes do livro — Radar de preços</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uplot@1.6.32/dist/uPlot.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="detalhes.css">
+  <script src="https://cdn.jsdelivr.net/npm/uplot@1.6.32/dist/uPlot.iife.min.js" defer></script>
+  <script src="detalhes.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><span id="updated" class="updated">Carregando dados…</span></header>
+  <main class="detail-page">
+    <a class="detail-back" href="./">← Voltar à minha estante</a>
+    <p id="detail-state" class="loading">Carregando dados do livro…</p>
+    <article id="detail-content" hidden>
+      <section class="detail-hero">
+        <div id="detail-cover" class="detail-cover"></div>
+        <div class="detail-intro">
+          <span id="detail-priority" class="priority-pill"></span>
+          <h1 id="detail-title"></h1>
+          <p id="detail-id" class="detail-id"></p>
+          <p id="detail-comment" class="detail-comment" hidden></p>
+        </div>
+      </section>
+
+      <section id="detail-metrics" class="detail-metrics" aria-label="Métricas atuais"></section>
+
+      <section class="detail-panel detail-history-panel">
+        <div class="detail-section-heading">
+          <div><span class="eyebrow">EVOLUÇÃO</span><h2>Histórico de preços</h2></div>
+          <label class="sort-box"><span>Exibir</span><select id="history-series">
+            <option value="vencedor_geral">Melhor preço</option>
+            <option value="amazon">Amazon</option>
+            <option value="estante_virtual">Estante Virtual</option>
+            <option value="mercado_livre">Mercado Livre</option>
+          </select></label>
+        </div>
+        <p id="history-state" class="history-state" aria-live="polite"></p>
+        <div id="detail-chart" class="detail-chart" role="img" aria-label="Gráfico do histórico de preços"></div>
+      </section>
+
+      <section class="detail-panel">
+        <div class="detail-section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2>Links e ofertas</h2></div></div>
+        <div id="detail-links" class="detail-links"></div>
+      </section>
+    </article>
+  </main>
+  <footer><span>RADAR DE PREÇOS</span><span>Preços coletados automaticamente. Confirme o valor na loja.</span></footer>
+</body>
+</html>

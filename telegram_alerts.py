@@ -13,7 +13,7 @@ from processing import ProdutoProcessado
 
 BASE_DIR = Path(__file__).resolve().parent
 ARQUIVO_ALERTAS = BASE_DIR / "alertas_enviados.json"
-MINIMO_PRECOS = 4
+MINIMO_PRECOS = 3
 VARIACAO_MINIMA = Decimal("0.70")
 DESTINATARIO_TELEGRAM = "taciossbr"
 

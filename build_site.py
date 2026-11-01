@@ -9,8 +9,11 @@ WEB_DIR = ROOT / "web"
 SITE_DIR = ROOT / "site"
 ARQUIVOS_WEB = (
     "index.html",
+    "detalhes.html",
     "styles.css",
+    "detalhes.css",
     "app.js",
+    "detalhes.js",
 )
 ARQUIVOS_DADOS = (
     "consolidado.json",

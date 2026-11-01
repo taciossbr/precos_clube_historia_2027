@@ -3,6 +3,7 @@ const money = (value) => value == null ? "—" : new Intl.NumberFormat("pt-BR", 
 const safe = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 let products = [];
 let history = {};
+let chartInstances = [];
 function discount(product) {
   const {menor_preco_geral: price, mediana} = product.metricas_atuais ?? {};
   return price != null && mediana > 0 ? (mediana-price)/mediana : null;
@@ -24,24 +25,56 @@ function sortItems(items) {
   });
 }
 function chart(product) {
-  const points=(history[product.id]?.vencedor_geral??[]).map(e=>Number(e.preco)).filter(Number.isFinite);
+  const points=(history[product.id]?.vencedor_geral??[]).filter(e=>Number.isFinite(Date.parse(e.timestamp))&&Number.isFinite(Number(e.preco)));
   if(points.length<2) return "";
-  const min=Math.min(...points),max=Math.max(...points),span=max-min||1;
-  const coords=points.map((v,i)=>`${8+i*84/(points.length-1)},${58-(v-min)/span*46}`).join(" ");
-  return `<details class="history"><summary>Ver variação de preço (${points.length} registros)</summary><svg class="chart" viewBox="0 0 100 68" preserveAspectRatio="none" role="img" aria-label="Gráfico do histórico de preços"><polyline points="${coords}" fill="none" stroke="#527a5d" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${coords.split(" ").at(-1).split(",")[0]}" cy="${coords.split(" ").at(-1).split(",")[1]}" r="3" fill="#d5784d" vector-effect="non-scaling-stroke"/></svg></details>`;
+  return `<details class="history" data-product-id="${safe(product.id)}"><summary>Ver variação de preço (${points.length} registros)</summary><div class="price-chart" role="img" aria-label="Gráfico do histórico de preços de ${safe(product.nome)}"></div></details>`;
+}
+function clearCharts() {
+  chartInstances.forEach(({plot,observer})=>{observer?.disconnect();plot.destroy()});
+  chartInstances=[];
+}
+function mountCharts() {
+  document.querySelectorAll(".history[data-product-id]").forEach(details=>{
+    details.addEventListener("toggle",()=>{
+      if(!details.open||details.dataset.chartReady||!window.uPlot) return;
+      const points=(history[details.dataset.productId]?.vencedor_geral??[]).filter(e=>Number.isFinite(Date.parse(e.timestamp))&&Number.isFinite(Number(e.preco)));
+      const host=details.querySelector(".price-chart");
+      const data=[points.map(e=>Date.parse(e.timestamp)/1000),points.map(e=>Number(e.preco))];
+      const plot=new window.uPlot({
+        width:host.clientWidth,
+        height:190,
+        padding:[8,8,0,0],
+        scales:{x:{time:true},y:{auto:true}},
+        series:[{}, {label:"Preço",stroke:"#096a6f",width:2,points:{show:true,size:5,fill:"#d5784d",stroke:"#fffefa",width:2}}],
+        axes:[
+          {stroke:"#677a82",grid:{stroke:"#dae0e0",width:1},ticks:{stroke:"#dae0e0",width:1},size:12,values:(_,ticks)=>ticks.map(()=>"")},
+          {stroke:"#677a82",grid:{stroke:"#dae0e0",width:1},ticks:{stroke:"#dae0e0",width:1},size:78,values:(_,ticks)=>ticks.map(money)},
+        ],
+        legend:{show:false},
+        cursor:{focus:{prox:16}},
+      },data,host);
+      details.dataset.chartReady="true";
+      const observer=window.ResizeObserver?new ResizeObserver(()=>plot.setSize({width:host.clientWidth,height:190})):null;
+      observer?.observe(host);
+      chartInstances.push({plot,observer});
+    });
+  });
 }
 function render() {
+  clearCharts();
   const query=$("#search").value.trim().toLocaleLowerCase("pt-BR");
   const visible=sortItems(products).filter(p=>p.nome.toLocaleLowerCase("pt-BR").includes(query));
   $("#result-count").textContent=`${visible.length} ${visible.length===1?"livro":"livros"}`;
   $("#products").innerHTML=visible.length?visible.map(p=>{
     const price=p.metricas_atuais?.menor_preco_geral;
     const links=p.links??[];
-    const winner=links.find(l=>l.status==="sucesso"&&l.preco_atual===price)??links.find(l=>l.status==="sucesso");
+    const winner=links.find(l=>l.status==="sucesso"&&l.preco_atual===price&&l.plataforma===p.metricas_atuais?.plataforma_vencedora)??links.find(l=>l.status==="sucesso");
+    const winnerUrl=winner?.top_n_resultados?.find(r=>r.escolhido&&r.url)?.url??winner?.url;
     const broken=links.some(l=>l.status!=="sucesso");
     const linkRows=links.map(l=>`<div class="link-row"><div class="link-heading"><strong>${safe(l.plataforma)}</strong><span class="status ${l.status==="sucesso"?"":"error"}">${safe(l.status)}</span></div><a href="${safe(l.url)}" target="_blank" rel="noopener noreferrer">${safe(l.url)}</a><div class="link-facts"><span>Preço: ${money(l.preco_atual)}</span><span>Erros seguidos: ${safe(l.erros_consecutivos??0)}</span>${l.pesquisa?`<span>Pesquisa · top ${safe(l.top_n??1)}</span>`:""}</div>${l.titulo?`<p class="link-title">${safe(l.titulo)}</p>`:""}${l.erro?`<p class="link-error">${safe(l.erro)}</p>`:""}${l.comentario?`<p>${safe(l.comentario)}</p>`:""}${l.top_n_resultados?.length?`<ul>${l.top_n_resultados.map(r=>`<li>${r.url?`<a href="${safe(r.url)}" target="_blank" rel="noopener noreferrer">${safe(r.titulo)}</a>`:safe(r.titulo)} — ${money(r.preco_total??r.preco)} ${r.escolhido?"(escolhido)":""}</li>`).join("")}</ul>`:""}</div>`).join("");
-    return `<article class="card"><div class="card-head"><div class="title-line"><h3>${safe(p.nome)}</h3><span class="priority-pill">Prioridade ${safe(p.prioridade)}</span></div>${p.capa_url?`<img class="cover-thumb" src="${safe(p.capa_url)}" alt="Capa de ${safe(p.nome)}" loading="lazy">`:""}</div><div class="card-body">${p.comentario?`<p class="comment">${safe(p.comentario)}</p>`:""}<div class="price-row"><strong class="price">${money(price)}</strong><span class="platform">${safe(winner?.plataforma??"sem preço")}</span></div><div class="metrics"><span>Média: ${money(p.metricas_atuais?.media)}</span><span>Mediana: ${money(p.metricas_atuais?.mediana)}</span><span>Alvo: ${((p.porcentagem_alvo??0)*100).toFixed(0)}%</span><span>${discount(p)==null?"":`${(discount(p)*100).toFixed(0)}% abaixo da mediana`}</span></div><div class="product-facts"><span>ID: ${safe(p.id)}</span><span>Falhas do produto: ${safe(p.contador_falhas??0)}</span><span>Vencedora: ${safe(p.metricas_atuais?.plataforma_vencedora??"—")}</span></div><div class="status ${broken?"error":""}">${broken?"Falha em um ou mais links":"Coleta dos links bem-sucedida"}</div><details class="link-details"><summary>Links e resultados (${links.length})</summary>${linkRows||"<p>Sem links configurados.</p>"}</details>${chart(p)}</div></article>`;
+    return `<article class="card"><div class="card-head"><div class="title-line"><h3>${safe(p.nome)}</h3><span class="priority-pill">Prioridade ${safe(p.prioridade)}</span></div>${p.capa_url?`<img class="cover-thumb" src="${safe(p.capa_url)}" alt="Capa de ${safe(p.nome)}" loading="lazy">`:""}</div><div class="card-body">${p.comentario?`<p class="comment">${safe(p.comentario)}</p>`:""}<div class="price-row"><strong class="price">${money(price)}</strong><span class="platform">${safe(winner?.plataforma??"sem preço")}</span></div><div class="metrics"><span>Média: ${money(p.metricas_atuais?.media)}</span><span>Mediana: ${money(p.metricas_atuais?.mediana)}</span><span>Alvo: ${((p.porcentagem_alvo??0)*100).toFixed(0)}%</span></div><div class="product-facts"><span>ID: ${safe(p.id)}</span><span>Falhas do produto: ${safe(p.contador_falhas??0)}</span><span>Vencedora: ${safe(p.metricas_atuais?.plataforma_vencedora??"—")}</span></div><div class="status ${broken?"error":""}">${broken?"Falha em um ou mais links":"Coleta dos links bem-sucedida"}</div><details class="link-details"><summary>Links e resultados (${links.length})</summary>${linkRows||"<p>Sem links configurados.</p>"}</details>${chart(p)}<a class="details-button" href="detalhes.html?id=${encodeURIComponent(p.id)}">Ver detalhes</a>${winnerUrl?`<a class="buy" href="${safe(winnerUrl)}" target="_blank" rel="noopener noreferrer">Ver oferta escolhida</a>`:""}${discount(p)!=null?`<p class="discount-summary">${(discount(p)*100).toFixed(0)}% abaixo da mediana</p>`:""}</div></article>`;
   }).join(""):`<p class="empty">Nenhum livro encontrado.</p>`;
+  mountCharts();
 }
 async function init(){
   try{

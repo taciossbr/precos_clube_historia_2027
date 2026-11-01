@@ -3,8 +3,16 @@
     "coletas_validas": [
       {
         "preco": 62.98
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 51.0
       }
-    ]
+    ],
+    "abaixo_mediana": "abaixo_mediana:51.00",
+    "novo_menor": "novo_menor:51.00"
   },
   "alexandre-e-cesar-plutarco": {
     "coletas_validas": [
