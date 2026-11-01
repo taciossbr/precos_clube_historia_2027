@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Estante — Radar de preços</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar"><a class="brand" href="."><span class="brand-mark">E</span><span>ESTANTE<small>RADAR DE PREÇOS</small></span></a><span id="updated" class="updated">Carregando preços…</span></header>
+    <main>
+      <section class="page-heading"><div><h1>Minha estante</h1><p>Preços e histórico dos livros que estou acompanhando.</p></div></section>
+      <section class="stats" aria-label="Resumo"><article><span>TOTAL DE PRODUTOS</span><strong id="total">—</strong></article><article><span>COM PREÇO</span><strong id="priced">—</strong></article><article><span>COM FALHA</span><strong id="failed">—</strong></article><article><span>MENOR OFERTA</span><strong id="best">—</strong><small id="best-title"></small></article></section>
+      <section class="catalog"><div class="section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2>Sua lista de livros</h2></div><span id="result-count" class="result-count"></span></div><div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar por título…" aria-label="Buscar livros"></label><label class="sort-box"><span>Ordenar</span><select id="sort"><option value="original">Ordem da lista</option><option value="priority">Prioridade</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="title-asc">Título A–Z</option><option value="title-desc">Título Z–A</option><option value="discount-desc">Maior desconto</option><option value="discount-asc">Menor desconto</option></select></label></div><div id="products" class="products" aria-live="polite"><p class="loading">Carregando catálogo…</p></div></section>
+    </main>
+    <footer><span>ESTANTE · RADAR DE PREÇOS</span><span>Preços coletados automaticamente. Confirme o valor na loja.</span></footer>
+  </body>
+</html>
