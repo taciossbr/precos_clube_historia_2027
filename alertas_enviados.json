@@ -8,6 +8,9 @@
         "preco": 62.98
       },
       {
+        "preco": 62.98
+      },
+      {
         "preco": 51.0
       }
     ],
@@ -21,8 +24,15 @@
       },
       {
         "preco": 32.22
+      },
+      {
+        "preco": 32.22
+      },
+      {
+        "preco": 44.1
       }
-    ]
+    ],
+    "abaixo_mediana": "abaixo_mediana:32.22"
   },
   "o-jesus-historico-david-flusser": {
     "coletas_validas": [
@@ -31,6 +41,15 @@
       },
       {
         "preco": 78.99
+      },
+      {
+        "preco": 78.99
+      },
+      {
+        "preco": 84.75
+      },
+      {
+        "preco": 88.0
       }
     ]
   },
@@ -41,6 +60,12 @@
       },
       {
         "preco": 110.87
+      },
+      {
+        "preco": 110.87
+      },
+      {
+        "preco": 116.0
       }
     ]
   },
@@ -51,6 +76,12 @@
       },
       {
         "preco": 48.86
+      },
+      {
+        "preco": 48.86
+      },
+      {
+        "preco": 57.98
       }
     ]
   },
@@ -61,8 +92,12 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 37.92
       }
-    ]
+    ],
+    "novo_menor": "novo_menor:37.92"
   },
   "o-que-e-a-filosofia-antiga-hadot": {
     "coletas_validas": [
@@ -71,6 +106,12 @@
       },
       {
         "preco": 94.37
+      },
+      {
+        "preco": 94.37
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -81,8 +122,15 @@
       },
       {
         "preco": 72.8
+      },
+      {
+        "preco": 72.8
+      },
+      {
+        "preco": 66.0
       }
-    ]
+    ],
+    "novo_menor": "novo_menor:66.00"
   },
   "piratas-no-brasil-carvalho": {
     "coletas_validas": [
@@ -91,8 +139,16 @@
       },
       {
         "preco": 76.17
+      },
+      {
+        "preco": 76.17
+      },
+      {
+        "preco": 36.0
       }
-    ]
+    ],
+    "abaixo_mediana": "abaixo_mediana:36.00",
+    "novo_menor": "novo_menor:36.00"
   },
   "os-mitos-maias-vozes": {
     "coletas_validas": [
@@ -101,6 +157,12 @@
       },
       {
         "preco": 53.48
+      },
+      {
+        "preco": 53.48
+      },
+      {
+        "preco": 70.9
       }
     ]
   },
@@ -111,6 +173,12 @@
       },
       {
         "preco": 60.61
+      },
+      {
+        "preco": 60.61
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -121,6 +189,12 @@
       },
       {
         "preco": 137.45
+      },
+      {
+        "preco": 137.45
+      },
+      {
+        "preco": 146.0
       }
     ]
   }

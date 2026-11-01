@@ -8,7 +8,7 @@
         "url": "https://www.amazon.com.br/dp/8531613930"
       },
       {
-        "timestamp": "2026-11-01T19:15:49-03:00",
+        "timestamp": "2026-11-01T19:41:25-03:00",
         "preco": 51.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
@@ -24,7 +24,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
         }
@@ -40,7 +40,7 @@
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
           "plataforma": "estante_virtual"
         }
@@ -66,7 +66,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
@@ -82,7 +82,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
           "plataforma": "estante_virtual"
         }
@@ -108,7 +108,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 84.75,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
         }
@@ -124,14 +124,14 @@
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 84.75,
           "plataforma": "estante_virtual"
         }
       ],
       "https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 88.0,
           "plataforma": "estante_virtual"
         }
@@ -157,7 +157,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 116.0,
           "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
         }
@@ -173,7 +173,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 116.0,
           "plataforma": "estante_virtual"
         }
@@ -199,7 +199,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 57.98,
           "url": "https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"
         }
@@ -215,7 +215,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 57.98,
           "plataforma": "estante_virtual"
         }
@@ -231,7 +231,7 @@
         "url": "https://www.amazon.com.br/dp/6589705577"
       },
       {
-        "timestamp": "2026-11-01T19:15:49-03:00",
+        "timestamp": "2026-11-01T19:41:25-03:00",
         "preco": 37.92,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6589705577"
@@ -245,7 +245,7 @@
           "url": "https://www.amazon.com.br/dp/6589705577"
         },
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 37.92,
           "url": "https://www.amazon.com.br/dp/6589705577"
         }
@@ -259,7 +259,7 @@
           "plataforma": "amazon"
         },
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 37.92,
           "plataforma": "amazon"
         }
@@ -285,7 +285,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 98.5,
           "url": "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"
         }
@@ -301,7 +301,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 98.5,
           "plataforma": "estante_virtual"
         }
@@ -317,7 +317,7 @@
         "url": "https://www.amazon.com.br/dp/B0D4WQ179K"
       },
       {
-        "timestamp": "2026-11-01T19:15:49-03:00",
+        "timestamp": "2026-11-01T19:41:25-03:00",
         "preco": 66.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
@@ -333,7 +333,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 66.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
         }
@@ -349,7 +349,7 @@
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 66.0,
           "plataforma": "estante_virtual"
         }
@@ -365,7 +365,7 @@
         "url": "https://www.amazon.com.br/dp/8525058270"
       },
       {
-        "timestamp": "2026-11-01T19:15:49-03:00",
+        "timestamp": "2026-11-01T19:41:25-03:00",
         "preco": 36.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first"
@@ -381,7 +381,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 36.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first"
         }
@@ -397,7 +397,7 @@
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 36.0,
           "plataforma": "estante_virtual"
         }
@@ -423,7 +423,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 70.9,
           "url": "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"
         }
@@ -439,7 +439,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 70.9,
           "plataforma": "estante_virtual"
         }
@@ -465,7 +465,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 79.75,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor"
         }
@@ -481,7 +481,7 @@
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 79.75,
           "plataforma": "estante_virtual"
         }
@@ -507,7 +507,7 @@
       ],
       "estante_virtual": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 146.0,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
@@ -523,7 +523,7 @@
       ],
       "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK": [
         {
-          "timestamp": "2026-11-01T19:15:49-03:00",
+          "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 146.0,
           "plataforma": "estante_virtual"
         }
