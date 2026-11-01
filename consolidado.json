@@ -1,0 +1,358 @@
+{
+  "ultima_atualizacao": "2026-11-01T15:08:20-03:00",
+  "estatisticas_gerais": {
+    "total_produtos": 12,
+    "produtos_com_preco": 12,
+    "produtos_com_falha": 0
+  },
+  "produtos": [
+    {
+      "id": "roma-greg-woolf",
+      "nome": "Roma: A História de um Império — Greg Woolf",
+      "prioridade": 1,
+      "porcentagem_alvo": 0.15,
+      "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
+      "comentario": "É o primeiro, prioridade máxima antes da viagem",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 62.98,
+        "plataforma_vencedora": "amazon",
+        "media": 62.98,
+        "mediana": 62.98
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8531613930",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 62.98,
+          "titulo": "Roma: A história de um império",
+          "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "alexandre-e-cesar-plutarco",
+      "nome": "Alexandre e César — Plutarco",
+      "prioridade": 1,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 32.22,
+        "plataforma_vencedora": "amazon",
+        "media": 32.22,
+        "mediana": 32.22
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/6556405825",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 32.22,
+          "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
+          "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "o-jesus-historico-david-flusser",
+      "nome": "O Jesus Histórico — David Flusser",
+      "prioridade": 1,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 78.99,
+        "plataforma_vencedora": "amazon",
+        "media": 78.99,
+        "mediana": 78.99
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8527302829",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 78.99,
+          "titulo": "Jesus",
+          "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "pompeia-mary-beard",
+      "nome": "Pompeia: A Vida de uma Cidade Romana — Mary Beard",
+      "prioridade": 5,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 110.87,
+        "plataforma_vencedora": "amazon",
+        "media": 110.87,
+        "mediana": 110.87
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8501092215",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 110.87,
+          "titulo": "Pompeia: A vida de uma cidade romana",
+          "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "teogonia-hesiodo",
+      "nome": "Teogonia — Hesíodo",
+      "prioridade": 5,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 48.86,
+        "plataforma_vencedora": "amazon",
+        "media": 48.86,
+        "mediana": 48.86
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/6589705585",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 48.86,
+          "titulo": "Teogonia",
+          "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "os-trabalhos-e-os-dias-hesiodo",
+      "nome": "Os Trabalhos e os Dias — Hesíodo",
+      "prioridade": 5,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 49.9,
+        "plataforma_vencedora": "amazon",
+        "media": 49.9,
+        "mediana": 49.9
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/6589705577",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 49.9,
+          "titulo": "Trabalhos e dias",
+          "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "o-que-e-a-filosofia-antiga-hadot",
+      "nome": "O Que é a Filosofia Antiga? — Pierre Hadot",
+      "prioridade": 4,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 94.37,
+        "plataforma_vencedora": "amazon",
+        "media": 94.37,
+        "mediana": 94.37
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8515017857",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 94.37,
+          "titulo": "O que é a filosofia antiga?",
+          "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "o-anticristo-biografia-almond",
+      "nome": "O Anticristo: Uma Biografia (Movimentos Apocalípticos) — Philip C. Almond",
+      "prioridade": 2,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 72.8,
+        "plataforma_vencedora": "amazon",
+        "media": 72.8,
+        "mediana": 72.8
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/B0D4WQ179K",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 72.8,
+          "titulo": "O Anticristo: Uma biografia",
+          "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "piratas-no-brasil-carvalho",
+      "nome": "Piratas no Brasil — Jean Marcel Carvalho",
+      "prioridade": 2,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 76.17,
+        "plataforma_vencedora": "amazon",
+        "media": 76.17,
+        "mediana": 76.17
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8525058270",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 76.17,
+          "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
+          "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "os-mitos-maias-vozes",
+      "nome": "Os Mitos Maias — Coleção Editora Vozes",
+      "prioridade": 10,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 53.48,
+        "plataforma_vencedora": "amazon",
+        "media": 53.48,
+        "mediana": 53.48
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/B0GH289VSL",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 53.48,
+          "titulo": "Os mitos maias: Um guia para os deuses, heróis e ancestrais",
+          "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "o-quinto-sol-camilla-townsend",
+      "nome": "O Quinto Sol: Uma Nova História dos Astecas — Camilla Townsend",
+      "prioridade": 3,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 60.61,
+        "plataforma_vencedora": "amazon",
+        "media": 60.61,
+        "mediana": 60.61
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8532674275",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 60.61,
+          "titulo": "O quinto sol: Uma nova história dos astecas",
+          "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    },
+    {
+      "id": "o-coracao-do-mundo-peter-frankopan",
+      "nome": "O Coração do Mundo — Peter Frankopan",
+      "prioridade": 3,
+      "porcentagem_alvo": 0.2,
+      "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
+      "comentario": "",
+      "contador_falhas": 0,
+      "metricas_atuais": {
+        "menor_preco_geral": 137.45,
+        "plataforma_vencedora": "amazon",
+        "media": 137.45,
+        "mediana": 137.45
+      },
+      "links": [
+        {
+          "plataforma": "amazon",
+          "url": "https://www.amazon.com.br/dp/8542217497",
+          "pesquisa": false,
+          "comentario": "",
+          "preco_atual": 137.45,
+          "titulo": "O coração do mundo: Uma nova história universal a partir da rota da seda: o encontro do oriente com o ocidente",
+          "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
+        }
+      ]
+    }
+  ]
+}

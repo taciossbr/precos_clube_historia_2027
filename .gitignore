@@ -1,0 +1,5 @@
+lista-livros.txt
+__pycache__/
+*.py[cod]
+site/
+web/
