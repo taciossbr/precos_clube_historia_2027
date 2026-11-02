@@ -3,7 +3,9 @@
 import argparse
 import json
 import random
+import re
 import time
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import replace
 from pathlib import Path
@@ -42,7 +44,7 @@ def executar(
         raise ValueError(f"Não há coletor implementado para {plataforma.value}")
     resultados_anteriores = _carregar_resultados_anteriores() if plataforma else {}
     trabalhos_por_plataforma: Dict[
-        Plataforma, List[Tuple[int, int, str, LinkConfig]]
+        Plataforma, List[Tuple[int, int, str, str, LinkConfig]]
     ] = {}
     resultados_por_posicao: Dict[Tuple[int, int], ResultadoColeta] = {}
 
@@ -66,7 +68,7 @@ def executar(
                 )
                 continue
             trabalhos_por_plataforma.setdefault(link.plataforma, []).append(
-                (indice_produto, indice_link, produto.id, link)
+                (indice_produto, indice_link, produto.id, produto.nome, link)
             )
 
     if trabalhos_por_plataforma:
@@ -109,12 +111,12 @@ def executar(
 
 def _coletar_fila_plataforma(
     coletor: Coletor,
-    trabalhos: List[Tuple[int, int, str, LinkConfig]],
+    trabalhos: List[Tuple[int, int, str, str, LinkConfig]],
     intervalo_entre_produtos: float,
 ) -> List[Tuple[int, int, str, ResultadoColeta]]:
     """Coleta sequencialmente uma plataforma e retorna resultados sem persistir."""
     resultados = []
-    for indice, (indice_produto, indice_link, produto_id, link) in enumerate(trabalhos):
+    for indice, (indice_produto, indice_link, produto_id, nome_produto, link) in enumerate(trabalhos):
         prefixo = f"{link.plataforma.value}/{produto_id}"
         with contexto_log(prefixo):
             if indice and intervalo_entre_produtos:
@@ -128,6 +130,10 @@ def _coletar_fila_plataforma(
                 time.sleep(intervalo)
             try:
                 resultado = coletor.coletar(link)
+                if link.pesquisa:
+                    resultado = _filtrar_resultados_pesquisa(
+                        resultado, nome_produto
+                    )
             except Exception as exc:
                 resultado = ResultadoColeta(
                     plataforma=link.plataforma.value,
@@ -138,6 +144,97 @@ def _coletar_fila_plataforma(
                 registrar_log(resultado.erro or "Falha inesperada no coletor.")
         resultados.append((indice_produto, indice_link, produto_id, resultado))
     return resultados
+
+
+def _filtrar_resultados_pesquisa(
+    resultado: ResultadoColeta, nome_produto: str
+) -> ResultadoColeta:
+    """Descarta candidatos de busca com similaridade inferior a 0,30."""
+    if not resultado.top_n_resultados:
+        return resultado
+
+    aceitos = []
+    for candidato in resultado.top_n_resultados:
+        nota = _similaridade_produto(
+            nome_produto,
+            candidato.get("titulo", ""),
+            candidato.get("autor"),
+        )
+        if nota < 0.30:
+            registrar_log(
+                f"Candidato descartado por divergência do livro "
+                f"(similaridade {nota:.2f} < 0.30): {candidato.get('titulo', '(sem título)')}"
+            )
+            continue
+        aceitos.append(dict(candidato, escolhido=False))
+
+    if not aceitos:
+        return replace(
+            resultado,
+            status="erro",
+            preco=None,
+            titulo=None,
+            erro="Nenhum resultado de pesquisa compatível com o livro (similaridade mínima 0.30)",
+            extras=None,
+            top_n_resultados=[],
+        )
+
+    indice_escolhido = min(
+        range(len(aceitos)),
+        key=lambda indice: float(
+            aceitos[indice].get("preco_total", aceitos[indice].get("preco", float("inf")))
+        ),
+    )
+    escolhido = aceitos[indice_escolhido]
+    aceitos[indice_escolhido] = dict(escolhido, escolhido=True)
+    extras = {
+        chave: escolhido[chave]
+        for chave in ("valor_sem_frete", "frete_aplicado", "frete_presumido")
+        if chave in escolhido
+    }
+    preco = escolhido.get("preco_total", escolhido.get("preco"))
+    return replace(
+        resultado,
+        status="sucesso",
+        preco=float(preco),
+        titulo=escolhido.get("titulo"),
+        erro=None,
+        extras=extras or None,
+        top_n_resultados=aceitos,
+    )
+
+
+def _similaridade_produto(
+    nome_produto: str, titulo_candidato: str, autor_candidato: Optional[str]
+) -> float:
+    partes = re.split(r"\s+[—–]\s+", nome_produto, maxsplit=1)
+    titulo_esperado = partes[0]
+    autor_esperado = partes[1] if len(partes) > 1 else ""
+    palavras_titulo = _palavras_relevantes(titulo_esperado)
+    palavras_candidato = _palavras_relevantes(titulo_candidato)
+    nota_titulo = (
+        len(palavras_titulo & palavras_candidato) / len(palavras_titulo)
+        if palavras_titulo
+        else 0.0
+    )
+
+    palavras_autor = _palavras_relevantes(autor_esperado)
+    palavras_autor_candidato = _palavras_relevantes(autor_candidato or "")
+    if palavras_autor and palavras_autor_candidato:
+        nota_autor = len(palavras_autor & palavras_autor_candidato) / len(palavras_autor)
+        return 0.7 * nota_titulo + 0.3 * nota_autor
+    return nota_titulo
+
+
+def _palavras_relevantes(texto: str) -> set[str]:
+    texto = unicodedata.normalize("NFKD", str(texto).casefold())
+    texto = "".join(caractere for caractere in texto if not unicodedata.combining(caractere))
+    comuns = {"a", "o", "as", "os", "de", "da", "do", "das", "dos", "e", "um", "uma", "para"}
+    return {
+        palavra
+        for palavra in re.findall(r"[a-z0-9]+", texto)
+        if palavra not in comuns
+    }
 
 
 def _carregar_resultados_anteriores() -> Dict[Tuple[str, str, str], dict]:

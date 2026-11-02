@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - consolidado.json
+      - historico.json
+      - erros_consecutivos.json
+      - alertas_enviados.json
+      - blacklist.txt
   workflow_dispatch:
-    inputs:
-      somente_publicar:
-        description: Publica o site com os dados já versionados, sem coletar preços
-        required: false
-        type: boolean
-        default: false
   schedule:
     - cron: "23 5,10,16,19,21 * * *"
       timezone: "America/Sao_Paulo"
@@ -37,7 +37,6 @@ jobs:
           python-version: "3.12"
 
       - name: Restaurar e guardar estado de preços
-        if: ${{ inputs.somente_publicar != true }}
         uses: actions/cache@v4
         with:
           path: |
@@ -50,22 +49,18 @@ jobs:
             precos-${{ github.ref_name }}-
 
       - name: Instalar dependências
-        if: ${{ inputs.somente_publicar != true }}
         run: python -m pip install -r requirements.txt
 
       - name: Instalar Firefox para Playwright
-        if: ${{ inputs.somente_publicar != true }}
         run: python -m playwright install --with-deps firefox
 
       - name: Coletar preços e atualizar histórico
-        if: ${{ inputs.somente_publicar != true }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
       - name: Commitar estado atualizado
-        if: ${{ inputs.somente_publicar != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
