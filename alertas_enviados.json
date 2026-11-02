@@ -24,6 +24,12 @@
       },
       {
         "preco": 51.0
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 51.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:51.00",
@@ -46,6 +52,12 @@
       },
       {
         "preco": 32.22
+      },
+      {
+        "preco": 44.1
+      },
+      {
+        "preco": 40.93
       },
       {
         "preco": 44.1
@@ -93,9 +105,18 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 78.99
+      },
+      {
+        "preco": 34.0
+      },
+      {
+        "preco": 88.0
       }
     ],
-    "abaixo_mediana": "abaixo_mediana:26.00"
+    "abaixo_mediana": "abaixo_mediana:34.00"
   },
   "pompeia-mary-beard": {
     "coletas_validas": [
@@ -122,6 +143,9 @@
       },
       {
         "preco": 116.0
+      },
+      {
+        "preco": 116.0
       }
     ]
   },
@@ -132,6 +156,12 @@
       },
       {
         "preco": 48.86
+      },
+      {
+        "preco": 48.86
+      },
+      {
+        "preco": 57.98
       },
       {
         "preco": 48.86
@@ -169,6 +199,9 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 49.9
       }
     ],
     "novo_menor": "novo_menor:37.92"
@@ -180,6 +213,12 @@
       },
       {
         "preco": 94.37
+      },
+      {
+        "preco": 94.37
+      },
+      {
+        "preco": 98.5
       },
       {
         "preco": 94.37
@@ -223,6 +262,12 @@
       },
       {
         "preco": 66.0
+      },
+      {
+        "preco": 72.8
+      },
+      {
+        "preco": 66.0
       }
     ],
     "novo_menor": "novo_menor:66.00"
@@ -234,6 +279,12 @@
       },
       {
         "preco": 76.17
+      },
+      {
+        "preco": 76.17
+      },
+      {
+        "preco": 36.0
       },
       {
         "preco": 76.17
@@ -282,6 +333,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 53.48
+      },
+      {
+        "preco": 70.9
       }
     ]
   },
@@ -310,6 +367,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 60.61
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -320,6 +383,12 @@
       },
       {
         "preco": 137.45
+      },
+      {
+        "preco": 137.45
+      },
+      {
+        "preco": 146.0
       },
       {
         "preco": 137.45
