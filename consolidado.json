@@ -1,9 +1,9 @@
 {
-  "ultima_atualizacao": "2026-11-02T13:54:53-03:00",
+  "ultima_atualizacao": "2026-11-02T19:56:39-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 10
+    "produtos_com_falha": 12
   },
   "produtos": [
     {
@@ -14,19 +14,18 @@
       "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 0,
+      "contador_falhas": 5,
       "metricas_atuais": {
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 60.66,
-        "mediana": 62.98,
+        "media": 56.99,
+        "mediana": 56.99,
         "mediana_por_plataforma": {
           "amazon": 62.98,
-          "mercado_livre": 68.0,
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -47,66 +46,15 @@
           "url": "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 68.0,
-          "titulo": "Roma - Woolf, Greg - Grupo Editorial Pensamento - Capa Mole",
-          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null,
-          "extras": {
-            "valor_sem_frete": 68.0,
-            "frete_aplicado": 0.0,
-            "frete_presumido": true
-          },
+          "erros_consecutivos": 5,
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
-          "top_n_resultados": [
-            {
-              "titulo": "Roma - Woolf, Greg - Grupo Editorial Pensamento - Capa Mole",
-              "valor_sem_frete": 68.0,
-              "preco_total": 68.0,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.mercadolivre.com.br/roma-woolf-greg-grupo-editorial-pensamento-capa-mole/p/MLB19420742#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=f2ed886d-388e-4396-babc-155ff84e0c41&overlay_label_capability=not_apply&wid=MLB5337270681&sid=search"
-            },
-            {
-              "titulo": "Roma A Historia De Um Imperio - Livro",
-              "valor_sem_frete": 271.9,
-              "preco_total": 271.9,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/roma-a-historia-de-um-imperio-livro/up/MLBU5650616564#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=f2ed886d-388e-4396-babc-155ff84e0c41&overlay_label_capability=not_apply&wid=MLB7864054864&sid=search"
-            },
-            {
-              "titulo": "Roma - A Historia De Um Imperio - Woolf, Greg - Cultrix",
-              "valor_sem_frete": 374.25,
-              "preco_total": 374.25,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/roma--a-historia-de-um-imperio--woolf-greg--cultrix/up/MLBU4949037982#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=f2ed886d-388e-4396-babc-155ff84e0c41&overlay_label_capability=not_apply&wid=MLB7509213510&sid=search"
-            },
-            {
-              "titulo": "Roma A Historia De Um Imperio - Livro",
-              "valor_sem_frete": 271.9,
-              "preco_total": 271.9,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/roma-a-historia-de-um-imperio-livro/up/MLBU5773472674#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=5&type=product&tracking_id=f2ed886d-388e-4396-babc-155ff84e0c41&overlay_label_capability=not_apply&wid=MLB5495946103&sid=search"
-            },
-            {
-              "titulo": "Roma A Historia De Um Imperio - Livro",
-              "valor_sem_frete": 271.9,
-              "preco_total": 271.9,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/roma-a-historia-de-um-imperio-livro/up/MLBU5364598219#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=6&type=product&tracking_id=f2ed886d-388e-4396-babc-155ff84e0c41&overlay_label_capability=not_apply&wid=MLB5337605575&sid=search"
-            }
-          ]
+          "top_n_resultados": []
         },
         {
           "plataforma": "estante_virtual",
@@ -158,20 +106,20 @@
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
             },
             {
-              "titulo": "Roma: A História de Um Império",
+              "titulo": "Roma a História de um Império",
               "autor": "Greg Woolf",
-              "valor_sem_frete": 40.0,
-              "preco_total": 56.0,
+              "valor_sem_frete": 43.5,
+              "preco_total": 59.5,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": false,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
             },
             {
-              "titulo": "Roma a História de um Império",
+              "titulo": "Roma: A Historia de Um Imperio",
               "autor": "Greg Woolf",
-              "valor_sem_frete": 43.5,
-              "preco_total": 59.5,
+              "valor_sem_frete": 45.0,
+              "preco_total": 61.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": false,
@@ -187,21 +135,19 @@
       "prioridade": 3,
       "porcentagem_alvo": 0.15,
       "alvo_real": 29,
-      "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+      "capa_url": "/book/00/0B0-5297-000/0B0-5297-000_detail1.jpg?ts=1777269130495",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 5,
       "metricas_atuais": {
-        "menor_preco_geral": 30.0,
-        "plataforma_vencedora": "mercado_livre",
-        "media": 38.34,
-        "mediana": 40.93,
+        "menor_preco_geral": 44.1,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 44.1,
+        "mediana": 44.1,
         "mediana_por_plataforma": {
-          "amazon": 40.93,
-          "mercado_livre": 30.0,
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 40.93,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T13:30:09-03:00"
       },
       "links": [
         {
@@ -209,79 +155,28 @@
           "url": "https://www.amazon.com.br/dp/6556405825",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 40.93,
-          "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
-          "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
           "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 30.0,
-          "titulo": "Alexandre E César / Plutarco",
-          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null,
-          "extras": {
-            "valor_sem_frete": 30.0,
-            "frete_aplicado": 0.0,
-            "frete_presumido": true
-          },
+          "erros_consecutivos": 5,
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
-          "top_n_resultados": [
-            {
-              "titulo": "Alexandre E César, De Plutarco. Editorial Nova Fronteira, Capa Mole, Edição 2022-09-20 00:00:00 Em Português",
-              "valor_sem_frete": 33.03,
-              "preco_total": 33.03,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/alexandre-e-cesar-de-plutarco-editorial-nova-fronteira-capa-mole-edicao-2022-09-20-000000-em-portugues/p/MLB42123871#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=7c766af0-d155-4a6d-bf1a-296acfcbd343&overlay_label_capability=not_apply&wid=MLB3440209818&sid=search"
-            },
-            {
-              "titulo": "Alexandre E César / Plutarco",
-              "valor_sem_frete": 30.0,
-              "preco_total": 30.0,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.mercadolivre.com.br/alexandre-e-cesar-plutarco/up/MLBU1223520713#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=7c766af0-d155-4a6d-bf1a-296acfcbd343&overlay_label_capability=not_apply&wid=MLB1697608657&sid=search"
-            },
-            {
-              "titulo": "Alexandre & Júlio César: As vidas dos nobres gregos e romanos (vol. 2) - Plutarco - Edições DI - Capa Mole",
-              "valor_sem_frete": 44.63,
-              "preco_total": 44.63,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/alexandre-julio-cesar-as-vidas-dos-nobres-gregos-e-romanos-vol-2-plutarco-edicoes-di-capa-mole/p/MLB74779111#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=7c766af0-d155-4a6d-bf1a-296acfcbd343&overlay_label_capability=not_apply&wid=MLB7389615008&sid=search"
-            },
-            {
-              "titulo": "César - Massie, Allan - Faro Editorial - Capa Mole",
-              "valor_sem_frete": 51.92,
-              "preco_total": 51.92,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/cesar-massie-allan-faro-editorial-capa-mole/p/MLB19197909#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=4&type=product&tracking_id=7c766af0-d155-4a6d-bf1a-296acfcbd343&overlay_label_capability=not_apply&wid=MLB6431632382&sid=search"
-            },
-            {
-              "titulo": "A Fortuna Ou A Virtude De Alexandre Magno: Volume 47 (autore",
-              "valor_sem_frete": 347.0,
-              "preco_total": 347.0,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.mercadolivre.com.br/a-fortuna-ou-a-virtude-de-alexandre-magno-volume-47-autore/up/MLBU4113074387#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=5&type=product&tracking_id=7c766af0-d155-4a6d-bf1a-296acfcbd343&overlay_label_capability=not_apply&wid=MLB4791505621&sid=search"
-            }
-          ]
+          "top_n_resultados": []
         },
         {
           "plataforma": "estante_virtual",
@@ -322,7 +217,7 @@
           "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -349,7 +244,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Chromium móvel: Falha do Playwright ao aguardar os resultados da busca: Page.content: Unable to retrieve content because the page is navigating and changing the content..",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
         },
@@ -436,14 +331,14 @@
       "metricas_atuais": {
         "menor_preco_geral": 110.87,
         "plataforma_vencedora": "amazon",
-        "media": 113.44,
-        "mediana": 113.44,
+        "media": 118.91,
+        "mediana": 118.91,
         "mediana_por_plataforma": {
           "amazon": 110.87,
-          "estante_virtual": 116.0
+          "estante_virtual": 126.94
         },
         "mediana_amazon_referencia": 110.87,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -470,7 +365,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -479,7 +374,7 @@
           "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 116.0,
+          "preco_atual": 126.94,
           "titulo": "Pompeia: A vida de uma cidade romana",
           "capa_url": "/book/00/06V-7741-000/06V-7741-000_detail1.jpg?ts=1712765208705",
           "status": "sucesso",
@@ -487,7 +382,7 @@
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 100.0,
+            "valor_sem_frete": 110.94,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           }
@@ -513,7 +408,7 @@
           "estante_virtual": 57.98
         },
         "mediana_amazon_referencia": 48.86,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -540,7 +435,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -574,15 +469,15 @@
       "comentario": "",
       "contador_falhas": 5,
       "metricas_atuais": {
-        "menor_preco_geral": 49.9,
+        "menor_preco_geral": 37.92,
         "plataforma_vencedora": "amazon",
-        "media": 49.9,
-        "mediana": 49.9,
+        "media": 37.92,
+        "mediana": 37.92,
         "mediana_por_plataforma": {
-          "amazon": 49.9
+          "amazon": 37.92
         },
-        "mediana_amazon_referencia": 49.9,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia": 37.92,
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -590,7 +485,7 @@
           "url": "https://www.amazon.com.br/dp/6589705577",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 49.9,
+          "preco_atual": 37.92,
           "titulo": "Trabalhos e dias",
           "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
           "status": "sucesso",
@@ -609,7 +504,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         }
@@ -634,7 +529,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 94.37,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -661,7 +556,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 7,
           "top_n_resultados": []
         },
@@ -704,7 +599,7 @@
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -731,7 +626,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Chromium móvel: Falha do Playwright ao aguardar os resultados da busca: Page.content: Unable to retrieve content because the page is navigating and changing the content..",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -827,7 +722,7 @@
           "estante_virtual": 36.0
         },
         "mediana_amazon_referencia": 76.17,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -854,7 +749,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Chromium móvel: Falha do Playwright ao aguardar os resultados da busca: Page.content: Unable to retrieve content because the page is navigating and changing the content..",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -950,7 +845,7 @@
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -977,7 +872,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -1020,7 +915,7 @@
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -1047,7 +942,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Mercado Livre retornou uma tela de verificação JavaScript; a página de resultados não foi carregada.",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
         },
@@ -1103,7 +998,7 @@
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 137.45,
-        "mediana_amazon_referencia_em": "2026-11-02T13:54:53-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T19:56:39-03:00"
       },
       "links": [
         {
@@ -1130,7 +1025,7 @@
           "status": "erro",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 5,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: Chromium móvel: Falha do Playwright ao aguardar os resultados da busca: Page.content: Unable to retrieve content because the page is navigating and changing the content..",
+          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
         },

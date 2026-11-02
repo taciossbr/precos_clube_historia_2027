@@ -28,13 +28,6 @@
           "preco": 51.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
         }
-      ],
-      "mercado_livre": [
-        {
-          "timestamp": "2026-11-02T13:54:53-03:00",
-          "preco": 68.0,
-          "url": "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf"
-        }
       ]
     },
     "por_link": {
@@ -50,13 +43,6 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
           "plataforma": "estante_virtual"
-        }
-      ],
-      "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf": [
-        {
-          "timestamp": "2026-11-02T13:54:53-03:00",
-          "preco": 68.0,
-          "plataforma": "mercado_livre"
         }
       ]
     }
@@ -88,10 +74,10 @@
         "url": "https://www.amazon.com.br/dp/6556405825"
       },
       {
-        "timestamp": "2026-11-02T13:54:53-03:00",
-        "preco": 30.0,
-        "plataforma": "mercado_livre",
-        "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco"
+        "timestamp": "2026-11-02T19:56:39-03:00",
+        "preco": 44.1,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
       }
     ],
     "por_plataforma": {
@@ -113,13 +99,6 @@
           "preco": 44.1,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
-      ],
-      "mercado_livre": [
-        {
-          "timestamp": "2026-11-02T13:54:53-03:00",
-          "preco": 30.0,
-          "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco"
-        }
       ]
     },
     "por_link": {
@@ -140,13 +119,6 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
           "plataforma": "estante_virtual"
-        }
-      ],
-      "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco": [
-        {
-          "timestamp": "2026-11-02T13:54:53-03:00",
-          "preco": 30.0,
-          "plataforma": "mercado_livre"
         }
       ]
     }
@@ -298,6 +270,11 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 116.0,
           "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
+        },
+        {
+          "timestamp": "2026-11-02T19:56:39-03:00",
+          "preco": 126.94,
+          "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
         }
       ]
     },
@@ -313,6 +290,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 116.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-02T19:56:39-03:00",
+          "preco": 126.94,
           "plataforma": "estante_virtual"
         }
       ]
@@ -391,6 +373,12 @@
         "preco": 49.9,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6589705577"
+      },
+      {
+        "timestamp": "2026-11-02T19:56:39-03:00",
+        "preco": 37.92,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6589705577"
       }
     ],
     "por_plataforma": {
@@ -408,6 +396,11 @@
         {
           "timestamp": "2026-11-01T23:47:49-03:00",
           "preco": 49.9,
+          "url": "https://www.amazon.com.br/dp/6589705577"
+        },
+        {
+          "timestamp": "2026-11-02T19:56:39-03:00",
+          "preco": 37.92,
           "url": "https://www.amazon.com.br/dp/6589705577"
         }
       ]
@@ -427,6 +420,11 @@
         {
           "timestamp": "2026-11-01T23:47:49-03:00",
           "preco": 49.9,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-02T19:56:39-03:00",
+          "preco": 37.92,
           "plataforma": "amazon"
         }
       ]
