@@ -18,6 +18,7 @@ BLACKLIST_BOOKS: List[str] = [
     "A Juventude de Jesus",
     "Kit A Visão dos Vencidos",
     "Combo A Visão dos Vencidos",
+    "Chamados Pelo Coração do Mundo",
 ]
 
 
@@ -298,7 +299,7 @@ PRODUTOS: List[Produto] = [
 ]
 
 
-BLACKLIST_BOOKS = [
+BLACKLIST_BOOKS += [
     'em busca de jesus',
     'o novo testamento ilustrado: a história de jesus e os primeiros discí',
     'Novo Argumentação Estoica 5 Livros | Literatura Reflexiva',

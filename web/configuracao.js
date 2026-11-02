@@ -24,7 +24,12 @@ function renderProduct(product) {
   }).join("");
 
   return `<article class="configured-product-card">
-    <header><h3>${safe(product.nome)}</h3><span>Prioridade ${safe(product.prioridade)}</span></header>
+    <header class="configured-product-header">
+      <div><h3>${safe(product.nome)}</h3><span>Prioridade ${safe(product.prioridade)}</span></div>
+      ${product.capa_url
+        ? `<img class="configured-product-thumbnail" src="${safe(product.capa_url)}" alt="Capa de ${safe(product.nome)}" loading="lazy">`
+        : `<div class="configured-product-thumbnail-empty">Sem capa</div>`}
+    </header>
     ${product.comentario ? `<p class="configured-product-comment">${safe(product.comentario)}</p>` : ""}
     <ul>${rows}</ul>
   </article>`;

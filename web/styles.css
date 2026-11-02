@@ -35,4 +35,5 @@
 .card-actions{display:grid;gap:12px;margin-top:auto;padding-top:12px}
 .card-actions .details-button,.card-actions .buy{margin:0}
 .discount-summary{margin:4px 0 0;padding-top:10px;border-top:1px solid var(--line);text-align:center;font-size:15px}
+.search-page-link{display:inline-block;color:var(--green);font-size:14px;font-weight:700;text-decoration:none;text-underline-offset:4px;white-space:nowrap}.search-page-link:hover{text-decoration:underline}
 @media(max-width:560px){.card-head{grid-template-columns:minmax(0,1fr) 96px;padding:14px 14px 0}.cover-thumb,.cover-empty{height:138px}.card-body{padding:14px}.metrics{gap:5px}.metrics span,.platform-medians span{font-size:11px}.metrics strong,.platform-medians strong{font-size:11px}}

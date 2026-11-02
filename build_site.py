@@ -39,10 +39,17 @@ def main() -> None:
         shutil.copy2(WEB_DIR / nome, SITE_DIR / nome)
     for nome in ARQUIVOS_DADOS:
         shutil.copy2(ROOT / nome, SITE_DIR / nome)
+    snapshot = json.loads((ROOT / "consolidado.json").read_text(encoding="utf-8"))
+    capas_por_produto = {
+        produto["id"]: produto.get("capa_url")
+        for produto in snapshot.get("produtos", [])
+        if isinstance(produto, dict) and produto.get("id")
+    }
     links_configurados = [
         {
             "id": produto.id,
             "nome": produto.nome,
+            "capa_url": capas_por_produto.get(produto.id),
             "prioridade": produto.prioridade,
             "comentario": produto.comentario,
             "links": [

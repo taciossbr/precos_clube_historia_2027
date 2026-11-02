@@ -713,12 +713,6 @@
         "preco": 137.45,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8542217497"
-      },
-      {
-        "timestamp": "2026-11-02T11:47:47-03:00",
-        "preco": 63.08,
-        "plataforma": "mercado_livre",
-        "url": "https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan"
       }
     ],
     "por_plataforma": {
@@ -735,13 +729,6 @@
           "preco": 146.0,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
-      ],
-      "mercado_livre": [
-        {
-          "timestamp": "2026-11-02T11:47:47-03:00",
-          "preco": 63.08,
-          "url": "https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan"
-        }
       ]
     },
     "por_link": {
@@ -757,13 +744,6 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 146.0,
           "plataforma": "estante_virtual"
-        }
-      ],
-      "https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan": [
-        {
-          "timestamp": "2026-11-02T11:47:47-03:00",
-          "preco": 63.08,
-          "plataforma": "mercado_livre"
         }
       ]
     }

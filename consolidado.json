@@ -3,7 +3,7 @@
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 3
+    "produtos_com_falha": 4
   },
   "produtos": [
     {
@@ -1379,15 +1379,14 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 63.08,
-        "plataforma_vencedora": "mercado_livre",
-        "media": 115.51,
-        "mediana": 137.45,
+        "menor_preco_geral": 137.45,
+        "plataforma_vencedora": "amazon",
+        "media": 141.73,
+        "mediana": 141.73,
         "mediana_por_plataforma": {
           "amazon": 137.45,
-          "mercado_livre": 63.08,
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 137.45,
@@ -1412,18 +1411,13 @@
           "url": "https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 63.08,
-          "titulo": "Chamados Pelo Coração Do Mundo",
-          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null,
-          "extras": {
-            "valor_sem_frete": 63.08,
-            "frete_aplicado": 0.0,
-            "frete_presumido": true
-          },
+          "erros_consecutivos": 1,
+          "erro": "Resultado removido manualmente: anúncio corresponde a outro livro.",
           "top_n": 3,
           "top_n_resultados": [
             {
@@ -1443,15 +1437,6 @@
               "frete_presumido": true,
               "escolhido": false,
               "url": "https://www.mercadolivre.com.br/coracao-do-mundo-o-de-frankopan-peter-editora-critica/p/MLB72449429#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=1dba1d53-ff59-4f26-ad42-3b5ef6295b60&overlay_label_capability=not_apply&wid=MLB7169959898&sid=search"
-            },
-            {
-              "titulo": "Chamados Pelo Coração Do Mundo",
-              "valor_sem_frete": 63.08,
-              "preco_total": 63.08,
-              "frete_aplicado": 0.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.mercadolivre.com.br/chamados-pelo-coracao-do-mundo/p/MLB21572988#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=1dba1d53-ff59-4f26-ad42-3b5ef6295b60&overlay_label_capability=not_apply&wid=MLB3646105277&sid=search"
             }
           ]
         },
