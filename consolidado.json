@@ -209,13 +209,13 @@
       "comentario": "",
       "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 26.0,
-        "plataforma_vencedora": "estante_virtual",
-        "media": 64.33,
-        "mediana": 78.99,
+        "menor_preco_geral": 78.99,
+        "plataforma_vencedora": "amazon",
+        "media": 83.91,
+        "mediana": 84.75,
         "mediana_por_plataforma": {
           "amazon": 78.99,
-          "estante_virtual": 57.0
+          "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
         "mediana_amazon_referencia_em": "2026-11-02T12:10:54-03:00"
@@ -254,15 +254,15 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 26.0,
-          "titulo": "Para os filhos dos filhos dos nossos filhos",
+          "preco_atual": 84.75,
+          "titulo": "Jesus",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 10.0,
+            "valor_sem_frete": 68.75,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
@@ -285,7 +285,7 @@
               "preco_total": 84.75,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
-              "escolhido": false,
+              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
             },
             {
@@ -293,26 +293,6 @@
               "autor": "David Flusser",
               "valor_sem_frete": 89.0,
               "preco_total": 105.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
-            },
-            {
-              "titulo": "Para os filhos dos filhos dos nossos filhos",
-              "autor": "David Turner-jesus Muñoz",
-              "valor_sem_frete": 10.0,
-              "preco_total": 26.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.estantevirtual.com.br/livro/para-os-filhos-dos-filhos-dos-nossos-filhos-0V5-5635-000-BK"
-            },
-            {
-              "titulo": "A Rua Sete e Outras Histórias",
-              "autor": "J. A. Carlos David Chagas",
-              "valor_sem_frete": 12.0,
-              "preco_total": 28.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": false,

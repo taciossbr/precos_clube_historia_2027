@@ -2,24 +2,22 @@
 
 from dataclasses import dataclass
 from enum import Enum
+from pathlib import Path
 from typing import List, Optional
 
 
-# Títulos/trechos que devem ser ignorados nos resultados de busca.
-BLACKLIST_BOOKS: List[str] = [
-    "Em busca de Jesus",
-    "O Novo Testamento Ilustrado",
-    "Portugal a Terra e o Homem",
-    "A farsa sobre Jesus",
-    "Siga-Me",
-    "O Diabólico Cérebro Eletrônico",
-    "O Mundo Jesus Cristo",
-    "A Escolha dos Discípulos",
-    "A Juventude de Jesus",
-    "Kit A Visão dos Vencidos",
-    "Combo A Visão dos Vencidos",
-    "Chamados Pelo Coração do Mundo",
-]
+# Um título/trecho por linha; o arquivo é versionado junto com o código.
+ARQUIVO_BLACKLIST = Path(__file__).resolve().parent / "blacklist.txt"
+
+
+def carregar_blacklist() -> List[str]:
+    if not ARQUIVO_BLACKLIST.exists():
+        return []
+    return [linha.strip() for linha in ARQUIVO_BLACKLIST.read_text(encoding="utf-8").splitlines()
+            if linha.strip() and not linha.lstrip().startswith("#")]
+
+
+BLACKLIST_BOOKS: List[str] = carregar_blacklist()
 
 
 class Plataforma(Enum):
@@ -165,7 +163,7 @@ PRODUTOS: List[Produto] = [
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8527302829"),
-            MercadoLink("https://lista.mercadolivre.com.br/o-jesus-hist%C3%B3rico-%E2%80%94-david-flusser", pesquisa=True, top_n=5),
+            MercadoLink("https://lista.mercadolivre.com.br/o-jesus-hist%C3%B3rico-%E2%80%94-david-flusser", pesquisa=True, top_n=3),
             EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"),
         ]
@@ -296,16 +294,4 @@ PRODUTOS: List[Produto] = [
             EstanteLink("https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"),
         ]
     ),
-]
-
-
-BLACKLIST_BOOKS += [
-    'em busca de jesus',
-    'o novo testamento ilustrado: a história de jesus e os primeiros discí',
-    'Novo Argumentação Estoica 5 Livros | Literatura Reflexiva',
-    'Chamados Pelo Coração Do Mundo',
-    'Brasil, Coração Do Mundo, Pátria Do Evangelho (novo Projeto)',
-    'Combo Como Ter O Coração De Maria No Mundo De Marta',
-    'Livro Como Ter O Coração De Maria No Mundo De Marta | Cpad',
-    'Kit Com 5 Livros Luciano Subirá | Rumo 120 Anos+ Cuidado Do Corpo+ Cultura Jejum+ Até Que Nada Nos Importe+ Todo Coração',
 ]
