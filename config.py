@@ -164,7 +164,7 @@ PRODUTOS: List[Produto] = [
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8527302829"),
             MercadoLink("https://lista.mercadolivre.com.br/o-jesus-hist%C3%B3rico-%E2%80%94-david-flusser", pesquisa=True, top_n=3),
-            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=3),
             EstanteLink("https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"),
         ]
     ),

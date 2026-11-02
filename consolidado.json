@@ -207,12 +207,12 @@
       "comentario": "",
       "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 62.0,
+        "menor_preco_geral": 88.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 75.0,
-        "mediana": 75.0,
+        "media": 88.0,
+        "mediana": 88.0,
         "mediana_por_plataforma": {
-          "estante_virtual": 75.0
+          "estante_virtual": 88.0
         },
         "mediana_amazon_referencia": 78.99,
         "mediana_amazon_referencia_em": "2026-11-02T12:46:36-03:00"
@@ -251,15 +251,15 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 62.0,
-          "titulo": "Os Juseus e o Judaísmo - História e Religião",
+          "preco_atual": 88.0,
+          "titulo": "Jesus",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 46.0,
+            "valor_sem_frete": 72.0,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
@@ -272,7 +272,7 @@
               "preco_total": 88.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
-              "escolhido": false,
+              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"
             },
             {
@@ -293,26 +293,6 @@
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": false,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
-            },
-            {
-              "titulo": "Prueba de Sonido - Primeras Historias del Rock En Chile / 1956-1984",
-              "autor": "David Ponce",
-              "valor_sem_frete": 300.0,
-              "preco_total": 316.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": false,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
-            },
-            {
-              "titulo": "Os Juseus e o Judaísmo - História e Religião",
-              "autor": "David Goldberg John Rayner",
-              "valor_sem_frete": 46.0,
-              "preco_total": 62.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
             }
           ]

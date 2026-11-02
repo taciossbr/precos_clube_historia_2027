@@ -130,12 +130,6 @@
         "preco": 34.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
-      },
-      {
-        "timestamp": "2026-11-02T13:03:58-03:00",
-        "preco": 62.0,
-        "plataforma": "estante_virtual",
-        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
       }
     ],
     "por_plataforma": {
@@ -160,11 +154,6 @@
         {
           "timestamp": "2026-11-02T12:46:36-03:00",
           "preco": 34.0,
-          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
-        },
-        {
-          "timestamp": "2026-11-02T13:03:58-03:00",
-          "preco": 62.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
         }
       ]
@@ -191,11 +180,6 @@
         {
           "timestamp": "2026-11-02T12:46:36-03:00",
           "preco": 34.0,
-          "plataforma": "estante_virtual"
-        },
-        {
-          "timestamp": "2026-11-02T13:03:58-03:00",
-          "preco": 62.0,
           "plataforma": "estante_virtual"
         }
       ],
