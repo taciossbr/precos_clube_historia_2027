@@ -1,8 +1,8 @@
 {
-  "ultima_atualizacao": "2026-11-02T12:46:36-03:00",
+  "ultima_atualizacao": "2026-11-02T13:03:58-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
-    "produtos_com_preco": 12,
+    "produtos_com_preco": 11,
     "produtos_com_falha": 12
   },
   "produtos": [
@@ -14,14 +14,13 @@
       "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 56.99,
-        "mediana": 56.99,
+        "media": 51.0,
+        "mediana": 51.0,
         "mediana_por_plataforma": {
-          "amazon": 62.98,
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
@@ -33,13 +32,13 @@
           "url": "https://www.amazon.com.br/dp/8531613930",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 62.98,
+          "preco_atual": null,
           "titulo": "Roma: A história de um império",
           "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -51,7 +50,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -137,14 +136,13 @@
       "alvo_real": 29,
       "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 40.93,
-        "plataforma_vencedora": "amazon",
-        "media": 42.52,
-        "mediana": 42.52,
+        "menor_preco_geral": 44.1,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 44.1,
+        "mediana": 44.1,
         "mediana_por_plataforma": {
-          "amazon": 40.93,
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 40.93,
@@ -156,13 +154,13 @@
           "url": "https://www.amazon.com.br/dp/6556405825",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 40.93,
+          "preco_atual": null,
           "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
           "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -174,7 +172,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -207,15 +205,14 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 34.0,
+        "menor_preco_geral": 62.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 67.0,
-        "mediana": 78.99,
+        "media": 75.0,
+        "mediana": 75.0,
         "mediana_por_plataforma": {
-          "amazon": 78.99,
-          "estante_virtual": 61.0
+          "estante_virtual": 75.0
         },
         "mediana_amazon_referencia": 78.99,
         "mediana_amazon_referencia_em": "2026-11-02T12:46:36-03:00"
@@ -226,13 +223,13 @@
           "url": "https://www.amazon.com.br/dp/8527302829",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 78.99,
+          "preco_atual": null,
           "titulo": "Jesus",
           "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -244,7 +241,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 3,
           "top_n_resultados": []
@@ -254,15 +251,15 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 34.0,
-          "titulo": "História de Jesus e Os Primeiros Discípulos Segundo A Bíblia",
+          "preco_atual": 62.0,
+          "titulo": "Os Juseus e o Judaísmo - História e Religião",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 18.0,
+            "valor_sem_frete": 46.0,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
@@ -309,10 +306,10 @@
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
             },
             {
-              "titulo": "História de Jesus e Os Primeiros Discípulos Segundo A Bíblia",
-              "autor": "Sem Autor",
-              "valor_sem_frete": 18.0,
-              "preco_total": 34.0,
+              "titulo": "Os Juseus e o Judaísmo - História e Religião",
+              "autor": "David Goldberg John Rayner",
+              "valor_sem_frete": 46.0,
+              "preco_total": 62.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": true,
@@ -346,9 +343,9 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": 90,
-      "capa_url": "/book/00/06V-7741-000/06V-7741-000_detail1.jpg?ts=1712765208705",
+      "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
         "menor_preco_geral": 116.0,
         "plataforma_vencedora": "estante_virtual",
@@ -367,12 +364,12 @@
           "pesquisa": false,
           "comentario": "",
           "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
+          "titulo": "Pompeia: A vida de uma cidade romana",
+          "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 1,
-          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+          "erros_consecutivos": 2,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -384,7 +381,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -417,14 +414,13 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 48.86,
-        "plataforma_vencedora": "amazon",
-        "media": 53.42,
-        "mediana": 53.42,
+        "menor_preco_geral": 57.98,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 57.98,
+        "mediana": 57.98,
         "mediana_por_plataforma": {
-          "amazon": 48.86,
           "estante_virtual": 57.98
         },
         "mediana_amazon_referencia": 48.86,
@@ -436,13 +432,13 @@
           "url": "https://www.amazon.com.br/dp/6589705585",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 48.86,
+          "preco_atual": null,
           "titulo": "Teogonia",
           "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -454,7 +450,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -487,15 +483,13 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 49.9,
-        "plataforma_vencedora": "amazon",
-        "media": 49.9,
-        "mediana": 49.9,
-        "mediana_por_plataforma": {
-          "amazon": 49.9
-        },
+        "menor_preco_geral": null,
+        "plataforma_vencedora": null,
+        "media": null,
+        "mediana": null,
+        "mediana_por_plataforma": {},
         "mediana_amazon_referencia": 49.9,
         "mediana_amazon_referencia_em": "2026-11-02T12:46:36-03:00"
       },
@@ -505,13 +499,13 @@
           "url": "https://www.amazon.com.br/dp/6589705577",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 49.9,
+          "preco_atual": null,
           "titulo": "Trabalhos e dias",
           "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -523,7 +517,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -538,14 +532,13 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 94.37,
-        "plataforma_vencedora": "amazon",
-        "media": 96.44,
-        "mediana": 96.44,
+        "menor_preco_geral": 98.5,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 98.5,
+        "mediana": 98.5,
         "mediana_por_plataforma": {
-          "amazon": 94.37,
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 94.37,
@@ -557,13 +550,13 @@
           "url": "https://www.amazon.com.br/dp/8515017857",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 94.37,
+          "preco_atual": null,
           "titulo": "O que é a filosofia antiga?",
           "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -575,7 +568,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 7,
           "top_n_resultados": []
@@ -606,16 +599,15 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 69.4,
-        "mediana": 69.4,
+        "media": 66.0,
+        "mediana": 66.0,
         "mediana_por_plataforma": {
-          "amazon": 72.8,
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
@@ -627,13 +619,13 @@
           "url": "https://www.amazon.com.br/dp/B0D4WQ179K",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 72.8,
-          "titulo": "O Anticristo: Uma biografia",
-          "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "HTTPError: HTTP Error 500: "
         },
         {
           "plataforma": "mercado_livre",
@@ -645,7 +637,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -729,16 +721,15 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 56.09,
-        "mediana": 56.09,
+        "media": 36.0,
+        "mediana": 36.0,
         "mediana_por_plataforma": {
-          "amazon": 76.17,
           "estante_virtual": 36.0
         },
         "mediana_amazon_referencia": 76.17,
@@ -750,13 +741,13 @@
           "url": "https://www.amazon.com.br/dp/8525058270",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 76.17,
-          "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
-          "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -768,7 +759,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -852,16 +843,15 @@
       "prioridade": 9,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+      "capa_url": "/book/00/NVV-7604-000/NVV-7604-000_detail1.jpg?ts=1769117700502",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 53.48,
-        "plataforma_vencedora": "amazon",
-        "media": 62.19,
-        "mediana": 62.19,
+        "menor_preco_geral": 70.9,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 70.9,
+        "mediana": 70.9,
         "mediana_por_plataforma": {
-          "amazon": 53.48,
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
@@ -873,13 +863,13 @@
           "url": "https://www.amazon.com.br/dp/B0GH289VSL",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 53.48,
-          "titulo": "Os mitos maias: Um guia para os deuses, heróis e ancestrais",
-          "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "HTTPError: HTTP Error 500: "
         },
         {
           "plataforma": "mercado_livre",
@@ -891,7 +881,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -924,14 +914,13 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 60.61,
-        "plataforma_vencedora": "amazon",
-        "media": 70.18,
-        "mediana": 70.18,
+        "menor_preco_geral": 79.75,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 79.75,
+        "mediana": 79.75,
         "mediana_por_plataforma": {
-          "amazon": 60.61,
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
@@ -943,13 +932,13 @@
           "url": "https://www.amazon.com.br/dp/8532674275",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 60.61,
+          "preco_atual": null,
           "titulo": "O quinto sol: Uma nova história dos astecas",
           "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -961,7 +950,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 5,
           "top_n_resultados": []
@@ -1007,14 +996,13 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 2,
+      "contador_falhas": 3,
       "metricas_atuais": {
-        "menor_preco_geral": 137.45,
-        "plataforma_vencedora": "amazon",
-        "media": 141.73,
-        "mediana": 141.73,
+        "menor_preco_geral": 146.0,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 146.0,
+        "mediana": 146.0,
         "mediana_por_plataforma": {
-          "amazon": 137.45,
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 137.45,
@@ -1026,13 +1014,13 @@
           "url": "https://www.amazon.com.br/dp/8542217497",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 137.45,
+          "preco_atual": null,
           "titulo": "O coração do mundo: Uma nova história universal a partir da rota da seda: o encontro do oriente com o ocidente",
           "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
-          "status": "sucesso",
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Preço não encontrado na página do produto"
         },
         {
           "plataforma": "mercado_livre",
@@ -1044,7 +1032,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 2,
+          "erros_consecutivos": 3,
           "erro": "Nenhum anúncio válido encontrado após aplicar BLACKLIST_BOOKS",
           "top_n": 3,
           "top_n_resultados": []

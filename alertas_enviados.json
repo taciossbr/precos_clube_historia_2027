@@ -30,6 +30,9 @@
       },
       {
         "preco": 51.0
+      },
+      {
+        "preco": 51.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:51.00",
@@ -64,6 +67,9 @@
       },
       {
         "preco": 40.93
+      },
+      {
+        "preco": 44.1
       },
       {
         "preco": 44.1
@@ -114,9 +120,15 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 62.0
+      },
+      {
+        "preco": 88.0
       }
     ],
-    "abaixo_mediana": "abaixo_mediana:34.00"
+    "abaixo_mediana": "abaixo_mediana:62.00"
   },
   "pompeia-mary-beard": {
     "coletas_validas": [
@@ -140,6 +152,9 @@
       },
       {
         "preco": 110.87
+      },
+      {
+        "preco": 116.0
       },
       {
         "preco": 116.0
@@ -177,6 +192,9 @@
       },
       {
         "preco": 48.86
+      },
+      {
+        "preco": 57.98
       },
       {
         "preco": 57.98
@@ -237,6 +255,9 @@
       },
       {
         "preco": 98.5
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -265,6 +286,9 @@
       },
       {
         "preco": 72.8
+      },
+      {
+        "preco": 66.0
       },
       {
         "preco": 66.0
@@ -300,6 +324,9 @@
       },
       {
         "preco": 76.17
+      },
+      {
+        "preco": 36.0
       },
       {
         "preco": 36.0
@@ -339,6 +366,9 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 70.9
       }
     ]
   },
@@ -373,6 +403,9 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -404,6 +437,9 @@
       },
       {
         "preco": 137.45
+      },
+      {
+        "preco": 146.0
       },
       {
         "preco": 146.0
