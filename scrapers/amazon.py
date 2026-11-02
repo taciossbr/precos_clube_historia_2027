@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from curl_cffi import requests
 
 from config import LinkConfig, Plataforma
+from logging_utils import registrar_log
 from scrapers.protocol import ResultadoColeta
 
 
@@ -62,7 +63,7 @@ class ColetorAmazon:
 
         for tentativa in range(self.max_retries + 1):
             perfil = self._proximo_perfil()
-            print(f"  Perfil de navegador desta requisição: {perfil}")
+            registrar_log(f"Perfil de navegador desta requisição: {perfil}")
             resultado, pode_repetir = self._coletar_uma_vez(link, perfil)
             if resultado.status == "sucesso" or not pode_repetir:
                 return resultado
@@ -71,7 +72,7 @@ class ColetorAmazon:
 
             atraso_base = self.retry_delay_base * (tentativa + 1)
             atraso = random.uniform(atraso_base * 0.8, atraso_base * 1.2)
-            print(
+            registrar_log(
                 f"  Falha na Amazon ({resultado.erro}); nova tentativa "
                 f"{tentativa + 1}/{self.max_retries} em {atraso:.1f}s."
             )

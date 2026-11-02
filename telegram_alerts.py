@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional
 
 import requests
 
+from logging_utils import registrar_log
 from processing import ProdutoProcessado
 
 
@@ -89,14 +90,17 @@ def enviar_mensagem_teste() -> None:
         raise ValueError("Defina TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID no ambiente")
     _validar_destinatario(token, chat_id)
     _enviar(token, chat_id, "✅ Teste do bot de alertas: envio funcionando para @taciossbr.")
-    print("Mensagem de teste enviada para @taciossbr.")
+    registrar_log("Mensagem de teste enviada para @taciossbr.", "telegram/geral")
 
 
 def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
     token = os.getenv("TELEGRAM_BOT_TOKEN")
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
-        print("Alertas Telegram ignorados: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.")
+        registrar_log(
+            "Alertas Telegram ignorados: configure TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.",
+            "telegram/geral",
+        )
         return 0
 
     _validar_destinatario(token, chat_id)
