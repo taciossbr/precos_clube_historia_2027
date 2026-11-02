@@ -94,6 +94,7 @@ Quero duas ordenações nos produtos: por prioridade e pela ordem original no ar
 
 - Padrão: 20% abaixo da mediana
 - Pode ser configurado manualmente em cada produto
+- Cada produto pode configurar também `alvo_real`, opcional, como valor bruto em reais. Quando o menor preço atual for igual ou menor que esse valor, enviar três mensagens curtas para chamar atenção, com intervalo de 4 segundos entre elas, antes da mensagem padrão do alerta. O campo ausente ou `null` desativa esse alvo.
 - O envio por preço abaixo da mediana só ocorre depois de registrar ao menos **4 coletas válidas**
 - Também sempre enviamos a notificação se for o menor preço registrado 
     - Nesse caso, a partir da segunda coleta válida, se o preço for pelo menos R$ 0,70 menor que o primeiro preço válido

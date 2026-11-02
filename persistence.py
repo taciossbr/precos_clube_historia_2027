@@ -70,6 +70,7 @@ def persistir_resultados(processados: List[ProdutoProcessado]) -> None:
                 "nome": produto.nome,
                 "prioridade": produto.prioridade,
                 "porcentagem_alvo": produto.porcentagem_alvo,
+                "alvo_real": produto.alvo_real,
                 "capa_url": capa_url,
                 "comentario": produto.comentario,
                 "contador_falhas": contador_falhas,

@@ -2,6 +2,7 @@
 
 import json
 import os
+import time
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -111,6 +112,9 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
             raise ValueError(f"Estado de alertas inválido para {item.produto.id}")
 
         candidatos = []
+        alvo_real = item.produto.alvo_real
+        if alvo_real is not None and preco <= _decimal(alvo_real):
+            candidatos.append(("alvo_real", "atingiu o alvo real", True))
         mediana = item.mediana
         limite = (
             _decimal(mediana) * (Decimal("1") - _decimal(item.produto.porcentagem_alvo))
@@ -118,16 +122,21 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
             else None
         )
         if len(eventos) >= MINIMO_PRECOS and limite is not None and preco <= limite:
-            candidatos.append(("abaixo_mediana", f"{item.produto.porcentagem_alvo:.0%} abaixo da mediana"))
+            candidatos.append(("abaixo_mediana", f"{item.produto.porcentagem_alvo:.0%} abaixo da mediana", False))
 
         menor_anterior = min((_decimal(e["preco"]) for e in eventos[:-1]), default=None)
         if menor_anterior is not None and preco < menor_anterior:
-            candidatos.append(("novo_menor", "menor preço registrado até agora"))
+            candidatos.append(("novo_menor", "menor preço registrado até agora", False))
 
-        for tipo, motivo in candidatos:
+        for tipo, motivo, chamar_atencao in candidatos:
             chave = f"{tipo}:{preco:.2f}"
             if alertas.get(tipo) == chave:
                 continue
+            if chamar_atencao:
+                for indice in range(3):
+                    if indice:
+                        time.sleep(4)
+                    _enviar(token, chat_id, f"🔔 PREÇO ALVO: {item.produto.nome}")
             mensagem = _formatar_mensagem(item, motivo)
             _enviar(token, chat_id, mensagem)
             alertas[tipo] = chave

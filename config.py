@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 from enum import Enum
-from typing import List
+from typing import List, Optional
 
 
 # Títulos/trechos que devem ser ignorados nos resultados de busca.
@@ -50,6 +50,7 @@ class Produto:
     id: str
     comentario: str = ""
     porcentagem_alvo: float = 0.20
+    alvo_real: Optional[float] = None
 
     def __post_init__(self) -> None:
         if not self.nome.strip():
@@ -60,6 +61,8 @@ class Produto:
             raise ValueError("A prioridade deve ser maior que zero")
         if not 0 <= self.porcentagem_alvo <= 1:
             raise ValueError("porcentagem_alvo deve estar entre 0 e 1")
+        if self.alvo_real is not None and self.alvo_real <= 0:
+            raise ValueError("alvo_real deve ser maior que zero")
         if not self.links:
             raise ValueError("O produto deve ter ao menos um link")
 
