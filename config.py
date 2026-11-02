@@ -134,6 +134,7 @@ PRODUTOS: List[Produto] = [
         nome="Roma: A História de um Império — Greg Woolf",
         prioridade=1,
         porcentagem_alvo=0.10,
+        alvo_real=55,
         # categoria="1ª Fase (Roma)",
         comentario="É o primeiro, prioridade máxima antes da viagem",
         links=[
@@ -147,6 +148,7 @@ PRODUTOS: List[Produto] = [
         nome="Alexandre e César — Plutarco",
         prioridade=3,
         porcentagem_alvo=0.15,
+        alvo_real=29,
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6556405825"),
@@ -172,6 +174,7 @@ PRODUTOS: List[Produto] = [
         nome="Pompeia: A Vida de uma Cidade Romana — Mary Beard",
         prioridade=5,
         porcentagem_alvo=0.20,
+        alvo_real=90,
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8501092215"),

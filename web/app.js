@@ -2,6 +2,7 @@ const $ = (selector) => document.querySelector(selector);
 const money = (value) => value == null ? "—" : new Intl.NumberFormat("pt-BR", {style:"currency",currency:"BRL"}).format(value);
 const safe = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 const platformNames = {amazon:"Amazon",estante_virtual:"Estante Virtual",mercado_livre:"Mercado Livre"};
+const platformColors = {amazon:"#d5784d",estante_virtual:"#39796f",mercado_livre:"#527aaf"};
 let products = [];
 let history = {};
 let chartInstances = [];
@@ -12,9 +13,9 @@ function discount(product) {
   return price != null && mediana > 0 ? (mediana-price)/mediana : null;
 }
 function discountLabel(value) {
-  if (value == null) return null;
+  if (value == null || Math.abs(value) < 0.03) return null;
   const percentage = Math.round(Math.abs(value) * 100);
-  if (percentage === 0) return {text:"na normal", tone:"neutral"};
+  if (percentage === 0) return null;
   return value > 0
     ? {text:`${percentage}% abaixo da normal`, tone:"below"}
     : {text:`${percentage}% acima da normal`, tone:"above"};
@@ -94,23 +95,80 @@ function mountCharts() {
     });
   });
 }
+function renderProductCard(product) {
+  const metrics = product.metricas_atuais ?? {};
+  const links = product.links ?? [];
+  const price = metrics.menor_preco_geral;
+  const winner = links.find(link => link.status === "sucesso" && link.preco_atual === price && link.plataforma === metrics.plataforma_vencedora)
+    ?? links.find(link => link.status === "sucesso");
+  const winnerUrl = winner?.top_n_resultados?.find(result => result.escolhido && result.url)?.url ?? winner?.url;
+  const hasFailures = links.some(link => link.status !== "sucesso");
+  const medians = {...(metrics.mediana_por_plataforma ?? {})};
+  if (medians.amazon == null) medians.amazon = amazonMedian(product);
+  const platformIds = [...new Set([
+    ...links.map(link => link.plataforma),
+    ...Object.keys(medians),
+  ])].sort((a, b) => {
+    const indexA = Object.keys(platformNames).indexOf(a);
+    const indexB = Object.keys(platformNames).indexOf(b);
+    return (indexA < 0 ? 99 : indexA) - (indexB < 0 ? 99 : indexB);
+  });
+  const currentPrices = {};
+  for (const link of links) {
+    if (link.status !== "sucesso" || link.preco_atual == null) continue;
+    const value = Number(link.preco_atual);
+    if (Number.isFinite(value) && (currentPrices[link.plataforma] == null || value < currentPrices[link.plataforma])) {
+      currentPrices[link.plataforma] = value;
+    }
+  }
+  const renderPlatformValues = (values, colored = false) => platformIds.map(platform =>
+    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(values[platform])}</strong></div>`
+  ).join("");
+  const percentage = product.porcentagem_alvo ?? 0.20;
+  const targetAmount = product.alvo_real != null
+    ? product.alvo_real
+    : amazonMedian(product) == null ? null : amazonMedian(product) * (1 - percentage);
+  const targetHtml = targetAmount == null
+    ? "—"
+    : product.alvo_real != null
+      ? `<span class="real-target">${money(targetAmount)}</span>`
+      : `${money(targetAmount)}*`;
+  const discountInfo = discountLabel(discount(product));
+  const linkRows = links.map(link =>
+    `<div class="link-row"><div class="link-heading"><strong>${safe(platformNames[link.plataforma] ?? link.plataforma)}</strong><span class="status ${link.status === "sucesso" ? "" : "error"}">${safe(link.status)}</span></div><a href="${safe(link.url)}" target="_blank" rel="noopener noreferrer">${safe(link.url)}</a><div class="link-facts"><span>Preço: ${money(link.preco_atual)}</span><span>Erros seguidos: ${safe(link.erros_consecutivos ?? 0)}</span>${link.pesquisa ? `<span>Pesquisa · top ${safe(link.top_n ?? 1)}</span>` : ""}</div>${link.titulo ? `<p class="link-title">${safe(link.titulo)}</p>` : ""}${link.erro ? `<p class="link-error">${safe(link.erro)}</p>` : ""}${link.comentario ? `<p>${safe(link.comentario)}</p>` : ""}${link.top_n_resultados?.length ? `<ul>${link.top_n_resultados.map(result => `<li>${result.url ? `<a href="${safe(result.url)}" target="_blank" rel="noopener noreferrer">${safe(result.titulo)}</a>` : safe(result.titulo)} — ${money(result.preco_total ?? result.preco)} ${result.escolhido ? "(escolhido)" : ""}</li>`).join("")}</ul>` : ""}</div>`
+  ).join("");
+
+  return `<article class="card">
+    <header class="card-head">
+      <div class="card-title"><h3>${safe(product.nome)}</h3><span class="priority-pill">Prioridade ${safe(product.prioridade)}</span></div>
+      <div class="priority-cover">${product.capa_url ? `<img class="cover-thumb" src="${safe(product.capa_url)}" alt="Capa de ${safe(product.nome)}" loading="lazy">` : `<div class="cover-empty">Sem capa</div>`}</div>
+    </header>
+    <div class="card-body">
+      ${product.comentario ? `<p class="comment">${safe(product.comentario)}</p>` : ""}
+      <section class="metrics" aria-label="Métricas e alvo">
+        <div><span>Média:</span><strong>${money(metrics.media)}</strong></div>
+        <div><span>Mediana:</span><strong>${money(metrics.mediana)}</strong></div>
+        <div><span>Alvo:</span><strong>${(percentage * 100).toFixed(0)}% (${targetHtml})</strong></div>
+      </section>
+      <section class="platform-price-summary" aria-label="Preços por plataforma">
+        <div class="platform-price-line"><h4>Preços normais</h4><div class="platform-price-values">${renderPlatformValues(medians)}</div></div>
+        <div class="platform-price-line"><h4>Preços atuais</h4><div class="platform-price-values">${renderPlatformValues(currentPrices, true)}</div></div>
+      </section>
+      <section class="product-facts"><span><b>ID:</b> ${safe(product.id)}</span><span><b>Falhas:</b> ${safe(product.contador_falhas ?? 0)}</span><span><b>Vencedor atual:</b> ${safe(metrics.plataforma_vencedora ? platformNames[metrics.plataforma_vencedora] ?? metrics.plataforma_vencedora : "—")}</span></section>
+      <div class="status ${hasFailures ? "error" : ""}">${hasFailures ? "Falha em um ou mais links" : "Coleta com Sucesso"}</div>
+      <details class="link-details"><summary>Links e resultado (${links.length})</summary>${linkRows || `<p>Sem links configurados.</p>`}</details>
+      ${chart(product)}
+      ${discountInfo ? `<p class="discount-summary discount-${discountInfo.tone}">${discountInfo.text}</p>` : ""}
+      <div class="card-actions"><a class="details-button" href="detalhes.html?id=${encodeURIComponent(product.id)}">Ver detalhes</a>${winnerUrl ? `<a class="buy" href="${safe(winnerUrl)}" target="_blank" rel="noopener noreferrer">Ver oferta escolhida</a>` : ""}</div>
+    </div>
+  </article>`;
+}
 function render() {
   clearCharts();
   const query=$("#search").value.trim().toLocaleLowerCase("pt-BR");
   const visible=sortItems(products).filter(p=>p.nome.toLocaleLowerCase("pt-BR").includes(query));
   $("#result-count").textContent=`${visible.length} ${visible.length===1?"livro":"livros"}`;
-  $("#products").innerHTML=visible.length?visible.map(p=>{
-    const price=p.metricas_atuais?.menor_preco_geral;
-    const links=p.links??[];
-    const winner=links.find(l=>l.status==="sucesso"&&l.preco_atual===price&&l.plataforma===p.metricas_atuais?.plataforma_vencedora)??links.find(l=>l.status==="sucesso");
-    const winnerUrl=winner?.top_n_resultados?.find(r=>r.escolhido&&r.url)?.url??winner?.url;
-    const broken=links.some(l=>l.status!=="sucesso");
-    const platformMedians=Object.entries(p.metricas_atuais?.mediana_por_plataforma??{}).map(([platform,value])=>`<span>Mediana ${safe(platformNames[platform]??platform)}: ${money(value)}</span>`).join("");
-    const amazonMedianReference=p.metricas_atuais?.mediana_por_plataforma?.amazon==null&&p.metricas_atuais?.mediana_amazon_referencia!=null?`<span>Mediana Amazon (última válida): ${money(p.metricas_atuais.mediana_amazon_referencia)}</span>`:"";
-    const discountInfo=discountLabel(discount(p));
-    const linkRows=links.map(l=>`<div class="link-row"><div class="link-heading"><strong>${safe(l.plataforma)}</strong><span class="status ${l.status==="sucesso"?"":"error"}">${safe(l.status)}</span></div><a href="${safe(l.url)}" target="_blank" rel="noopener noreferrer">${safe(l.url)}</a><div class="link-facts"><span>Preço: ${money(l.preco_atual)}</span><span>Erros seguidos: ${safe(l.erros_consecutivos??0)}</span>${l.pesquisa?`<span>Pesquisa · top ${safe(l.top_n??1)}</span>`:""}</div>${l.titulo?`<p class="link-title">${safe(l.titulo)}</p>`:""}${l.erro?`<p class="link-error">${safe(l.erro)}</p>`:""}${l.comentario?`<p>${safe(l.comentario)}</p>`:""}${l.top_n_resultados?.length?`<ul>${l.top_n_resultados.map(r=>`<li>${r.url?`<a href="${safe(r.url)}" target="_blank" rel="noopener noreferrer">${safe(r.titulo)}</a>`:safe(r.titulo)} — ${money(r.preco_total??r.preco)} ${r.escolhido?"(escolhido)":""}</li>`).join("")}</ul>`:""}</div>`).join("");
-    return `<article class="card"><div class="card-head"><div class="title-line"><h3>${safe(p.nome)}</h3><span class="priority-pill">Prioridade ${safe(p.prioridade)}</span></div>${p.capa_url?`<img class="cover-thumb" src="${safe(p.capa_url)}" alt="Capa de ${safe(p.nome)}" loading="lazy">`:""}</div><div class="card-body">${p.comentario?`<p class="comment">${safe(p.comentario)}</p>`:""}<div class="price-row"><strong class="price">${money(price)}</strong><span class="platform">${safe(winner?.plataforma??"sem preço")}</span></div><div class="metrics"><span>Média: ${money(p.metricas_atuais?.media)}</span><span>Mediana: ${money(p.metricas_atuais?.mediana)}</span>${platformMedians}${amazonMedianReference}<span>Alvo: ${((p.porcentagem_alvo??0)*100).toFixed(0)}%</span></div><div class="product-facts"><span>ID: ${safe(p.id)}</span><span>Falhas do produto: ${safe(p.contador_falhas??0)}</span><span>Vencedora: ${safe(p.metricas_atuais?.plataforma_vencedora??"—")}</span></div><div class="status ${broken?"error":""}">${broken?"Falha em um ou mais links":"Coleta dos links bem-sucedida"}</div><details class="link-details"><summary>Links e resultados (${links.length})</summary>${linkRows||"<p>Sem links configurados.</p>"}</details>${chart(p)}<a class="details-button" href="detalhes.html?id=${encodeURIComponent(p.id)}">Ver detalhes</a>${winnerUrl?`<a class="buy" href="${safe(winnerUrl)}" target="_blank" rel="noopener noreferrer">Ver oferta escolhida</a>`:""}${discountInfo?`<p class="discount-summary discount-${discountInfo.tone}">${discountInfo.text}</p>`:""}</div></article>`;
-  }).join(""):`<p class="empty">Nenhum livro encontrado.</p>`;
+  $("#products").innerHTML=visible.length?visible.map(renderProductCard).join(""):`<p class="empty">Nenhum livro encontrado.</p>`;
   mountCharts();
 }
 async function init(){

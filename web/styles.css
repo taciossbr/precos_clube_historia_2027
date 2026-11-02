@@ -3,3 +3,35 @@
 .details-button{display:block;text-align:center;text-decoration:none;margin-top:14px;padding:10px;border:1px solid var(--green);border-radius:7px;color:var(--green);font-size:14px;font-weight:700}
 .details-button:hover{background:var(--lime)}
 .discount-summary{margin:8px 0 0;text-align:right;font-size:14px;font-weight:700}.discount-below{color:var(--green)}.discount-above{color:#a44d37}.discount-neutral{color:var(--muted)}
+.card-head{display:grid;grid-template-columns:minmax(0,1fr) 112px;align-items:start;gap:16px;padding:18px 18px 0}
+.card-title{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:8px;padding-top:0}
+.card-title h3{font:700 22px/1.3 'Playfair Display',serif;overflow-wrap:anywhere}
+.priority-cover{display:flex;min-width:0;flex-direction:column;align-items:flex-end;gap:10px}
+.priority-cover .priority-pill{font-weight:700}
+.cover-thumb,.cover-empty{width:100%;height:160px;object-fit:contain;flex:none}
+.cover-empty{display:grid;place-items:center;background:#e9e4d8;border-radius:6px;color:var(--muted);font-size:12px}
+.card-body{gap:12px;padding:16px 18px 18px}
+.card-body .comment{margin:0}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metrics>div,.platform-medians>div{display:flex;min-width:0;flex-direction:column;gap:3px}
+.metrics span,.platform-medians span{color:var(--muted);font-size:12px}
+.metrics strong,.platform-medians strong{font:600 12px 'DM Mono',monospace;overflow-wrap:anywhere;color:var(--ink)}
+.metrics .real-target{font-weight:700;color:var(--green)}
+.platform-medians{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
+.platform-price-summary{display:grid;gap:10px}
+.platform-price-line{display:grid;grid-template-columns:108px minmax(0,1fr);align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--line)}
+.platform-price-line h4{margin:0;color:var(--muted);font:700 11px 'DM Mono',monospace;text-transform:uppercase}
+.platform-price-values{display:grid;grid-template-columns:repeat(auto-fit,minmax(74px,1fr));gap:8px}
+.platform-price-values>div{display:flex;min-width:0;flex-direction:column;gap:2px}
+.platform-price-values span{color:var(--muted);font-size:11px}
+.platform-price-values strong{font:600 12px 'DM Mono',monospace;overflow-wrap:anywhere}
+.product-facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin:0}
+.product-facts span:last-child{grid-column:1/-1}
+.status{padding:7px 10px;background:var(--lime);border-radius:6px;font-weight:700}
+.status.error{background:#f8e8e3}
+.link-details{margin:0;padding-top:10px}
+.link-details summary{color:var(--green)}
+.card-actions{display:grid;gap:12px;margin-top:auto;padding-top:12px}
+.card-actions .details-button,.card-actions .buy{margin:0}
+.discount-summary{margin:4px 0 0;padding-top:10px;border-top:1px solid var(--line);text-align:center;font-size:15px}
+@media(max-width:560px){.card-head{grid-template-columns:minmax(0,1fr) 96px;padding:14px 14px 0}.cover-thumb,.cover-empty{height:138px}.card-body{padding:14px}.metrics{gap:5px}.metrics span,.platform-medians span{font-size:11px}.metrics strong,.platform-medians strong{font-size:11px}}

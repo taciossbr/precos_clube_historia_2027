@@ -6,6 +6,7 @@ const platformNames = {
   estante_virtual: "Estante Virtual",
   mercado_livre: "Mercado Livre",
 };
+const platformColors = {amazon:"#d5784d",estante_virtual:"#39796f",mercado_livre:"#527aaf"};
 const seriesNames = {
   vencedor_geral: "Melhor preço",
   amazon: "Amazon",
@@ -66,6 +67,35 @@ function renderMetrics(product) {
     metric("Prioridade", product.prioridade ?? "—"),
     metric("Falhas consecutivas", product.contador_falhas ?? 0),
   ].join("");
+}
+
+function renderPlatformPrices(product) {
+  const metrics = product.metricas_atuais ?? {};
+  const normalPrices = {...(metrics.mediana_por_plataforma ?? {})};
+  if (normalPrices.amazon == null) normalPrices.amazon = amazonMedian(product, metrics);
+  const currentPrices = {};
+  for (const link of product.links ?? []) {
+    if (link.status !== "sucesso" || link.preco_atual == null) continue;
+    const price = Number(link.preco_atual);
+    if (Number.isFinite(price) && (currentPrices[link.plataforma] == null || price < currentPrices[link.plataforma])) {
+      currentPrices[link.plataforma] = price;
+    }
+  }
+  const platforms = [...new Set([
+    ...(product.links ?? []).map(link => link.plataforma),
+    ...Object.keys(normalPrices),
+  ])].sort((a, b) => {
+    const indexA = Object.keys(platformNames).indexOf(a);
+    const indexB = Object.keys(platformNames).indexOf(b);
+    return (indexA < 0 ? 99 : indexA) - (indexB < 0 ? 99 : indexB);
+  });
+  const values = (source, colored = false) => platforms.map(platform =>
+    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(source[platform])}</strong></div>`
+  ).join("");
+  return `<section class="detail-platform-prices" aria-label="Preços normais e atuais por plataforma">
+    <div class="detail-platform-price-line"><h2>Preços normais</h2><div>${values(normalPrices)}</div></div>
+    <div class="detail-platform-price-line"><h2>Preços atuais</h2><div>${values(currentPrices, true)}</div></div>
+  </section>`;
 }
 
 function renderExtras(extras) {
@@ -197,6 +227,7 @@ function renderProduct(product, record) {
     : `<span>${safe(product.nome)}</span>`;
   $("#detail-cover").innerHTML = cover;
   renderMetrics(product);
+  $("#detail-platform-prices").innerHTML = renderPlatformPrices(product);
   $("#detail-links").innerHTML = (product.links ?? []).map(renderLink).join("") || `<p class="empty">Nenhum link configurado.</p>`;
   productHistory = record ?? {};
   $("#history-series").addEventListener("change", renderHistory);

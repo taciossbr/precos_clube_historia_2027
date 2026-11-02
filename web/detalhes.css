@@ -14,6 +14,14 @@
 .detail-metrics article.metric-below strong{color:var(--green)}
 .detail-metrics article.metric-above strong{color:#a44d37}
 .detail-metrics article.metric-neutral strong{color:var(--muted)}
+.detail-platform-prices{margin:-8px 0 24px;padding:14px 18px;background:var(--white);border:1px solid var(--line);border-radius:10px}
+.detail-platform-price-line{display:grid;grid-template-columns:150px minmax(0,1fr);align-items:center;gap:12px;padding:8px 0}
+.detail-platform-price-line+ .detail-platform-price-line{border-top:1px solid var(--line)}
+.detail-platform-price-line h2{margin:0;color:var(--muted);font:700 11px 'DM Mono',monospace;text-transform:uppercase}
+.detail-platform-price-line>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.detail-platform-price-line>div>div{display:flex;flex-direction:column;gap:3px}
+.detail-platform-price-line span{color:var(--muted);font-size:12px}
+.detail-platform-price-line strong{font:600 14px 'DM Mono',monospace;overflow-wrap:anywhere}
 .detail-panel{margin:22px 0;padding:24px;background:var(--white);border:1px solid var(--line);border-radius:14px}
 .detail-section-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:14px}
 .detail-section-heading h2{font:30px/1.2 'Playfair Display',serif;margin:7px 0 0}
@@ -47,4 +55,4 @@
 .candidate-facts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px 14px;color:var(--muted);font-size:12px}
 .history-state:empty{display:none}
 @media(max-width:800px){.detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.detail-page{padding-top:18px}.detail-hero{grid-template-columns:1fr;gap:18px;padding:18px}.detail-cover{min-height:180px}.detail-cover img{max-height:220px}.detail-intro h1{font-size:34px}.detail-metrics{gap:8px}.detail-metrics article{padding:13px 11px}.detail-metrics article strong{font-size:18px}.detail-panel{padding:16px;margin:16px 0}.detail-section-heading{align-items:flex-start;flex-direction:column}.detail-section-heading h2{font-size:26px}.detail-section-heading .sort-box{width:100%;justify-content:space-between}.detail-chart{height:260px}.detail-link-head{flex-direction:column}.detail-link-price{font-size:20px}.detail-candidate{grid-template-columns:minmax(0,1fr) auto;padding:9px}.detail-extras{gap:10px}.detail-extras div{min-width:calc(50% - 12px)}}
+@media(max-width:560px){.detail-page{padding-top:18px}.detail-hero{grid-template-columns:1fr;gap:18px;padding:18px}.detail-cover{min-height:180px}.detail-cover img{max-height:220px}.detail-intro h1{font-size:34px}.detail-metrics{gap:8px}.detail-metrics article{padding:13px 11px}.detail-metrics article strong{font-size:18px}.detail-panel{padding:16px;margin:16px 0}.detail-section-heading{align-items:flex-start;flex-direction:column}.detail-section-heading h2{font-size:26px}.detail-section-heading .sort-box{width:100%;justify-content:space-between}.detail-chart{height:260px}.detail-link-head{flex-direction:column}.detail-link-price{font-size:20px}.detail-candidate{grid-template-columns:minmax(0,1fr) auto;padding:9px}.detail-extras{gap:10px}.detail-extras div{min-width:calc(50% - 12px)}.detail-platform-prices{padding:12px}.detail-platform-price-line{grid-template-columns:1fr;gap:7px}.detail-platform-price-line>div{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-platform-price-line strong{font-size:12px}}

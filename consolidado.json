@@ -1,9 +1,9 @@
 {
-  "ultima_atualizacao": "2026-11-02T09:50:17-03:00",
+  "ultima_atualizacao": "2026-11-02T10:23:18-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 3
+    "produtos_com_falha": 0
   },
   "produtos": [
     {
@@ -11,7 +11,7 @@
       "nome": "Roma: A História de um Império — Greg Woolf",
       "prioridade": 1,
       "porcentagem_alvo": 0.1,
-      "alvo_real": null,
+      "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
       "contador_falhas": 0,
@@ -25,7 +25,7 @@
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -117,7 +117,7 @@
       "nome": "Alexandre e César — Plutarco",
       "prioridade": 3,
       "porcentagem_alvo": 0.15,
-      "alvo_real": null,
+      "alvo_real": 29,
       "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -131,7 +131,7 @@
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 32.22,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -171,19 +171,20 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
       "alvo_real": null,
-      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
+      "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 1,
+      "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 84.75,
-        "plataforma_vencedora": "estante_virtual",
-        "media": 86.38,
-        "mediana": 86.38,
+        "menor_preco_geral": 78.99,
+        "plataforma_vencedora": "amazon",
+        "media": 83.91,
+        "mediana": 84.75,
         "mediana_por_plataforma": {
+          "amazon": 78.99,
           "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -191,12 +192,12 @@
           "url": "https://www.amazon.com.br/dp/8527302829",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
-          "status": "erro",
-          "erros_consecutivos": 1,
-          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+          "preco_atual": 78.99,
+          "titulo": "Jesus",
+          "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
         },
         {
           "plataforma": "estante_virtual",
@@ -272,7 +273,7 @@
       "nome": "Pompeia: A Vida de uma Cidade Romana — Mary Beard",
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
-      "alvo_real": null,
+      "alvo_real": 90,
       "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -286,7 +287,7 @@
           "estante_virtual": 116.0
         },
         "mediana_amazon_referencia": 110.87,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -326,19 +327,20 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "/book/00/0GH-2736-000/0GH-2736-000_detail1.jpg?ts=1776951601101",
+      "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 1,
+      "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 57.98,
-        "plataforma_vencedora": "estante_virtual",
-        "media": 57.98,
-        "mediana": 57.98,
+        "menor_preco_geral": 48.86,
+        "plataforma_vencedora": "amazon",
+        "media": 53.42,
+        "mediana": 53.42,
         "mediana_por_plataforma": {
+          "amazon": 48.86,
           "estante_virtual": 57.98
         },
         "mediana_amazon_referencia": 48.86,
-        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -346,12 +348,12 @@
           "url": "https://www.amazon.com.br/dp/6589705585",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
-          "status": "erro",
-          "erros_consecutivos": 1,
-          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+          "preco_atual": 48.86,
+          "titulo": "Teogonia",
+          "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
         },
         {
           "plataforma": "estante_virtual",
@@ -390,7 +392,7 @@
           "amazon": 49.9
         },
         "mediana_amazon_referencia": 49.9,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -426,7 +428,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 94.37,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -466,19 +468,20 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
+      "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 1,
+      "contador_falhas": 0,
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 66.0,
-        "mediana": 66.0,
+        "media": 69.4,
+        "mediana": 69.4,
         "mediana_por_plataforma": {
+          "amazon": 72.8,
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -486,12 +489,12 @@
           "url": "https://www.amazon.com.br/dp/B0D4WQ179K",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
-          "status": "erro",
-          "erros_consecutivos": 1,
-          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+          "preco_atual": 72.8,
+          "titulo": "O Anticristo: Uma biografia",
+          "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
+          "status": "sucesso",
+          "erros_consecutivos": 0,
+          "erro": null
         },
         {
           "plataforma": "estante_virtual",
@@ -584,7 +587,7 @@
           "estante_virtual": 36.0
         },
         "mediana_amazon_referencia": 76.17,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -690,7 +693,7 @@
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -743,7 +746,7 @@
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {
@@ -829,7 +832,7 @@
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 137.45,
-        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
       },
       "links": [
         {

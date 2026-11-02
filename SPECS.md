@@ -288,6 +288,10 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
 5. Criar a apresentação para consulta
    - Criar uma página estática que lê `consolidado.json` e `historico.json` no navegador.
    - Exibir preços, status por link, média e mediana gerais, mediana por plataforma, plataforma vencedora e histórico do vencedor geral.
+   - Organizar os cards da HOME com título e prioridade no cabeçalho, capa à direita, métricas gerais e alvo em uma linha, medianas por plataforma, ID/falhas/vencedor, status, links e botões de detalhes/oferta.
+   - Na HOME e nos detalhes do produto, separar por plataforma a linha “Preços normais” (medianas) da linha “Preços atuais” (menor preço válido atual), colorindo os preços atuais por loja.
+   - Exibir ao lado do percentual do alvo o valor em reais: usar `alvo_real` em negrito quando configurado; sem ele, calcular o valor usando a mediana Amazon e marcar com `*`.
+   - Mostrar a comparação com o normal somente quando a diferença absoluta for de pelo menos 3%; indicar “X% abaixo da normal” ou “X% acima da normal”.
    - Exibir sempre duas linhas horizontais de referência nos gráficos: mediana geral atual e mediana Amazon (usando a última referência válida quando a coleta Amazon falhar).
    - Permitir busca e ordenação por ordem original, prioridade, preço crescente/decrescente, título A-Z/Z-A e percentual abaixo da mediana atual da Amazon.
    - Mostrar valores ausentes sem inventar preços e manter a página compatível com publicação em subdiretório do GitHub Pages.
