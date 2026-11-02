@@ -1,15 +1,22 @@
-"""Coleta preços de anúncios do Mercado Livre com Firefox headless."""
+"""Coleta preços do Mercado Livre em desktop e, se necessário, em modo móvel."""
 
+import os
 import re
+from dataclasses import replace
 from typing import Any, Dict, List, Optional
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, Tag
 from playwright.sync_api import Error as PlaywrightError
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from playwright.sync_api import sync_playwright
 
 from config import BLACKLIST_BOOKS, LinkConfig, Plataforma
+from logging_utils import registrar_log
 from scrapers.protocol import ResultadoColeta
+
+
+DEBUG_MERCADO_LIVRE = True
 
 
 class ColetorMercadoLivre:
@@ -33,27 +40,78 @@ class ColetorMercadoLivre:
                 link, "ColetorMercadoLivre aceita somente links do Mercado Livre"
             )
 
+        registrar_log("Iniciando tentativa desktop com Firefox.")
+        resultado_desktop = self._coletar_tentativa(link, mobile=False)
+        if resultado_desktop.status == "sucesso":
+            return resultado_desktop
+
+        registrar_log(
+            f"Tentativa desktop falhou ({resultado_desktop.erro}); "
+            "tentando uma vez no modo móvel com Chromium."
+        )
+        resultado_movel = self._coletar_tentativa(link, mobile=True)
+        if resultado_movel.status == "sucesso":
+            registrar_log("Coleta concluída no modo móvel.")
+            return resultado_movel
+
+        return replace(
+            resultado_movel,
+            erro=(
+                f"Tentativa desktop: {resultado_desktop.erro or 'falha sem detalhes'}. "
+                f"Tentativa móvel: {resultado_movel.erro or 'falha sem detalhes'}."
+            ),
+        )
+
+    def _coletar_tentativa(
+        self, link: LinkConfig, mobile: bool
+    ) -> ResultadoColeta:
+        nome_navegador = "Chromium móvel" if mobile else "Firefox desktop"
+        fase = "iniciar o Firefox"
+        if mobile:
+            fase = "iniciar o Chromium móvel"
         try:
             with sync_playwright() as playwright:
-                browser = playwright.firefox.launch(headless=True)
+                tipo_navegador = playwright.chromium if mobile else playwright.firefox
+                debug_visivel = (
+                    DEBUG_MERCADO_LIVRE
+                    and os.getenv("GITHUB_ACTIONS", "").casefold() != "true"
+                )
+                browser = tipo_navegador.launch(headless=not debug_visivel)
                 try:
-                    contexto = browser.new_context(
+                    opcoes_contexto = {}
+                    if mobile:
+                        opcoes_contexto.update(playwright.devices["Pixel 7"])
+                    opcoes_contexto.update(
                         locale="pt-BR",
                         extra_http_headers={
                             "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8"
                         },
                     )
+                    contexto = browser.new_context(**opcoes_contexto)
                     page = contexto.new_page()
                     page.set_default_navigation_timeout(self.timeout * 1000)
                     page.on("dialog", lambda dialog: dialog.dismiss())
+                    fase = "carregar a página"
                     response = page.goto(link.url, wait_until="domcontentloaded")
                     if response and response.status >= 400:
+                        if response.status == 403:
+                            mensagem_http = "Acesso bloqueado pelo Mercado Livre (HTTP 403)."
+                        elif response.status == 429:
+                            mensagem_http = "Mercado Livre limitou temporariamente o acesso (HTTP 429)."
+                        else:
+                            mensagem_http = f"Mercado Livre respondeu com HTTP {response.status}."
                         return self._erro(
                             link,
-                            f"Falha HTTP no Mercado Livre: HTTP {response.status}",
+                            mensagem_http,
                         )
-                    page.wait_for_timeout(self.espera_apos_carregar * 1000)
-                    soup = BeautifulSoup(page.content(), "html.parser")
+                    if link.pesquisa:
+                        fase = "aguardar os resultados da busca"
+                        soup = self._aguardar_busca(page)
+                    else:
+                        fase = "aguardar o resultado do produto"
+                        page.wait_for_timeout(self.espera_apos_carregar * 1000)
+                        fase = "ler o conteúdo da página"
+                        soup = BeautifulSoup(page.content(), "html.parser")
                 finally:
                     browser.close()
 
@@ -66,25 +124,52 @@ class ColetorMercadoLivre:
             if link.pesquisa:
                 return self._coletar_busca(link, soup)
             return self._coletar_pagina_direta(link, soup)
+        except PlaywrightTimeoutError:
+            return self._erro(
+                link,
+                f"Tempo esgotado ao {fase} no {nome_navegador} "
+                f"(limite de {self.timeout:g}s).",
+            )
         except PlaywrightError as exc:
-            return self._erro(link, f"Falha no Playwright para Mercado Livre: {exc}")
+            return self._erro(
+                link,
+                f"{nome_navegador}: {self._mensagem_playwright(exc, fase)}",
+            )
         except Exception as exc:
-            return self._erro(link, f"{type(exc).__name__}: {exc}")
+            return self._erro(
+                link,
+                f"Erro inesperado no {nome_navegador} ao {fase}: "
+                f"{type(exc).__name__}: {str(exc).splitlines()[0]}",
+            )
 
     def _coletar_busca(self, link: LinkConfig, soup: BeautifulSoup) -> ResultadoColeta:
         candidatos: List[Dict[str, Any]] = []
-        cards = soup.select(".poly-card, .ui-search-result")
+        cards = self._cards_busca(soup)
         if not cards:
-            cards = soup.select("li.ui-search-layout__item")
+            return self._erro(
+                link,
+                "A busca carregou, mas nenhum card de anúncio foi encontrado. "
+                "Os resultados podem estar vazios, bloqueados ou com o layout alterado.",
+                titulo=self._texto(soup.select_one("h1")),
+            )
+
+        descartados_blacklist = 0
+        sem_titulo = 0
+        sem_preco = 0
         for card in cards:
             titulo_elemento = card.select_one(
                 "h2, .poly-component__title, .ui-search-item__title"
             )
             titulo = self._texto(titulo_elemento)
-            if not titulo or self._esta_na_blacklist(titulo):
+            if not titulo:
+                sem_titulo += 1
+                continue
+            if self._esta_na_blacklist(titulo):
+                descartados_blacklist += 1
                 continue
             preco = self._preco_card(card)
             if preco is None:
+                sem_preco += 1
                 continue
             anuncio = card.select_one("a.poly-component__title, a.ui-search-link, a[href]")
             url_anuncio = (
@@ -95,7 +180,51 @@ class ColetorMercadoLivre:
             candidatos.append(self._candidato(titulo, preco, url_anuncio))
             if len(candidatos) >= link.top_n:
                 break
+        if not candidatos:
+            if descartados_blacklist == len(cards):
+                erro = (
+                    f"Os {len(cards)} anúncios encontrados foram descartados pela blacklist."
+                )
+            elif sem_preco and not descartados_blacklist:
+                erro = (
+                    f"Encontrei {len(cards)} cards, mas não consegui ler o preço de nenhum. "
+                    "O layout ou os seletores de preço podem ter mudado."
+                )
+            else:
+                erro = (
+                    "Nenhum anúncio com título e preço válidos. "
+                    f"Cards: {len(cards)}; sem título: {sem_titulo}; "
+                    f"sem preço: {sem_preco}; na blacklist: {descartados_blacklist}."
+                )
+            return self._erro(link, erro, titulo=self._texto(soup.select_one("h1")))
         return self._resultado(link, soup, candidatos)
+
+    def _aguardar_busca(self, page) -> BeautifulSoup:
+        soup = BeautifulSoup(page.content(), "html.parser")
+        for verificacao in range(2):
+            page.wait_for_timeout(5_000)
+            soup = BeautifulSoup(page.content(), "html.parser")
+            if self._eh_desafio(soup) or self._busca_pronta(soup):
+                return soup
+            if verificacao == 0:
+                registrar_log(
+                    "Busca ainda sem anúncios com título e preço após 5s; "
+                    "aguardando mais 5s."
+                )
+        return soup
+
+    @classmethod
+    def _busca_pronta(cls, soup: BeautifulSoup) -> bool:
+        return any(
+            cls._texto(card.select_one("h2, .poly-component__title, .ui-search-item__title"))
+            and cls._preco_card(card) is not None
+            for card in cls._cards_busca(soup)
+        )
+
+    @staticmethod
+    def _cards_busca(soup: BeautifulSoup) -> List[Tag]:
+        cards = soup.select(".poly-card, .ui-search-result")
+        return cards or soup.select("li.ui-search-layout__item")
 
     def _coletar_pagina_direta(
         self, link: LinkConfig, soup: BeautifulSoup
@@ -202,14 +331,51 @@ class ColetorMercadoLivre:
     @staticmethod
     def _eh_desafio(soup: BeautifulSoup) -> bool:
         html = str(soup).lower()
-        return any(
-            marcador in html
-            for marcador in (
-                "micro-landing-container",
-                "browser-assessment",
-                "bot-interceptor-muralla",
-            )
+        texto = soup.get_text(" ", strip=True).lower()
+        marcadores_html = (
+            "micro-landing-container",
+            "browser-assessment",
+            "bot-interceptor-muralla",
         )
+        marcadores_texto = (
+            "verifique que você não é um robô",
+            "verifique que voce nao e um robo",
+            "confirme que você não é um robô",
+            "captcha",
+        )
+        return any(marcador in html for marcador in marcadores_html) or any(
+            marcador in texto for marcador in marcadores_texto
+        )
+
+    @staticmethod
+    def _mensagem_playwright(erro: PlaywrightError, fase: str) -> str:
+        detalhe = str(erro).splitlines()[0]
+        texto = str(erro).casefold()
+        if "executable doesn't exist" in texto or "executable does not exist" in texto:
+            return (
+                "O navegador solicitado do Playwright não está instalado. "
+                "Instale com `python -m playwright install firefox chromium`."
+            )
+        if (
+            "shared libraries" in texto
+            or "error while loading shared library" in texto
+            or "cannot open shared object file" in texto
+        ):
+            return (
+                "O navegador não iniciou porque faltam bibliotecas do sistema. "
+                "Instale com `python -m playwright install-deps firefox chromium`."
+            )
+        if "net::err_name_not_resolved" in texto:
+            return "Falha de DNS ao acessar o Mercado Livre."
+        if "net::err_connection_refused" in texto:
+            return "Conexão recusada ao acessar o Mercado Livre."
+        if "net::err_connection_reset" in texto:
+            return "A conexão com o Mercado Livre foi interrompida."
+        if "net::err_internet_disconnected" in texto:
+            return "O runner está sem conexão com a internet."
+        if "target page, context or browser has been closed" in texto:
+            return "O Firefox fechou antes de concluir a coleta."
+        return f"Falha do Playwright ao {fase}: {detalhe}"
 
     @staticmethod
     def _texto(elemento: Optional[Tag]) -> Optional[str]:

@@ -326,7 +326,7 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
 - Aplicar os dois retries também quando a resposta identificar CAPTCHA/Robot Check; se as três tentativas falharem, registrar a falha e seguir para o próximo produto após o intervalo normal.
 - Manter um contador persistente por produto caso o produto não tenha o preço de alguma das plataformas na ultima execução.
 - Manter um contador persistente por URL em `erros_consecutivos.json`: incrementar uma vez quando a coleta termina sem sucesso após as tentativas permitidas e zerar quando a coleta do link tiver sucesso.
-- Rotacionar entre os perfis de navegador `chrome`, `firefox` e `safari` do `curl-cffi`, que fornecem User Agents associados aos respectivos fingerprints; evitar User Agents manuais que não correspondam ao fingerprint.
+- Em cada link Amazon, usar `safari` sempre na primeira tentativa; nas tentativas seguintes, alternar para um perfil diferente entre `chrome`, `firefox` e `safari`, sem repetir o perfil da tentativa imediatamente anterior. Esses perfis do `curl-cffi` fornecem User Agents associados aos respectivos fingerprints; evitar User Agents manuais que não correspondam ao fingerprint.
 - Não trocar IP/proxy nem responder automaticamente ao desafio CAPTCHA.
 - Intervalos e retries reduzem a frequência das requisições, mas não garantem que a Amazon não apresente bloqueios.
 
@@ -368,7 +368,7 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
 ## Implementação do scraping do Mercado Livre
 
 - O coletor fica em `scrapers/mercado_livre.py` e segue o contrato comum dos demais coletores.
-- Usar Firefox headless via Playwright, aguardar 7s após `DOMContentLoaded` para a página terminar de montar os resultados e fazer uma única tentativa por link, sem retry. O fluxo principal aguarda entre chamadas conforme `intervalo_entre_produtos` (12s por padrão, com jitter de ±20%). Não trocar IP/proxy nem tentar resolver automaticamente a verificação; registrar a falha específica.
+- Fazer a tentativa inicial com Firefox via Playwright. Se ela retornar erro, repetir uma vez usando Chromium com o perfil móvel `Pixel 7`; se também falhar, registrar os dois erros. Para links de busca, aguardar 5s após `DOMContentLoaded` e verificar se há anúncio com título e preço; se ainda não houver, aguardar mais 5s e verificar uma segunda vez. Para links diretos, manter a espera configurada de 7s. O fluxo principal aguarda entre chamadas conforme `intervalo_entre_produtos` (12s por padrão, com jitter de ±20%). Não trocar IP/proxy nem tentar resolver automaticamente a verificação; registrar a falha específica.
 - Para páginas de busca, descartar títulos listados em `BLACKLIST_BOOKS`, considerar até `top_n` anúncios válidos e escolher o menor preço anunciado. Para páginas diretas, extrair o título e o preço do produto.
 - No Mercado Livre, considerar o frete sempre grátis: `preco_total` é igual ao preço anunciado e `frete_aplicado` é `0.0`. `frete_presumido` registra que essa regra foi assumida, sem depender do texto do anúncio.
 - Os candidatos ficam em `top_n_resultados`, com título, URL do anúncio, preço antes do frete e total comparável; um deles é marcado como escolhido. O resultado principal e o histórico usam o total comparável.

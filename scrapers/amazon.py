@@ -62,7 +62,7 @@ class ColetorAmazon:
             )
 
         for tentativa in range(self.max_retries + 1):
-            perfil = self._proximo_perfil()
+            perfil = self._proximo_perfil(primeira_tentativa=tentativa == 0)
             registrar_log(f"Perfil de navegador desta requisição: {perfil}")
             resultado, pode_repetir = self._coletar_uma_vez(link, perfil)
             if resultado.status == "sucesso" or not pode_repetir:
@@ -167,12 +167,11 @@ class ColetorAmazon:
                 False,
             )
 
-    def _proximo_perfil(self) -> str:
-        disponiveis = [
-            perfil
-            for perfil in self._PERFIS_NAVEGADOR
-            if perfil != self._ultimo_perfil
-        ]
+    def _proximo_perfil(self, primeira_tentativa: bool = False) -> str:
+        if primeira_tentativa:
+            self._ultimo_perfil = "safari"
+            return self._ultimo_perfil
+        disponiveis = [perfil for perfil in self._PERFIS_NAVEGADOR if perfil != self._ultimo_perfil]
         self._ultimo_perfil = random.choice(disponiveis)
         return self._ultimo_perfil
 
