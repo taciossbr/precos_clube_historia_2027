@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-01T19:41:25-03:00",
+  "ultima_atualizacao": "2026-11-01T23:47:49-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
@@ -348,10 +348,10 @@
       "comentario": "",
       "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 37.92,
+        "menor_preco_geral": 49.9,
         "plataforma_vencedora": "amazon",
-        "media": 37.92,
-        "mediana": 37.92
+        "media": 49.9,
+        "mediana": 49.9
       },
       "links": [
         {
@@ -359,7 +359,7 @@
           "url": "https://www.amazon.com.br/dp/6589705577",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 37.92,
+          "preco_atual": 49.9,
           "titulo": "Trabalhos e dias",
           "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
           "status": "sucesso",
