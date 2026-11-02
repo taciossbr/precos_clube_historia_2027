@@ -16,7 +16,7 @@ from logging_utils import registrar_log
 from scrapers.protocol import ResultadoColeta
 
 
-DEBUG_MERCADO_LIVRE = True
+DEBUG_MERCADO_LIVRE = False
 
 
 class ColetorMercadoLivre:

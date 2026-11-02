@@ -28,6 +28,13 @@
           "preco": 51.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
         }
+      ],
+      "mercado_livre": [
+        {
+          "timestamp": "2026-11-02T13:54:53-03:00",
+          "preco": 68.0,
+          "url": "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf"
+        }
       ]
     },
     "por_link": {
@@ -43,6 +50,13 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
           "plataforma": "estante_virtual"
+        }
+      ],
+      "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf": [
+        {
+          "timestamp": "2026-11-02T13:54:53-03:00",
+          "preco": 68.0,
+          "plataforma": "mercado_livre"
         }
       ]
     }
@@ -72,6 +86,12 @@
         "preco": 40.93,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6556405825"
+      },
+      {
+        "timestamp": "2026-11-02T13:54:53-03:00",
+        "preco": 30.0,
+        "plataforma": "mercado_livre",
+        "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco"
       }
     ],
     "por_plataforma": {
@@ -93,6 +113,13 @@
           "preco": 44.1,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
+      ],
+      "mercado_livre": [
+        {
+          "timestamp": "2026-11-02T13:54:53-03:00",
+          "preco": 30.0,
+          "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco"
+        }
       ]
     },
     "por_link": {
@@ -113,6 +140,13 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
           "plataforma": "estante_virtual"
+        }
+      ],
+      "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco": [
+        {
+          "timestamp": "2026-11-02T13:54:53-03:00",
+          "preco": 30.0,
+          "plataforma": "mercado_livre"
         }
       ]
     }
