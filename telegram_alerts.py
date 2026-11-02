@@ -14,6 +14,7 @@ from processing import ProdutoProcessado
 
 BASE_DIR = Path(__file__).resolve().parent
 ARQUIVO_ALERTAS = BASE_DIR / "alertas_enviados.json"
+ARQUIVO_CONSOLIDADO = BASE_DIR / "consolidado.json"
 MINIMO_PRECOS = 3
 VARIACAO_MINIMA = Decimal("0.70")
 DESTINATARIO_TELEGRAM = "taciossbr"
@@ -115,14 +116,14 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
         alvo_real = item.produto.alvo_real
         if alvo_real is not None and preco <= _decimal(alvo_real):
             candidatos.append(("alvo_real", "atingiu o alvo real", True))
-        mediana = item.mediana
+        mediana = _mediana_amazon_referencia(item)
         limite = (
             _decimal(mediana) * (Decimal("1") - _decimal(item.produto.porcentagem_alvo))
             if mediana is not None
             else None
         )
         if len(eventos) >= MINIMO_PRECOS and limite is not None and preco <= limite:
-            candidatos.append(("abaixo_mediana", f"{item.produto.porcentagem_alvo:.0%} abaixo da mediana", False))
+            candidatos.append(("abaixo_mediana", f"{item.produto.porcentagem_alvo:.0%} abaixo da mediana da Amazon", False))
 
         menor_anterior = min((_decimal(e["preco"]) for e in eventos[:-1]), default=None)
         if menor_anterior is not None and preco < menor_anterior:
@@ -175,6 +176,34 @@ def _coletas_validas(estado: Dict[str, Any], item: ProdutoProcessado) -> List[Di
         registros.append({"preco": float(preco)})
         del registros[:-100]
     return registros
+
+
+def _mediana_amazon_referencia(item: ProdutoProcessado) -> Optional[float]:
+    mediana_atual = item.mediana_por_plataforma.get("amazon")
+    if mediana_atual is not None:
+        return mediana_atual
+    if not ARQUIVO_CONSOLIDADO.exists():
+        return None
+    try:
+        consolidado = json.loads(ARQUIVO_CONSOLIDADO.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+        return None
+    produtos = consolidado.get("produtos", [])
+    if not isinstance(produtos, list):
+        return None
+    for produto in produtos:
+        if not isinstance(produto, dict) or produto.get("id") != item.produto.id:
+            continue
+        metricas = produto.get("metricas_atuais", {})
+        if not isinstance(metricas, dict):
+            return None
+        mediana = metricas.get("mediana_amazon_referencia")
+        if mediana is None:
+            medianas_por_plataforma = metricas.get("mediana_por_plataforma")
+            if isinstance(medianas_por_plataforma, dict):
+                mediana = medianas_por_plataforma.get("amazon")
+        return float(mediana) if mediana is not None else None
+    return None
 
 
 def _formatar_mensagem(item: ProdutoProcessado, motivo: str) -> str:

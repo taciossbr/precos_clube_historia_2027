@@ -1,9 +1,9 @@
 {
-  "ultima_atualizacao": "2026-11-01T23:47:49-03:00",
+  "ultima_atualizacao": "2026-11-02T09:50:17-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 0
+    "produtos_com_falha": 3
   },
   "produtos": [
     {
@@ -11,6 +11,7 @@
       "nome": "Roma: A História de um Império — Greg Woolf",
       "prioridade": 1,
       "porcentagem_alvo": 0.1,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
       "contador_falhas": 0,
@@ -18,7 +19,13 @@
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
         "media": 56.99,
-        "mediana": 56.99
+        "mediana": 56.99,
+        "mediana_por_plataforma": {
+          "amazon": 62.98,
+          "estante_virtual": 51.0
+        },
+        "mediana_amazon_referencia": 62.98,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -110,6 +117,7 @@
       "nome": "Alexandre e César — Plutarco",
       "prioridade": 3,
       "porcentagem_alvo": 0.15,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -117,7 +125,13 @@
         "menor_preco_geral": 32.22,
         "plataforma_vencedora": "amazon",
         "media": 38.16,
-        "mediana": 38.16
+        "mediana": 38.16,
+        "mediana_por_plataforma": {
+          "amazon": 32.22,
+          "estante_virtual": 44.1
+        },
+        "mediana_amazon_referencia": 32.22,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -156,14 +170,20 @@
       "nome": "O Jesus Histórico — David Flusser",
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
-      "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
+      "alvo_real": null,
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 78.99,
-        "plataforma_vencedora": "amazon",
-        "media": 83.91,
-        "mediana": 84.75
+        "menor_preco_geral": 84.75,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 86.38,
+        "mediana": 86.38,
+        "mediana_por_plataforma": {
+          "estante_virtual": 86.38
+        },
+        "mediana_amazon_referencia": 78.99,
+        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
       },
       "links": [
         {
@@ -171,12 +191,12 @@
           "url": "https://www.amazon.com.br/dp/8527302829",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 78.99,
-          "titulo": "Jesus",
-          "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
-          "status": "sucesso",
-          "erros_consecutivos": 0,
-          "erro": null
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "estante_virtual",
@@ -252,6 +272,7 @@
       "nome": "Pompeia: A Vida de uma Cidade Romana — Mary Beard",
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -259,7 +280,13 @@
         "menor_preco_geral": 110.87,
         "plataforma_vencedora": "amazon",
         "media": 113.44,
-        "mediana": 113.44
+        "mediana": 113.44,
+        "mediana_por_plataforma": {
+          "amazon": 110.87,
+          "estante_virtual": 116.0
+        },
+        "mediana_amazon_referencia": 110.87,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -298,14 +325,20 @@
       "nome": "Teogonia — Hesíodo",
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
-      "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
+      "alvo_real": null,
+      "capa_url": "/book/00/0GH-2736-000/0GH-2736-000_detail1.jpg?ts=1776951601101",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 48.86,
-        "plataforma_vencedora": "amazon",
-        "media": 53.42,
-        "mediana": 53.42
+        "menor_preco_geral": 57.98,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 57.98,
+        "mediana": 57.98,
+        "mediana_por_plataforma": {
+          "estante_virtual": 57.98
+        },
+        "mediana_amazon_referencia": 48.86,
+        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
       },
       "links": [
         {
@@ -313,12 +346,12 @@
           "url": "https://www.amazon.com.br/dp/6589705585",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 48.86,
-          "titulo": "Teogonia",
-          "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
-          "status": "sucesso",
-          "erros_consecutivos": 0,
-          "erro": null
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "estante_virtual",
@@ -344,6 +377,7 @@
       "nome": "Os Trabalhos e os Dias — Hesíodo",
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -351,7 +385,12 @@
         "menor_preco_geral": 49.9,
         "plataforma_vencedora": "amazon",
         "media": 49.9,
-        "mediana": 49.9
+        "mediana": 49.9,
+        "mediana_por_plataforma": {
+          "amazon": 49.9
+        },
+        "mediana_amazon_referencia": 49.9,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -373,6 +412,7 @@
       "nome": "O Que é a Filosofia Antiga? — Pierre Hadot",
       "prioridade": 4,
       "porcentagem_alvo": 0.2,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -380,7 +420,13 @@
         "menor_preco_geral": 94.37,
         "plataforma_vencedora": "amazon",
         "media": 96.44,
-        "mediana": 96.44
+        "mediana": 96.44,
+        "mediana_por_plataforma": {
+          "amazon": 94.37,
+          "estante_virtual": 98.5
+        },
+        "mediana_amazon_referencia": 94.37,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -419,14 +465,20 @@
       "nome": "O Anticristo: Uma Biografia (Movimentos Apocalípticos) — Philip C. Almond",
       "prioridade": 2,
       "porcentagem_alvo": 0.2,
-      "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
+      "alvo_real": null,
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 69.4,
-        "mediana": 69.4
+        "media": 66.0,
+        "mediana": 66.0,
+        "mediana_por_plataforma": {
+          "estante_virtual": 66.0
+        },
+        "mediana_amazon_referencia": 72.8,
+        "mediana_amazon_referencia_em": "2026-11-01T23:47:49-03:00"
       },
       "links": [
         {
@@ -434,12 +486,12 @@
           "url": "https://www.amazon.com.br/dp/B0D4WQ179K",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 72.8,
-          "titulo": "O Anticristo: Uma biografia",
-          "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
-          "status": "sucesso",
-          "erros_consecutivos": 0,
-          "erro": null
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "estante_virtual",
@@ -518,6 +570,7 @@
       "nome": "Piratas no Brasil — Jean Marcel Carvalho",
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -525,7 +578,13 @@
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
         "media": 56.09,
-        "mediana": 56.09
+        "mediana": 56.09,
+        "mediana_por_plataforma": {
+          "amazon": 76.17,
+          "estante_virtual": 36.0
+        },
+        "mediana_amazon_referencia": 76.17,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -617,6 +676,7 @@
       "nome": "Os Mitos Maias — Coleção Editora Vozes",
       "prioridade": 9,
       "porcentagem_alvo": 0.2,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -624,7 +684,13 @@
         "menor_preco_geral": 53.48,
         "plataforma_vencedora": "amazon",
         "media": 62.19,
-        "mediana": 62.19
+        "mediana": 62.19,
+        "mediana_por_plataforma": {
+          "amazon": 53.48,
+          "estante_virtual": 70.9
+        },
+        "mediana_amazon_referencia": 53.48,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -663,6 +729,7 @@
       "nome": "O Quinto Sol: Uma Nova História dos Astecas — Camilla Townsend",
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -670,7 +737,13 @@
         "menor_preco_geral": 60.61,
         "plataforma_vencedora": "amazon",
         "media": 70.18,
-        "mediana": 70.18
+        "mediana": 70.18,
+        "mediana_por_plataforma": {
+          "amazon": 60.61,
+          "estante_virtual": 79.75
+        },
+        "mediana_amazon_referencia": 60.61,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {
@@ -705,7 +778,7 @@
           "top_n_resultados": [
             {
               "titulo": "O quinto sol",
-              "autor": "Camila Townsend",
+              "autor": "Camilla Townsend",
               "valor_sem_frete": 63.75,
               "preco_total": 79.75,
               "frete_aplicado": 16.0,
@@ -742,6 +815,7 @@
       "nome": "O Coração do Mundo — Peter Frankopan",
       "prioridade": 3,
       "porcentagem_alvo": 0.2,
+      "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
       "contador_falhas": 0,
@@ -749,7 +823,13 @@
         "menor_preco_geral": 137.45,
         "plataforma_vencedora": "amazon",
         "media": 141.73,
-        "mediana": 141.73
+        "mediana": 141.73,
+        "mediana_por_plataforma": {
+          "amazon": 137.45,
+          "estante_virtual": 146.0
+        },
+        "mediana_amazon_referencia": 137.45,
+        "mediana_amazon_referencia_em": "2026-11-02T09:50:17-03:00"
       },
       "links": [
         {

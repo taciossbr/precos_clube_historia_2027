@@ -13,25 +13,56 @@ const seriesNames = {
   mercado_livre: "Mercado Livre",
 };
 let productHistory = {};
+let currentProduct = null;
 let plot = null;
 let resizeObserver = null;
 
-function metric(label, value) {
-  return `<article><span>${safe(label)}</span><strong>${safe(value)}</strong></article>`;
+function metric(label, value, tone = "") {
+  return `<article class="${tone ? `metric-${tone}` : ""}"><span>${safe(label)}</span><strong>${safe(value)}</strong></article>`;
+}
+
+function amazonMedian(product, metrics) {
+  const platformMedians = metrics.mediana_por_plataforma ?? {};
+  if (Object.hasOwn(platformMedians, "amazon")) return platformMedians.amazon;
+  if (metrics.mediana_amazon_referencia != null) return metrics.mediana_amazon_referencia;
+  const prices = (product.links ?? [])
+    .filter(link => link.plataforma === "amazon" && link.status === "sucesso" && link.preco_atual != null)
+    .map(link => Number(link.preco_atual))
+    .filter(Number.isFinite)
+    .sort((a, b) => a - b);
+  if (!prices.length) return null;
+  const middle = Math.floor(prices.length / 2);
+  return prices.length % 2 ? prices[middle] : (prices[middle - 1] + prices[middle]) / 2;
 }
 
 function renderMetrics(product) {
   const metrics = product.metricas_atuais ?? {};
-  const discount = metrics.mediana > 0 && metrics.menor_preco_geral != null
-    ? `${(((metrics.mediana - metrics.menor_preco_geral) / metrics.mediana) * 100).toFixed(0)}%`
-    : "—";
+  const amazonMedianValue = amazonMedian(product, metrics);
+  const discount = amazonMedianValue > 0 && metrics.menor_preco_geral != null
+    ? (amazonMedianValue - metrics.menor_preco_geral) / amazonMedianValue
+    : null;
+  const discountPercentage = discount == null ? null : Math.round(Math.abs(discount) * 100);
+  const discountText = discount == null
+    ? "—"
+    : discountPercentage === 0
+      ? "na normal"
+      : `${discountPercentage}% ${discount > 0 ? "abaixo" : "acima"} da normal`;
+  const discountTone = discount == null || discountPercentage === 0
+    ? "neutral"
+    : discount > 0 ? "below" : "above";
   $("#detail-metrics").innerHTML = [
     metric("Melhor preço atual", money(metrics.menor_preco_geral)),
     metric("Plataforma vencedora", platformNames[metrics.plataforma_vencedora] ?? metrics.plataforma_vencedora ?? "—"),
     metric("Média", money(metrics.media)),
     metric("Mediana", money(metrics.mediana)),
+    ...Object.entries(metrics.mediana_por_plataforma ?? {}).map(([platform, value]) =>
+      metric(`Mediana ${platformNames[platform] ?? platform}`, money(value))
+    ),
+    ...(metrics.mediana_por_plataforma?.amazon == null && metrics.mediana_amazon_referencia != null
+      ? [metric("Mediana Amazon (última válida)", money(metrics.mediana_amazon_referencia))]
+      : []),
     metric("Alvo", `${((product.porcentagem_alvo ?? 0) * 100).toFixed(0)}%`),
-    metric("Abaixo da mediana", discount),
+    metric("Preço vs. normal", discountText, discountTone),
     metric("Prioridade", product.prioridade ?? "—"),
     metric("Falhas consecutivas", product.contador_falhas ?? 0),
   ].join("");
@@ -95,6 +126,7 @@ function renderHistory() {
   const host = $("#detail-chart");
   const series = $("#history-series").value;
   const points = historyPoints(series);
+  const metrics = currentProduct?.metricas_atuais ?? {};
   host.innerHTML = "";
 
   if (!points.length) {
@@ -111,17 +143,29 @@ function renderHistory() {
   $("#history-state").textContent = `${points.length} ${points.length === 1 ? "registro" : "registros"} · ${seriesNames[series]}`;
   host.hidden = false;
   const colors = {vencedor_geral:"#096a6f", amazon:"#d5784d", estante_virtual:"#39796f", mercado_livre:"#527aaf"};
+  const times = points.map(point => point.time);
+  const amazonMedian = metrics.mediana_por_plataforma?.amazon ?? metrics.mediana_amazon_referencia;
+  const data = [
+    times,
+    points.map(point => point.price),
+    times.map(() => metrics.mediana),
+    times.map(() => amazonMedian),
+  ];
+  const chartSeries = [{}, {
+    label: seriesNames[series],
+    stroke: colors[series],
+    width: 2,
+    points: {show: true, size: 6, fill: colors[series], stroke: "#fffefa", width: 2},
+  },
+  {label:"Mediana geral atual",stroke:"#d5784d",width:1,dash:[5,4]},
+  {label:"Mediana Amazon",stroke:"#8a5ca8",width:1,dash:[2,3]},
+  ];
   plot = new window.uPlot({
     width: host.clientWidth,
     height: 300,
     padding: [10, 10, 0, 0],
     scales: {x: {time: true}, y: {auto: true}},
-    series: [{}, {
-      label: seriesNames[series],
-      stroke: colors[series],
-      width: 2,
-      points: {show: true, size: 6, fill: colors[series], stroke: "#fffefa", width: 2},
-    }],
+    series: chartSeries,
     axes: [
       {stroke:"#677a82",grid:{stroke:"#e4e8e6",width:1},ticks:{stroke:"#dae0e0",width:1},size:32,values:(_,ticks)=>{
         const labelEvery=Math.max(1,Math.ceil(ticks.length/5));
@@ -131,9 +175,9 @@ function renderHistory() {
       }},
       {stroke:"#677a82",grid:{stroke:"#e4e8e6",width:1},ticks:{stroke:"#dae0e0",width:1},size:82,values:(_,ticks)=>ticks.map(money)},
     ],
-    legend: {show: false},
+    legend: {show: true},
     cursor: {focus: {prox: 16}},
-  }, [points.map(point=>point.time), points.map(point=>point.price)], host);
+  }, data, host);
   if (window.ResizeObserver) {
     resizeObserver = new ResizeObserver(() => plot?.setSize({width:host.clientWidth,height:300}));
     resizeObserver.observe(host);
@@ -141,6 +185,7 @@ function renderHistory() {
 }
 
 function renderProduct(product, record) {
+  currentProduct = product;
   document.title = `${product.nome} — Radar de preços`;
   $("#detail-title").textContent = product.nome;
   $("#detail-id").textContent = `ID: ${product.id}`;

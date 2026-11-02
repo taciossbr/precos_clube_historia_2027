@@ -39,7 +39,7 @@ class ColetorAmazon:
     def __init__(
         self,
         timeout: float = 20,
-        max_retries: int = 2,
+        max_retries: int = 3,
         retry_delay_base: float = 5,
     ) -> None:
         if max_retries < 0:

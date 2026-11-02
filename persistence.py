@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
+from statistics import median
 from typing import Any, Dict, List, Optional, Tuple
 from zoneinfo import ZoneInfo
 
@@ -59,6 +60,19 @@ def persistir_resultados(processados: List[ProdutoProcessado]) -> None:
             ),
             None,
         )
+        mediana_amazon_atual = item.mediana_por_plataforma.get("amazon")
+        if mediana_amazon_atual is not None:
+            mediana_amazon_referencia = _preco_json(mediana_amazon_atual)
+            mediana_amazon_referencia_em = timestamp
+        else:
+            mediana_amazon_referencia, mediana_amazon_referencia_em = (
+                _mediana_amazon_anterior(
+                    consolidado_anterior,
+                    historico,
+                    produto.id,
+                    [link.url for link in produto.links if link.plataforma.value == "amazon"],
+                )
+            )
         links_json = [
             _serializar_link(link, resultado)
             for link, resultado in zip(produto.links, item.resultados)
@@ -79,6 +93,12 @@ def persistir_resultados(processados: List[ProdutoProcessado]) -> None:
                     "plataforma_vencedora": item.plataforma_vencedora,
                     "media": _preco_json(item.media),
                     "mediana": _preco_json(item.mediana),
+                    "mediana_por_plataforma": {
+                        plataforma: _preco_json(preco)
+                        for plataforma, preco in item.mediana_por_plataforma.items()
+                    },
+                    "mediana_amazon_referencia": mediana_amazon_referencia,
+                    "mediana_amazon_referencia_em": mediana_amazon_referencia_em,
                 },
                 "links": links_json,
             }
@@ -223,6 +243,63 @@ def _contadores_anteriores(consolidado: Dict[str, Any]) -> Dict[str, int]:
             raise ValueError(f"contador_falhas inválido para {produto['id']}")
         contadores[produto["id"]] = contador
     return contadores
+
+
+def _mediana_amazon_anterior(
+    consolidado: Dict[str, Any],
+    historico: Dict[str, Any],
+    produto_id: str,
+    urls_amazon: List[str],
+) -> Tuple[Optional[float], Optional[str]]:
+    produtos = consolidado.get("produtos", [])
+    produto = next(
+        (item for item in produtos if isinstance(item, dict) and item.get("id") == produto_id),
+        None,
+    ) if isinstance(produtos, list) else None
+    if produto is None:
+        produto = {}
+
+    metricas = produto.get("metricas_atuais", {})
+    if not isinstance(metricas, dict):
+        metricas = {}
+    valor = metricas.get("mediana_amazon_referencia")
+    data = metricas.get("mediana_amazon_referencia_em")
+    if valor is None:
+        medianas_por_plataforma = metricas.get("mediana_por_plataforma")
+        if isinstance(medianas_por_plataforma, dict):
+            valor = medianas_por_plataforma.get("amazon")
+    if valor is None:
+        precos = [
+            link.get("preco_atual")
+            for link in produto.get("links", [])
+            if isinstance(link, dict)
+            and link.get("plataforma") == "amazon"
+            and link.get("status") == "sucesso"
+            and link.get("preco_atual") is not None
+        ]
+        if precos:
+            valor = median(precos)
+            data = consolidado.get("ultima_atualizacao")
+    if valor is None and urls_amazon:
+        registro_historico = historico.get(produto_id, {})
+        por_link = registro_historico.get("por_link", {}) if isinstance(registro_historico, dict) else {}
+        eventos = [
+            evento
+            for url in urls_amazon
+            for evento in por_link.get(url, [])
+            if isinstance(evento, dict) and evento.get("preco") is not None
+        ] if isinstance(por_link, dict) else []
+        if eventos:
+            valor = median([evento["preco"] for evento in eventos])
+            data = max(
+                (evento.get("timestamp") for evento in eventos if isinstance(evento.get("timestamp"), str)),
+                default=None,
+            )
+    if valor is None:
+        return None, None
+    if not isinstance(data, str):
+        data = consolidado.get("ultima_atualizacao")
+    return _preco_json(valor), data if isinstance(data, str) else None
 
 
 def _ler_json(caminho: Path, default: Dict[str, Any]) -> Dict[str, Any]:

@@ -92,7 +92,9 @@ Quero duas ordenações nos produtos: por prioridade e pela ordem original no ar
 
 ## Regras para envio de notificação via Telegram
 
-- Padrão: 20% abaixo da mediana
+- Padrão: 20% abaixo da mediana da Amazon; os percentuais de desconto exibidos na interface também usam essa mediana como referência. A média e a mediana gerais continuam disponíveis como métricas, mas não são usadas nesses percentuais.
+- Na interface, mostrar apenas o percentual em relação ao normal: “X% abaixo da normal” ou “X% acima da normal”, sem sinal negativo. Usar verde para abaixo, vermelho para acima e neutro quando arredondar para zero.
+- Se a coleta Amazon falhar, preservar e usar a última mediana Amazon válida salva; se nunca houver uma, não calcular esse percentual nem disparar esse alerta.
 - Pode ser configurado manualmente em cada produto
 - Cada produto pode configurar também `alvo_real`, opcional, como valor bruto em reais. Quando o menor preço atual for igual ou menor que esse valor, enviar três mensagens curtas para chamar atenção, com intervalo de 4 segundos entre elas, antes da mensagem padrão do alerta. O campo ausente ou `null` desativa esse alvo.
 - O envio por preço abaixo da mediana só ocorre depois de registrar ao menos **4 coletas válidas**
@@ -145,7 +147,14 @@ Consolidado
         "menor_preco_geral": 49.90,
         "plataforma_vencedora": "estante_virtual",
         "media": 52.27,
-        "mediana": 52.00
+        "mediana": 52.00,
+        "mediana_por_plataforma": {
+          "amazon": 52.00,
+          "mercado_livre": 54.90,
+          "estante_virtual": 49.90
+        },
+        "mediana_amazon_referencia": 52.00,
+        "mediana_amazon_referencia_em": "2026-11-01T15:00:00-03:00"
       },
       "links": [
         {
@@ -268,7 +277,7 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
    - Para cada link Amazon, obter o preço atual e, quando disponível, metadados úteis para apresentação, como título e capa.
    - Registrar sucesso ou falha por link, sem impedir a coleta dos demais produtos.
 3. Montar o processamento dos preços
-   - Associar os resultados coletados aos produtos e calcular a média, a mediana, o menor preço atual e a plataforma vencedora.
+   - Associar os resultados coletados aos produtos e calcular média e mediana gerais, mediana por plataforma, menor preço atual e plataforma vencedora.
    - Preparar estruturas para múltiplos resultados de pesquisa (top_n_resultados), embora a coleta da Fase 1 use apenas Amazon.
    - Representar estados sem preço válido ou com erro de coleta, sem inventar valores.
 4. Persistir os arquivos de dados
@@ -278,8 +287,9 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
    - Definir claramente como tratar a primeira coleta, preços ausentes e variações exatamente iguais a R$ 1,00.
 5. Criar a apresentação para consulta
    - Criar uma página estática que lê `consolidado.json` e `historico.json` no navegador.
-   - Exibir preços, status por link, média, mediana, plataforma vencedora e histórico do vencedor geral.
-   - Permitir busca e ordenação por ordem original, prioridade, preço crescente/decrescente, título A-Z/Z-A e percentual abaixo da mediana atual.
+   - Exibir preços, status por link, média e mediana gerais, mediana por plataforma, plataforma vencedora e histórico do vencedor geral.
+   - Exibir sempre duas linhas horizontais de referência nos gráficos: mediana geral atual e mediana Amazon (usando a última referência válida quando a coleta Amazon falhar).
+   - Permitir busca e ordenação por ordem original, prioridade, preço crescente/decrescente, título A-Z/Z-A e percentual abaixo da mediana atual da Amazon.
    - Mostrar valores ausentes sem inventar preços e manter a página compatível com publicação em subdiretório do GitHub Pages.
 6. Preparar a execução periódica e manual
    - Configurar GitHub Actions para execução manual, em pushes para `main` e no cron especificado.

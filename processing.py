@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 from statistics import mean, median
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 from config import Produto
 from scrapers.protocol import ResultadoColeta
@@ -16,6 +16,7 @@ class ProdutoProcessado:
     plataforma_vencedora: Optional[str]
     media: Optional[float]
     mediana: Optional[float]
+    mediana_por_plataforma: Dict[str, float]
 
 
 def processar_produto(
@@ -37,9 +38,13 @@ def processar_produto(
             plataforma_vencedora=None,
             media=None,
             mediana=None,
+            mediana_por_plataforma={},
         )
 
     vencedor = min(validos, key=lambda resultado: resultado.preco)
+    precos_por_plataforma: Dict[str, List[float]] = {}
+    for resultado in validos:
+        precos_por_plataforma.setdefault(resultado.plataforma, []).append(resultado.preco)
     return ProdutoProcessado(
         produto=produto,
         resultados=resultados,
@@ -47,4 +52,8 @@ def processar_produto(
         plataforma_vencedora=vencedor.plataforma,
         media=mean(precos),
         mediana=median(precos),
+        mediana_por_plataforma={
+            plataforma: median(valores)
+            for plataforma, valores in precos_por_plataforma.items()
+        },
     )
