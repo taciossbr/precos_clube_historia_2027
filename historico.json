@@ -112,6 +112,18 @@
         "preco": 78.99,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8527302829"
+      },
+      {
+        "timestamp": "2026-11-02T12:10:54-03:00",
+        "preco": 26.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
+      },
+      {
+        "timestamp": "2026-11-02T12:46:36-03:00",
+        "preco": 34.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
       }
     ],
     "por_plataforma": {
@@ -126,6 +138,16 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 84.75,
+          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
+        },
+        {
+          "timestamp": "2026-11-02T12:10:54-03:00",
+          "preco": 26.0,
+          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
+        },
+        {
+          "timestamp": "2026-11-02T12:46:36-03:00",
+          "preco": 34.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
         }
       ]
@@ -142,6 +164,16 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 84.75,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-02T12:10:54-03:00",
+          "preco": 26.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-02T12:46:36-03:00",
+          "preco": 34.0,
           "plataforma": "estante_virtual"
         }
       ],
@@ -161,6 +193,12 @@
         "preco": 110.87,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-02T12:46:36-03:00",
+        "preco": 116.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
       }
     ],
     "por_plataforma": {
