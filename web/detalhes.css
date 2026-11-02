@@ -22,6 +22,7 @@
 .detail-platform-price-line>div>div{display:flex;flex-direction:column;gap:3px}
 .detail-platform-price-line span{color:var(--muted);font-size:12px}
 .detail-platform-price-line strong{font:600 14px 'DM Mono',monospace;overflow-wrap:anywhere}
+.detail-platform-price-line small{color:var(--muted);font:10px 'DM Mono',monospace}
 .detail-panel{margin:22px 0;padding:24px;background:var(--white);border:1px solid var(--line);border-radius:14px}
 .detail-section-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:14px}
 .detail-section-heading h2{font:30px/1.2 'Playfair Display',serif;margin:7px 0 0}

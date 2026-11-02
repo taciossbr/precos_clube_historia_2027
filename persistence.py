@@ -43,9 +43,29 @@ def persistir_resultados(processados: List[ProdutoProcessado]) -> None:
         plataformas_esperadas = {link.plataforma.value for link in produto.links}
         plataformas_com_preco = {resultado.plataforma for _, resultado in pares_validos}
         tem_falha = not plataformas_esperadas.issubset(plataformas_com_preco)
-        contador_falhas = (
-            contadores_produto.get(produto.id, 0) + 1 if tem_falha else 0
-        )
+        contador_anterior = contadores_produto.get(produto.id, 0)
+        plataformas_coletadas = {
+            link.plataforma.value
+            for link, resultado in zip(produto.links, item.resultados)
+            if resultado.coletado_nesta_execucao
+        }
+        plataformas_coletadas_com_preco = {
+            resultado.plataforma
+            for link, resultado in zip(produto.links, item.resultados)
+            if resultado.coletado_nesta_execucao
+            and resultado.status == "sucesso"
+            and resultado.preco is not None
+        }
+        if plataformas_coletadas == plataformas_esperadas:
+            contador_falhas = contador_anterior + 1 if tem_falha else 0
+        elif plataformas_coletadas:
+            if not tem_falha:
+                contador_falhas = 0
+            else:
+                falha_coletada = not plataformas_coletadas.issubset(plataformas_coletadas_com_preco)
+                contador_falhas = contador_anterior + 1 if falha_coletada else contador_anterior
+        else:
+            contador_falhas = contador_anterior
 
         if pares_validos:
             produtos_com_preco += 1
@@ -60,9 +80,16 @@ def persistir_resultados(processados: List[ProdutoProcessado]) -> None:
             ),
             None,
         )
-        mediana_amazon_atual = item.mediana_por_plataforma.get("amazon")
-        if mediana_amazon_atual is not None:
-            mediana_amazon_referencia = _preco_json(mediana_amazon_atual)
+        precos_amazon_coletados = [
+            resultado.preco
+            for link, resultado in zip(produto.links, item.resultados)
+            if link.plataforma.value == "amazon"
+            and resultado.coletado_nesta_execucao
+            and resultado.status == "sucesso"
+            and resultado.preco is not None
+        ]
+        if precos_amazon_coletados:
+            mediana_amazon_referencia = _preco_json(median(precos_amazon_coletados))
             mediana_amazon_referencia_em = timestamp
         else:
             mediana_amazon_referencia, mediana_amazon_referencia_em = (
@@ -134,6 +161,7 @@ def _serializar_link(
         "titulo": resultado.titulo,
         "capa_url": resultado.capa_url,
         "status": resultado.status,
+        "coletado_nesta_execucao": resultado.coletado_nesta_execucao,
         "erros_consecutivos": resultado.erros_consecutivos,
         "erro": resultado.erro,
     }
@@ -151,6 +179,11 @@ def _atualizar_historico(
     pares_validos: List[Tuple[LinkConfig, ResultadoColeta]],
     timestamp: str,
 ) -> None:
+    pares_coletados = [
+        (link, resultado)
+        for link, resultado in pares_validos
+        if resultado.coletado_nesta_execucao
+    ]
     produto_id = item.produto.id
     registro = historico.setdefault(
         produto_id,
@@ -166,7 +199,7 @@ def _atualizar_historico(
     if not isinstance(por_link, dict):
         raise ValueError(f"Histórico por link inválido para o produto {produto_id}")
 
-    for link, resultado in pares_validos:
+    for link, resultado in pares_coletados:
         eventos = por_link.setdefault(link.url, [])
         if not isinstance(eventos, list):
             raise ValueError(f"Histórico inválido para o link {link.url}")
@@ -183,7 +216,7 @@ def _atualizar_historico(
     por_plataforma_validos: Dict[
         str, List[Tuple[LinkConfig, ResultadoColeta]]
     ] = {}
-    for par in pares_validos:
+    for par in pares_coletados:
         por_plataforma_validos.setdefault(par[1].plataforma, []).append(par)
 
     for plataforma, pares in por_plataforma_validos.items():
@@ -201,16 +234,17 @@ def _atualizar_historico(
         link, resultado = min(
             pares_validos, key=lambda par: _decimal_preco(par[1].preco)
         )
-        preco = _decimal_preco(resultado.preco)
-        if _deve_registrar(vencedor_geral, preco):
-            vencedor_geral.append(
-                {
-                    "timestamp": timestamp,
-                    "preco": float(preco),
-                    "plataforma": resultado.plataforma,
-                    "url": link.url,
-                }
-            )
+        if resultado.coletado_nesta_execucao:
+            preco = _decimal_preco(resultado.preco)
+            if _deve_registrar(vencedor_geral, preco):
+                vencedor_geral.append(
+                    {
+                        "timestamp": timestamp,
+                        "preco": float(preco),
+                        "plataforma": resultado.plataforma,
+                        "url": link.url,
+                    }
+                )
 
 
 def _deve_registrar(eventos: List[Dict[str, Any]], preco: Decimal) -> bool:

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>Links configurados — Radar de preços</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="detalhes.css">
+  <link rel="stylesheet" href="configuracao.css">
+  <script src="configuracao.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar"><span class="updated">CONFIGURAÇÃO ATIVA</span></header>
+  <main class="configured-page detail-page">
+    <nav class="detail-navigation" aria-label="Navegação">
+      <a class="detail-back" href="./">← Voltar à minha estante</a>
+    </nav>
+    <section class="page-heading">
+      <div>
+        <span class="eyebrow">CONFIGURAÇÃO</span>
+        <h1>Links configurados</h1>
+        <p>Representação dos produtos e links ativos em config.py.</p>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="section-heading">
+        <div><span class="eyebrow">PRODUTOS</span><h2>Todos os links</h2></div>
+        <span id="result-count" class="result-count"></span>
+      </div>
+      <div id="configured-links" class="configured-products" aria-live="polite">
+        <p class="loading">Carregando configuração…</p>
+      </div>
+    </section>
+  </main>
+  <footer><span>RADAR DE PREÇOS</span><span>Links e metadados copiados da configuração ativa.</span></footer>
+</body>
+
+</html>

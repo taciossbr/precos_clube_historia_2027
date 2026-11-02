@@ -18,6 +18,7 @@ class ResultadoColeta:
     erros_consecutivos: int = 0
     extras: Optional[Dict[str, Any]] = None
     top_n_resultados: Optional[List[Dict[str, Any]]] = None
+    coletado_nesta_execucao: bool = True
 
 
 class Coletor(Protocol):

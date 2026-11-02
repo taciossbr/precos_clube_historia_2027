@@ -25,6 +25,7 @@
 .platform-price-values>div{display:flex;min-width:0;flex-direction:column;gap:2px}
 .platform-price-values span{color:var(--muted);font-size:11px}
 .platform-price-values strong{font:600 12px 'DM Mono',monospace;overflow-wrap:anywhere}
+.platform-price-values small{color:var(--muted);font:10px 'DM Mono',monospace}
 .product-facts{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin:0}
 .product-facts span:last-child{grid-column:1/-1}
 .status{padding:7px 10px;background:var(--lime);border-radius:6px;font-weight:700}

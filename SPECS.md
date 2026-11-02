@@ -294,8 +294,10 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
    - Mostrar a comparação com o normal somente quando a diferença absoluta for de pelo menos 3%; indicar “X% abaixo da normal” ou “X% acima da normal”.
    - Exibir sempre duas linhas horizontais de referência nos gráficos: mediana geral atual e mediana Amazon (usando a última referência válida quando a coleta Amazon falhar).
    - Permitir busca e ordenação por ordem original, prioridade, preço crescente/decrescente, título A-Z/Z-A e percentual abaixo da mediana atual da Amazon.
+   - Criar uma página que represente todos os links ativos em `config.py`, mantendo URLs, plataforma, tipo de link, comentários e `top_n` quando for pesquisa.
    - Mostrar valores ausentes sem inventar preços e manter a página compatível com publicação em subdiretório do GitHub Pages.
 6. Preparar a execução periódica e manual
+   - Permitir executar `python main.py --plataforma amazon`, `--plataforma mercado_livre` ou `--plataforma estante_virtual`; buscar somente os links da plataforma escolhida e reutilizar os demais dados de `consolidado.json`, sem registrá-los como novas coletas no histórico.
    - Configurar GitHub Actions para execução manual, em pushes para `main` e no cron especificado.
    - Restaurar e salvar `consolidado.json`, `historico.json` e `erros_consecutivos.json` no cache de Actions entre execuções.
    - Gerar o diretório `site/` com arquivos estáticos e dados para publicar pelo GitHub Pages.
@@ -362,3 +364,13 @@ A Fase 1 entrega a coleta de preços da Amazon e a apresentação dos dados, dei
 - Salvar os candidatos avaliados em `top_n_resultados`, incluindo preço, URL própria do anúncio e, na Estante, `valor_sem_frete`; marcar o selecionado com `escolhido: true`. O resultado do link guarda o preço do escolhido em `preco_atual` e os dados adicionais em `extras`. No histórico, `url` continua sendo a URL configurada para o link; as URLs dos anúncios ficam nos candidatos.
 - Cada `LinkConfig` conta uma única vez nas métricas do produto e gera no máximo um preço para o histórico por link e plataforma. `top_n_resultados` é detalhe dos candidatos daquela coleta; não transforma cada candidato em um link monitorado independente. Se nenhum candidato válido restar, o link fica com erro/sem preço e não gera evento de preço no histórico.
 - A configuração de exemplo deve usar URL de busca quando `pesquisa=true`; URLs diretas de produto devem usar `pesquisa=false`.
+
+## Implementação do scraping do Mercado Livre
+
+- O coletor fica em `scrapers/mercado_livre.py` e segue o contrato comum dos demais coletores.
+- Usar Firefox headless via Playwright, aguardar 7s após `DOMContentLoaded` para a página terminar de montar os resultados e fazer uma única tentativa por link, sem retry. O fluxo principal aguarda entre chamadas conforme `intervalo_entre_produtos` (12s por padrão, com jitter de ±20%). Não trocar IP/proxy nem tentar resolver automaticamente a verificação; registrar a falha específica.
+- Para páginas de busca, descartar títulos listados em `BLACKLIST_BOOKS`, considerar até `top_n` anúncios válidos e escolher o menor preço anunciado. Para páginas diretas, extrair o título e o preço do produto.
+- No Mercado Livre, considerar o frete sempre grátis: `preco_total` é igual ao preço anunciado e `frete_aplicado` é `0.0`. `frete_presumido` registra que essa regra foi assumida, sem depender do texto do anúncio.
+- Os candidatos ficam em `top_n_resultados`, com título, URL do anúncio, preço antes do frete e total comparável; um deles é marcado como escolhido. O resultado principal e o histórico usam o total comparável.
+- Se a resposta contiver a tela intermediária de verificação JavaScript do Mercado Livre, registrar erro específico de bloqueio sem tratar o título da tela como título de anúncio nem reportar ausência genérica de resultados.
+- A execução completa inclui o Mercado Livre; `python main.py --plataforma mercado_livre` coleta somente essa plataforma e reutiliza os dados anteriores das demais, conforme o modo de execução seletiva.

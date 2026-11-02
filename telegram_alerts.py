@@ -104,17 +104,24 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
     estado = _ler_estado()
     enviados = 0
     for item in processados:
-        if item.menor_preco is None:
+        coletados_validos = [
+            resultado for resultado in item.resultados
+            if resultado.coletado_nesta_execucao
+            and resultado.status == "sucesso"
+            and resultado.preco is not None
+        ]
+        if not coletados_validos:
             continue
         eventos = _coletas_validas(estado, item)
-        preco = _decimal(item.menor_preco)
+        vencedor_coletado = min(coletados_validos, key=lambda resultado: resultado.preco)
+        preco_atual = _decimal(vencedor_coletado.preco)
         alertas = estado.setdefault(item.produto.id, {})
         if not isinstance(alertas, dict):
             raise ValueError(f"Estado de alertas inválido para {item.produto.id}")
 
         candidatos = []
         alvo_real = item.produto.alvo_real
-        if alvo_real is not None and preco <= _decimal(alvo_real):
+        if alvo_real is not None and preco_atual <= _decimal(alvo_real):
             candidatos.append(("alvo_real", "atingiu o alvo real", True))
         mediana = _mediana_amazon_referencia(item)
         limite = (
@@ -122,15 +129,15 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
             if mediana is not None
             else None
         )
-        if len(eventos) >= MINIMO_PRECOS and limite is not None and preco <= limite:
+        if len(eventos) >= MINIMO_PRECOS and limite is not None and preco_atual <= limite:
             candidatos.append(("abaixo_mediana", f"{item.produto.porcentagem_alvo:.0%} abaixo da mediana da Amazon", False))
 
         menor_anterior = min((_decimal(e["preco"]) for e in eventos[:-1]), default=None)
-        if menor_anterior is not None and preco < menor_anterior:
+        if menor_anterior is not None and preco_atual < menor_anterior:
             candidatos.append(("novo_menor", "menor preço registrado até agora", False))
 
         for tipo, motivo, chamar_atencao in candidatos:
-            chave = f"{tipo}:{preco:.2f}"
+            chave = f"{tipo}:{preco_atual:.2f}"
             if alertas.get(tipo) == chave:
                 continue
             if chamar_atencao:
@@ -138,7 +145,13 @@ def enviar_alertas(processados: List[ProdutoProcessado]) -> int:
                     if indice:
                         time.sleep(4)
                     _enviar(token, chat_id, f"🔔 PREÇO ALVO: {item.produto.nome}")
-            mensagem = _formatar_mensagem(item, motivo)
+            mensagem = _formatar_mensagem(
+                item,
+                motivo,
+                float(preco_atual),
+                vencedor_coletado.plataforma,
+                vencedor_coletado.url,
+            )
             _enviar(token, chat_id, mensagem)
             alertas[tipo] = chave
             enviados += 1
@@ -170,7 +183,9 @@ def _coletas_validas(estado: Dict[str, Any], item: ProdutoProcessado) -> List[Di
     validos = [
         _decimal(resultado.preco)
         for resultado in item.resultados
-        if resultado.status == "sucesso" and resultado.preco is not None
+        if resultado.coletado_nesta_execucao
+        and resultado.status == "sucesso"
+        and resultado.preco is not None
     ]
     for preco in validos:
         registros.append({"preco": float(preco)})
@@ -206,17 +221,26 @@ def _mediana_amazon_referencia(item: ProdutoProcessado) -> Optional[float]:
     return None
 
 
-def _formatar_mensagem(item: ProdutoProcessado, motivo: str) -> str:
-    indice = next(
-        (i for i, resultado in enumerate(item.resultados)
-         if resultado.status == "sucesso" and resultado.preco == item.menor_preco),
-        0,
-    )
-    link = item.produto.links[indice].url
+def _formatar_mensagem(
+    item: ProdutoProcessado,
+    motivo: str,
+    preco: Optional[float] = None,
+    plataforma: Optional[str] = None,
+    url: Optional[str] = None,
+) -> str:
+    preco = item.menor_preco if preco is None else preco
+    plataforma = item.plataforma_vencedora if plataforma is None else plataforma
+    if url is None:
+        indice = next(
+            (i for i, resultado in enumerate(item.resultados)
+             if resultado.status == "sucesso" and resultado.preco == preco),
+            0,
+        )
+        url = item.produto.links[indice].url
     return (
         f"📚 Alerta de preço\n{item.produto.nome}\n"
-        f"Preço: {_formatar_preco(item.menor_preco)} ({item.plataforma_vencedora})\n"
-        f"Motivo: {motivo}\n{link}"
+        f"Preço: {_formatar_preco(preco)} ({plataforma})\n"
+        f"Motivo: {motivo}\n{url}"
     )
 
 

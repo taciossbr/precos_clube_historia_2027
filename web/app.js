@@ -114,15 +114,17 @@ function renderProductCard(product) {
     return (indexA < 0 ? 99 : indexA) - (indexB < 0 ? 99 : indexB);
   });
   const currentPrices = {};
+  const currentPriceReused = {};
   for (const link of links) {
     if (link.status !== "sucesso" || link.preco_atual == null) continue;
     const value = Number(link.preco_atual);
     if (Number.isFinite(value) && (currentPrices[link.plataforma] == null || value < currentPrices[link.plataforma])) {
       currentPrices[link.plataforma] = value;
+      currentPriceReused[link.plataforma] = link.coletado_nesta_execucao === false;
     }
   }
   const renderPlatformValues = (values, colored = false) => platformIds.map(platform =>
-    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(values[platform])}</strong></div>`
+    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(values[platform])}</strong>${colored && currentPriceReused[platform] ? `<small>reutilizado</small>` : ""}</div>`
   ).join("");
   const percentage = product.porcentagem_alvo ?? 0.20;
   const targetAmount = product.alvo_real != null
@@ -135,7 +137,7 @@ function renderProductCard(product) {
       : `${money(targetAmount)}*`;
   const discountInfo = discountLabel(discount(product));
   const linkRows = links.map(link =>
-    `<div class="link-row"><div class="link-heading"><strong>${safe(platformNames[link.plataforma] ?? link.plataforma)}</strong><span class="status ${link.status === "sucesso" ? "" : "error"}">${safe(link.status)}</span></div><a href="${safe(link.url)}" target="_blank" rel="noopener noreferrer">${safe(link.url)}</a><div class="link-facts"><span>Preço: ${money(link.preco_atual)}</span><span>Erros seguidos: ${safe(link.erros_consecutivos ?? 0)}</span>${link.pesquisa ? `<span>Pesquisa · top ${safe(link.top_n ?? 1)}</span>` : ""}</div>${link.titulo ? `<p class="link-title">${safe(link.titulo)}</p>` : ""}${link.erro ? `<p class="link-error">${safe(link.erro)}</p>` : ""}${link.comentario ? `<p>${safe(link.comentario)}</p>` : ""}${link.top_n_resultados?.length ? `<ul>${link.top_n_resultados.map(result => `<li>${result.url ? `<a href="${safe(result.url)}" target="_blank" rel="noopener noreferrer">${safe(result.titulo)}</a>` : safe(result.titulo)} — ${money(result.preco_total ?? result.preco)} ${result.escolhido ? "(escolhido)" : ""}</li>`).join("")}</ul>` : ""}</div>`
+    `<div class="link-row"><div class="link-heading"><strong>${safe(platformNames[link.plataforma] ?? link.plataforma)}</strong><span class="status ${link.status === "sucesso" ? "" : "error"}">${safe(link.status)}</span></div><a href="${safe(link.url)}" target="_blank" rel="noopener noreferrer">${safe(link.url)}</a><div class="link-facts"><span>Preço: ${money(link.preco_atual)}</span><span>Erros seguidos: ${safe(link.erros_consecutivos ?? 0)}</span>${link.coletado_nesta_execucao === false ? `<span>Dado reutilizado</span>` : link.coletado_nesta_execucao === true ? `<span>Coletado nesta execução</span>` : ""}${link.pesquisa ? `<span>Pesquisa · top ${safe(link.top_n ?? 1)}</span>` : ""}</div>${link.titulo ? `<p class="link-title">${safe(link.titulo)}</p>` : ""}${link.erro ? `<p class="link-error">${safe(link.erro)}</p>` : ""}${link.comentario ? `<p>${safe(link.comentario)}</p>` : ""}${link.top_n_resultados?.length ? `<ul>${link.top_n_resultados.map(result => `<li>${result.url ? `<a href="${safe(result.url)}" target="_blank" rel="noopener noreferrer">${safe(result.titulo)}</a>` : safe(result.titulo)} — ${money(result.preco_total ?? result.preco)} ${result.escolhido ? "(escolhido)" : ""}</li>`).join("")}</ul>` : ""}</div>`
   ).join("");
 
   return `<article class="card">

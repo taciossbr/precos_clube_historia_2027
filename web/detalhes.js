@@ -74,11 +74,13 @@ function renderPlatformPrices(product) {
   const normalPrices = {...(metrics.mediana_por_plataforma ?? {})};
   if (normalPrices.amazon == null) normalPrices.amazon = amazonMedian(product, metrics);
   const currentPrices = {};
+  const currentPriceReused = {};
   for (const link of product.links ?? []) {
     if (link.status !== "sucesso" || link.preco_atual == null) continue;
     const price = Number(link.preco_atual);
     if (Number.isFinite(price) && (currentPrices[link.plataforma] == null || price < currentPrices[link.plataforma])) {
       currentPrices[link.plataforma] = price;
+      currentPriceReused[link.plataforma] = link.coletado_nesta_execucao === false;
     }
   }
   const platforms = [...new Set([
@@ -90,7 +92,7 @@ function renderPlatformPrices(product) {
     return (indexA < 0 ? 99 : indexA) - (indexB < 0 ? 99 : indexB);
   });
   const values = (source, colored = false) => platforms.map(platform =>
-    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(source[platform])}</strong></div>`
+    `<div><span>${safe(platformNames[platform] ?? platform)}</span><strong${colored ? ` style="color:${platformColors[platform] ?? "#183039"}"` : ""}>${money(source[platform])}</strong>${colored && currentPriceReused[platform] ? `<small>reutilizado</small>` : ""}</div>`
   ).join("");
   return `<section class="detail-platform-prices" aria-label="Preços normais e atuais por plataforma">
     <div class="detail-platform-price-line"><h2>Preços normais</h2><div>${values(normalPrices)}</div></div>
@@ -132,7 +134,7 @@ function renderLink(link) {
     <a class="detail-configured-url" href="${safe(link.url)}" target="_blank" rel="noopener noreferrer">Abrir link configurado</a>
     ${link.titulo ? `<p class="detail-book-title">${safe(link.titulo)}</p>` : ""}
     ${link.comentario ? `<p class="detail-link-comment">${safe(link.comentario)}</p>` : ""}
-    <div class="detail-link-facts"><span>${link.pesquisa ? `Pesquisa · top ${safe(link.top_n ?? 1)}` : "Link direto"}</span><span>Falhas consecutivas: ${safe(link.erros_consecutivos ?? 0)}</span></div>
+    <div class="detail-link-facts"><span>${link.pesquisa ? `Pesquisa · top ${safe(link.top_n ?? 1)}` : "Link direto"}</span><span>Falhas consecutivas: ${safe(link.erros_consecutivos ?? 0)}</span>${link.coletado_nesta_execucao === false ? `<span>Dado reutilizado de coleta anterior</span>` : link.coletado_nesta_execucao === true ? `<span>Coletado nesta execução</span>` : ""}</div>
     ${link.erro ? `<p class="link-error">${safe(link.erro)}</p>` : ""}
     ${renderExtras(link.extras)}
     ${results}

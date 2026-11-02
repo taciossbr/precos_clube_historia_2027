@@ -139,7 +139,7 @@ PRODUTOS: List[Produto] = [
         comentario="É o primeiro, prioridade máxima antes da viagem",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8531613930"),
-            # MercadoLink("https://lista.mercadolivre.com.br/roma-a-historia-de-um-imperio-greg-woolf", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
@@ -152,7 +152,7 @@ PRODUTOS: List[Produto] = [
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6556405825"),
-            # MercadoLink("https://lista.mercadolivre.com.br/alexandre-e-cesar-plutarco", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"),
         ]
     ),
@@ -164,8 +164,8 @@ PRODUTOS: List[Produto] = [
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8527302829"),
-            # MercadoLink("https://lista.mercadolivre.com.br/o-jesus-historico-david-flusser", top_n=3),
-            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/o-jesus-hist%C3%B3rico-%E2%80%94-david-flusser", pesquisa=True, top_n=5),
+            EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"),
         ]
     ),
@@ -178,7 +178,7 @@ PRODUTOS: List[Produto] = [
         # categoria="1ª Fase (Roma)",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8501092215"),
-            # MercadoLink("https://lista.mercadolivre.com.br/pompeia-a-vida-de-uma-cidade-romana-mary-beard", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/pompeia%3A-a-vida-de-uma-cidade-romana-%E2%80%94-mary-beard", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"),
         ]
     ),
@@ -194,7 +194,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Grécia Antiga",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6589705585"),
-            # MercadoLink("https://lista.mercadolivre.com.br/teogonia-hesiodo", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/teogonia-%E2%80%94-hes%C3%ADodo-hedra", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"),
         ]
     ),
@@ -206,7 +206,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Grécia Antiga",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/6589705577"),
-            # MercadoLink("https://lista.mercadolivre.com.br/os-trabalhos-e-os-dias-hesiodo", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/os-trabalhos-e-os-dias-%E2%80%94-hes%C3%ADodo-hedra", pesquisa=True, top_n=5),
             # EstanteLink("https://www.estantevirtual.com.br/busca?q=os-trabalhos-e-os-dias-hesiodo", top_n=5),
         ]
     ),
@@ -218,7 +218,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Grécia Antiga",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8515017857"),
-            # MercadoLink("https://lista.mercadolivre.com.br/o-que-e-a-filosofia-antiga-pierre-hadot", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/o-que-%C3%A9-a-filosofia-antiga%3F-%E2%80%94-pierre-hadot", pesquisa=True, top_n=7),
             # EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Que%20%C3%A9%20a%20Filosofia%20Antiga%3F%20%E2%80%94%20Pierre%20Hadot&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"),
         ]
@@ -235,7 +235,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Geral / Religião",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/B0D4WQ179K"),
-            # MercadoLink("https://lista.mercadolivre.com.br/o-anticristo-uma-biografia-philip-c-almond", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/o-anticristo%3A-uma-biografia-%E2%80%94-philip-c.-almond", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
@@ -251,7 +251,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Américas",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8525058270"),
-            # MercadoLink("https://lista.mercadolivre.com.br/piratas-no-brasil-jean-marcel-carvalho", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/piratas-no-brasil-%E2%80%94-jean-marcel-carvalho", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first", pesquisa=True, top_n=5),
         ]
     ),
@@ -263,7 +263,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Américas",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/B0GH289VSL"),
-            # MercadoLink("https://lista.mercadolivre.com.br/os-mitos-maias-editora-vozes", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/os-mitos-maias-%E2%80%94-cole%C3%A7%C3%A3o-editora-vozes", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"),
         ]
     ),
@@ -275,7 +275,7 @@ PRODUTOS: List[Produto] = [
         # categoria="Américas",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8532674275"),
-            # MercadoLink("https://lista.mercadolivre.com.br/o-quinto-sol-camilla-townsend", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/o-quinto-sol%3A-uma-nova-hist%C3%B3ria-dos-astecas-%E2%80%94-camilla-townsend", pesquisa=True, top_n=5),
             EstanteLink("https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor", pesquisa=True, top_n=5),
         ]
     ),
@@ -291,7 +291,7 @@ PRODUTOS: List[Produto] = [
         # categoria="História Global",
         links=[
             AmazonLink("https://www.amazon.com.br/dp/8542217497"),
-            # MercadoLink("https://lista.mercadolivre.com.br/o-coracao-do-mundo-peter-frankopan", top_n=3),
+            MercadoLink("https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan", pesquisa=True, top_n=3),
             EstanteLink("https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"),
         ]
     ),
@@ -301,4 +301,10 @@ PRODUTOS: List[Produto] = [
 BLACKLIST_BOOKS = [
     'em busca de jesus',
     'o novo testamento ilustrado: a história de jesus e os primeiros discí',
+    'Novo Argumentação Estoica 5 Livros | Literatura Reflexiva',
+    'Chamados Pelo Coração Do Mundo',
+    'Brasil, Coração Do Mundo, Pátria Do Evangelho (novo Projeto)',
+    'Combo Como Ter O Coração De Maria No Mundo De Marta',
+    'Livro Como Ter O Coração De Maria No Mundo De Marta | Cpad',
+    'Kit Com 5 Livros Luciano Subirá | Rumo 120 Anos+ Cuidado Do Corpo+ Cultura Jejum+ Até Que Nada Nos Importe+ Todo Coração',
 ]

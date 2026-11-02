@@ -1,9 +1,9 @@
 {
-  "ultima_atualizacao": "2026-11-02T10:23:18-03:00",
+  "ultima_atualizacao": "2026-11-02T11:47:47-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 0
+    "produtos_com_falha": 3
   },
   "produtos": [
     {
@@ -18,14 +18,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 56.99,
-        "mediana": 56.99,
+        "media": 60.66,
+        "mediana": 62.98,
         "mediana_por_plataforma": {
           "amazon": 62.98,
+          "mercado_livre": 68.0,
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -37,8 +38,57 @@
           "titulo": "Roma: A história de um império",
           "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 68.0,
+          "titulo": "Roma - Woolf, Greg - Grupo Editorial Pensamento - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 68.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Roma - Woolf, Greg - Grupo Editorial Pensamento - Capa Mole",
+              "valor_sem_frete": 68.0,
+              "preco_total": 68.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/roma-woolf-greg-grupo-editorial-pensamento-capa-mole/p/MLB19420742#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=f0831b32-3bb4-43b5-966d-12b9c5d3ecad&overlay_label_capability=not_apply&wid=MLB5337270681&sid=search"
+            },
+            {
+              "titulo": "Roma A Historia De Um Imperio - Livro",
+              "valor_sem_frete": 271.9,
+              "preco_total": 271.9,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/roma-a-historia-de-um-imperio-livro/up/MLBU5650616564#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=f0831b32-3bb4-43b5-966d-12b9c5d3ecad&overlay_label_capability=not_apply&wid=MLB7864054864&sid=search"
+            },
+            {
+              "titulo": "Roma A Historia De Um Imperio - Livro",
+              "valor_sem_frete": 271.9,
+              "preco_total": 271.9,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/roma-a-historia-de-um-imperio-livro/up/MLBU5773472674#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=f0831b32-3bb4-43b5-966d-12b9c5d3ecad&overlay_label_capability=not_apply&wid=MLB5495946103&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -49,6 +99,7 @@
           "titulo": "Roma a História de um Império",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -118,16 +169,16 @@
       "prioridade": 3,
       "porcentagem_alvo": 0.15,
       "alvo_real": 29,
-      "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+      "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 32.22,
-        "plataforma_vencedora": "amazon",
-        "media": 38.16,
-        "mediana": 38.16,
+        "menor_preco_geral": 30.0,
+        "plataforma_vencedora": "mercado_livre",
+        "media": 37.05,
+        "mediana": 37.05,
         "mediana_por_plataforma": {
-          "amazon": 32.22,
+          "mercado_livre": 30.0,
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 32.22,
@@ -139,12 +190,61 @@
           "url": "https://www.amazon.com.br/dp/6556405825",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 32.22,
-          "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
-          "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/alexandre-e-c%C3%A9sar-%E2%80%94-plutarco",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 30.0,
+          "titulo": "Alexandre E César / Plutarco",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
-          "erro": null
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 30.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Alexandre E César, De Plutarco. Editorial Nova Fronteira, Capa Mole, Edição 2022-09-20 00:00:00 Em Português",
+              "valor_sem_frete": 33.03,
+              "preco_total": 33.03,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/alexandre-e-cesar-de-plutarco-editorial-nova-fronteira-capa-mole-edicao-2022-09-20-000000-em-portugues/p/MLB42123871#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=d3d9bc9d-02fb-41f7-ac6b-94a995cf40c6&overlay_label_capability=not_apply&wid=MLB3440209818&sid=search"
+            },
+            {
+              "titulo": "Alexandre E César / Plutarco",
+              "valor_sem_frete": 30.0,
+              "preco_total": 30.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/alexandre-e-cesar-plutarco/up/MLBU1223520713#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=d3d9bc9d-02fb-41f7-ac6b-94a995cf40c6&overlay_label_capability=not_apply&wid=MLB1697608657&sid=search"
+            },
+            {
+              "titulo": "Alexandre & Júlio César: As vidas dos nobres gregos e romanos (vol. 2) - Plutarco - Edições DI - Capa Mole",
+              "valor_sem_frete": 44.63,
+              "preco_total": 44.63,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/alexandre-julio-cesar-as-vidas-dos-nobres-gregos-e-romanos-vol-2-plutarco-edicoes-di-capa-mole/p/MLB74779111#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=d3d9bc9d-02fb-41f7-ac6b-94a995cf40c6&overlay_label_capability=not_apply&wid=MLB7389615008&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -155,6 +255,7 @@
           "titulo": "Alexandre e César",
           "capa_url": "/book/00/0B0-5297-000/0B0-5297-000_detail1.jpg?ts=1777269130495",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -177,14 +278,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 78.99,
         "plataforma_vencedora": "amazon",
-        "media": 83.91,
-        "mediana": 84.75,
+        "media": 82.68,
+        "mediana": 81.87,
         "mediana_por_plataforma": {
           "amazon": 78.99,
+          "mercado_livre": 78.99,
           "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -196,8 +298,57 @@
           "titulo": "Jesus",
           "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/o-jesus-hist%C3%B3rico-%E2%80%94-david-flusser",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 78.99,
+          "titulo": "Jesus - Flusser, David - Perspectiva - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 78.99,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Jesus - Flusser, David - Perspectiva - Capa Mole",
+              "valor_sem_frete": 78.99,
+              "preco_total": 78.99,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/jesus-flusser-david-perspectiva-capa-mole/p/MLB19400549#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=da2d0739-febc-4440-8433-701e6b516e5c&overlay_label_capability=not_apply&wid=MLB5228871132&sid=search"
+            },
+            {
+              "titulo": "Livro - Jesus - David Flusser - Editora Perspectiva - Seminovo",
+              "valor_sem_frete": 89.0,
+              "preco_total": 89.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/livro-jesus-david-flusser-editora-perspectiva-seminovo/up/MLBU3414359574#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=da2d0739-febc-4440-8433-701e6b516e5c&overlay_label_capability=not_apply&wid=MLB5681630818&sid=search"
+            },
+            {
+              "titulo": "A Farsa Sobre Jesus, De Skrbina, David. Editorial Safra, Capa Mole Em",
+              "valor_sem_frete": 86.0,
+              "preco_total": 86.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/a-farsa-sobre-jesus-de-skrbina-david-editorial-safra-capa-mole-em/p/MLB44405935#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=da2d0739-febc-4440-8433-701e6b516e5c&overlay_label_capability=not_apply&wid=MLB6686624020&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -208,6 +359,7 @@
           "titulo": "Jesus",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -258,6 +410,7 @@
           "titulo": "Jesus",
           "capa_url": "/book/00/04G-7460-000/04G-7460-000_detail1.jpg?ts=1715021775686",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -280,14 +433,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 110.87,
         "plataforma_vencedora": "amazon",
-        "media": 113.44,
-        "mediana": 113.44,
+        "media": 128.02,
+        "mediana": 116.0,
         "mediana_por_plataforma": {
           "amazon": 110.87,
+          "mercado_livre": 157.19,
           "estante_virtual": 116.0
         },
         "mediana_amazon_referencia": 110.87,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -299,8 +453,57 @@
           "titulo": "Pompeia: A vida de uma cidade romana",
           "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/pompeia%3A-a-vida-de-uma-cidade-romana-%E2%80%94-mary-beard",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 157.19,
+          "titulo": "Pompeia: A Vida De Uma Cidade Romana - Português",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 157.19,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Pompeia: a vida de uma cidade romana - Beard, Mary - Grupo Editorial Record - Capa Mole",
+              "valor_sem_frete": 159.9,
+              "preco_total": 159.9,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/pompeia-a-vida-de-uma-cidade-romana-beard-mary-grupo-editorial-record-capa-mole/p/MLB19191387#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=f6086f7f-abde-488e-ae10-ba8e3eac2bb9&overlay_label_capability=not_apply&wid=MLB4159068687&sid=search"
+            },
+            {
+              "titulo": "Pompéia",
+              "valor_sem_frete": 167.65,
+              "preco_total": 167.65,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/pompeia/up/MLBU1331037202#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=f6086f7f-abde-488e-ae10-ba8e3eac2bb9&overlay_label_capability=not_apply&wid=MLB1958043379&sid=search"
+            },
+            {
+              "titulo": "Pompeia: A Vida De Uma Cidade Romana - Português",
+              "valor_sem_frete": 157.19,
+              "preco_total": 157.19,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/pompeia-a-vida-de-uma-cidade-romana--portugues/up/MLBU3849768453#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=f6086f7f-abde-488e-ae10-ba8e3eac2bb9&overlay_label_capability=not_apply&wid=MLB6487182208&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -311,6 +514,7 @@
           "titulo": "Pompeia: A vida de uma cidade romana",
           "capa_url": "/book/00/06V-7741-000/06V-7741-000_detail1.jpg?ts=1712765208705",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -331,16 +535,17 @@
       "comentario": "",
       "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 48.86,
-        "plataforma_vencedora": "amazon",
-        "media": 53.42,
-        "mediana": 53.42,
+        "menor_preco_geral": 47.5,
+        "plataforma_vencedora": "mercado_livre",
+        "media": 51.45,
+        "mediana": 48.86,
         "mediana_por_plataforma": {
           "amazon": 48.86,
+          "mercado_livre": 47.5,
           "estante_virtual": 57.98
         },
         "mediana_amazon_referencia": 48.86,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -352,8 +557,57 @@
           "titulo": "Teogonia",
           "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/teogonia-%E2%80%94-hes%C3%ADodo-hedra",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 47.5,
+          "titulo": "Teogonia - Hesíodo - Edlab - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 47.5,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Teogonia - Hesíodo - Edlab - Capa Mole",
+              "valor_sem_frete": 47.5,
+              "preco_total": 47.5,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/teogonia-hesiodo-edlab-capa-mole/p/MLB26352989#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=0e6828a0-5f09-4f83-9597-98c12e25a3b4&overlay_label_capability=not_apply&wid=MLB5397477304&sid=search"
+            },
+            {
+              "titulo": "Livro Teogonia, de Hesíodo, vol. 307. Editorial Editora Martin Claret Ltda, tapa mole, en português (2014)",
+              "valor_sem_frete": 193.5,
+              "preco_total": 193.5,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/livro-teogonia-de-hesiodo-vol-307-editorial-editora-martin-claret-ltda-tapa-mole-en-portugues-2014/p/MLB19177021#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=0e6828a0-5f09-4f83-9597-98c12e25a3b4&overlay_label_capability=not_apply&wid=MLB6683328858&sid=search"
+            },
+            {
+              "titulo": "Teogonia : A Origem Dos Deuses - De Hesíodo & Jaa Torrano",
+              "valor_sem_frete": 101.14,
+              "preco_total": 101.14,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/teogonia-a-origem-dos-deuses-de-hesiodo-jaa-torrano/up/MLBU4388518861#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=0e6828a0-5f09-4f83-9597-98c12e25a3b4&overlay_label_capability=not_apply&wid=MLB4933144877&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -364,6 +618,7 @@
           "titulo": "Teogonia",
           "capa_url": "/book/00/0GH-2736-000/0GH-2736-000_detail1.jpg?ts=1776951601101",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -380,16 +635,16 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
+      "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 49.9,
-        "plataforma_vencedora": "amazon",
-        "media": 49.9,
-        "mediana": 49.9,
+        "menor_preco_geral": 43.31,
+        "plataforma_vencedora": "mercado_livre",
+        "media": 43.31,
+        "mediana": 43.31,
         "mediana_por_plataforma": {
-          "amazon": 49.9
+          "mercado_livre": 43.31
         },
         "mediana_amazon_referencia": 49.9,
         "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
@@ -400,12 +655,61 @@
           "url": "https://www.amazon.com.br/dp/6589705577",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 49.9,
-          "titulo": "Trabalhos e dias",
-          "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/os-trabalhos-e-os-dias-%E2%80%94-hes%C3%ADodo-hedra",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 43.31,
+          "titulo": "Trabalhos e dias - Hesíodo - Edlab - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
-          "erro": null
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 43.31,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Trabalhos e dias - Hesíodo - Edlab - Capa Mole",
+              "valor_sem_frete": 43.31,
+              "preco_total": 43.31,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/trabalhos-e-dias-hesiodo-edlab-capa-mole/p/MLB40857863#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=18579e45-bec8-48d9-9a94-6b3adadacecf&overlay_label_capability=not_apply&wid=MLB5397399768&sid=search"
+            },
+            {
+              "titulo": "Trabalhos E Dias - Hesíodo - Edlab - Capa Mole",
+              "valor_sem_frete": 207.0,
+              "preco_total": 207.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/trabalhos-e-dias-hesiodo-edlab-capa-mole/up/MLBU5723708771#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=18579e45-bec8-48d9-9a94-6b3adadacecf&overlay_label_capability=not_apply&wid=MLB7921558284&sid=search"
+            },
+            {
+              "titulo": "Trabalhos E Dias - Hesíodo - Edlab - Capa Mole",
+              "valor_sem_frete": 205.38,
+              "preco_total": 205.38,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/trabalhos-e-dias--hesiodo--edlab--capa-mole/up/MLBU5530194551#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=18579e45-bec8-48d9-9a94-6b3adadacecf&overlay_label_capability=not_apply&wid=MLB5411253845&sid=search"
+            }
+          ]
         }
       ]
     },
@@ -421,14 +725,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 94.37,
         "plataforma_vencedora": "amazon",
-        "media": 96.44,
-        "mediana": 96.44,
+        "media": 155.96,
+        "mediana": 98.5,
         "mediana_por_plataforma": {
           "amazon": 94.37,
+          "mercado_livre": 275.0,
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 94.37,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -440,8 +745,57 @@
           "titulo": "O que é a filosofia antiga?",
           "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/o-que-%C3%A9-a-filosofia-antiga%3F-%E2%80%94-pierre-hadot",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 275.0,
+          "titulo": "O que é a filosofia antiga? - Hadot, Pierre - Edições Loyola - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 275.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "O que é a filosofia antiga? - Hadot, Pierre - Edições Loyola - Capa Mole",
+              "valor_sem_frete": 275.0,
+              "preco_total": 275.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/o-que-e-a-filosofia-antiga-hadot-pierre-edicoes-loyola-capa-mole/p/MLB19414915#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=b335ad5c-ee04-412c-8f40-e5cbeb889584&overlay_label_capability=not_apply&wid=MLB5492862399&sid=search"
+            },
+            {
+              "titulo": "Livro: O Que É A Filosofia Antiga?",
+              "valor_sem_frete": 275.0,
+              "preco_total": 275.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/livro-o-que-e-a-filosofia-antiga/up/MLBU4641012485#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=b335ad5c-ee04-412c-8f40-e5cbeb889584&overlay_label_capability=not_apply&wid=MLB7372360736&sid=search"
+            },
+            {
+              "titulo": "Livro: O Que É A Filosofia Antiga?",
+              "valor_sem_frete": 275.0,
+              "preco_total": 275.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/livro-o-que-e-a-filosofia-antiga/up/MLBU4641012491#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=b335ad5c-ee04-412c-8f40-e5cbeb889584&overlay_label_capability=not_apply&wid=MLB7372360744&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -452,6 +806,7 @@
           "titulo": "O que é a filosofia antiga?",
           "capa_url": "/book/00/08V-7398-000/08V-7398-000_detail1.jpg?ts=1722352623718",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -474,14 +829,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 69.4,
-        "mediana": 69.4,
+        "media": 72.6,
+        "mediana": 72.8,
         "mediana_por_plataforma": {
           "amazon": 72.8,
+          "mercado_livre": 79.0,
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -493,8 +849,57 @@
           "titulo": "O Anticristo: Uma biografia",
           "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/o-anticristo%3A-uma-biografia-%E2%80%94-philip-c.-almond",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 79.0,
+          "titulo": "O Anticristo - Almond, Philip C. - Editora Vozes - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 79.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "O Anticristo - Almond, Philip C. - Editora Vozes - Capa Mole",
+              "valor_sem_frete": 79.0,
+              "preco_total": 79.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/o-anticristo-almond-philip-c-editora-vozes-capa-mole/p/MLB40623481#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=4fec5c92-5810-49da-a901-3c583b9b86d0&overlay_label_capability=not_apply&wid=MLB3883548367&sid=search"
+            },
+            {
+              "titulo": "O Anticristo - Almond, Philip C. - Editora Vozes - Capa Mole",
+              "valor_sem_frete": 282.5,
+              "preco_total": 282.5,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/o-anticristo-almond-philip-c-editora-vozes-capa-mole/up/MLBU5643754079#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=4fec5c92-5810-49da-a901-3c583b9b86d0&overlay_label_capability=not_apply&wid=MLB7882907474&sid=search"
+            },
+            {
+              "titulo": "O Anticristo: Uma Biografia, De Philip C. Almond., Vol. 1. E",
+              "valor_sem_frete": 282.5,
+              "preco_total": 282.5,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/o-anticristo-uma-biografia-de-philip-c-almond-vol-1-e/up/MLBU4270632611#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=4fec5c92-5810-49da-a901-3c583b9b86d0&overlay_label_capability=not_apply&wid=MLB4878943951&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -505,6 +910,7 @@
           "titulo": "O Anticristo: Uma Biografia",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -580,14 +986,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 56.09,
-        "mediana": 56.09,
+        "media": 52.39,
+        "mediana": 45.0,
         "mediana_por_plataforma": {
           "amazon": 76.17,
+          "mercado_livre": 45.0,
           "estante_virtual": 36.0
         },
         "mediana_amazon_referencia": 76.17,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -599,8 +1006,57 @@
           "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
           "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/piratas-no-brasil-%E2%80%94-jean-marcel-carvalho",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 45.0,
+          "titulo": "Livro Piratas No Brasil - Jean Marcel Carval",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 45.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Piratas no Brasil - França, Jean Marcel Carvalho - Globo Livros - Capa Mole",
+              "valor_sem_frete": 78.99,
+              "preco_total": 78.99,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/piratas-no-brasil-franca-jean-marcel-carvalho-globo-livros-capa-mole/p/MLB19190673#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=b82ea333-8af8-4ee8-afb5-1abe826623b2&overlay_label_capability=not_apply&wid=MLB3892278513&sid=search"
+            },
+            {
+              "titulo": "Livro Piratas No Brasil - Jean Marcel Carval",
+              "valor_sem_frete": 45.0,
+              "preco_total": 45.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/livro-piratas-no-brasil--jean-marcel-carval/up/MLBU4290725313#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=b82ea333-8af8-4ee8-afb5-1abe826623b2&overlay_label_capability=not_apply&wid=MLB4887415243&sid=search"
+            },
+            {
+              "titulo": "Livro Piratas No Brasil - Jean Marcel Carval",
+              "valor_sem_frete": 77.88,
+              "preco_total": 77.88,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/livro-piratas-no-brasil--jean-marcel-carval/up/MLBU5270886621#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=b82ea333-8af8-4ee8-afb5-1abe826623b2&overlay_label_capability=not_apply&wid=MLB5292290037&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -611,6 +1067,7 @@
           "titulo": "Piratas no Brasil",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -680,16 +1137,16 @@
       "prioridade": 9,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+      "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
       "comentario": "",
-      "contador_falhas": 0,
+      "contador_falhas": 1,
       "metricas_atuais": {
-        "menor_preco_geral": 53.48,
-        "plataforma_vencedora": "amazon",
-        "media": 62.19,
-        "mediana": 62.19,
+        "menor_preco_geral": 64.8,
+        "plataforma_vencedora": "mercado_livre",
+        "media": 67.85,
+        "mediana": 67.85,
         "mediana_por_plataforma": {
-          "amazon": 53.48,
+          "mercado_livre": 64.8,
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
@@ -701,12 +1158,61 @@
           "url": "https://www.amazon.com.br/dp/B0GH289VSL",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 53.48,
-          "titulo": "Os mitos maias: Um guia para os deuses, heróis e ancestrais",
-          "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/os-mitos-maias-%E2%80%94-cole%C3%A7%C3%A3o-editora-vozes",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 64.8,
+          "titulo": "Mitos Maias (os)   Um Guia Para Os Deuses, Herois E Ancentrais",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
-          "erro": null
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 64.8,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "Os mitos maias - Matsumoto, Mallory - Editora Vozes - Capa Dura",
+              "valor_sem_frete": 75.0,
+              "preco_total": 75.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/os-mitos-maias-matsumoto-mallory-editora-vozes-capa-dura/p/MLB66802032#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=82424287-526d-484e-997a-59e6be7fc37b&overlay_label_capability=not_apply&wid=MLB6587861830&sid=search"
+            },
+            {
+              "titulo": "Mitos Maias (os)   Um Guia Para Os Deuses, Herois E Ancentrais",
+              "valor_sem_frete": 64.8,
+              "preco_total": 64.8,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/mitos-maias-os-um-guia-para-os-deuses-herois-e-ancentrais/up/MLBU4583528947#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=82424287-526d-484e-997a-59e6be7fc37b&overlay_label_capability=not_apply&wid=MLB7338278054&sid=search"
+            },
+            {
+              "titulo": "Os mitos astecas - CamillaTownsend - Editora Vozes - Capa Dura",
+              "valor_sem_frete": 75.0,
+              "preco_total": 75.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/os-mitos-astecas-camillatownsend-editora-vozes-capa-dura/p/MLB45298875#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=82424287-526d-484e-997a-59e6be7fc37b&overlay_label_capability=not_apply&wid=MLB4111442205&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -717,6 +1223,7 @@
           "titulo": "Os mitos maias",
           "capa_url": "/book/00/NVV-7604-000/NVV-7604-000_detail1.jpg?ts=1769117700502",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -739,14 +1246,15 @@
       "metricas_atuais": {
         "menor_preco_geral": 60.61,
         "plataforma_vencedora": "amazon",
-        "media": 70.18,
-        "mediana": 70.18,
+        "media": 72.12,
+        "mediana": 76.0,
         "mediana_por_plataforma": {
           "amazon": 60.61,
+          "mercado_livre": 76.0,
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -758,8 +1266,57 @@
           "titulo": "O quinto sol: Uma nova história dos astecas",
           "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/o-quinto-sol%3A-uma-nova-hist%C3%B3ria-dos-astecas-%E2%80%94-camilla-townsend",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 76.0,
+          "titulo": "O quinto sol - Townsend, Camila - Editora Vozes - Capa Mole",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 76.0,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "O quinto sol - Townsend, Camila - Editora Vozes - Capa Mole",
+              "valor_sem_frete": 76.0,
+              "preco_total": 76.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/o-quinto-sol-townsend-camila-editora-vozes-capa-mole/p/MLB72949199#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=83fe9f14-dc16-42fa-859f-e1a4a4533369&overlay_label_capability=not_apply&wid=MLB7137212388&sid=search"
+            },
+            {
+              "titulo": "O Quinto Sol - Townsend, Camila - Editora Vozes - Capa Mole",
+              "valor_sem_frete": 277.05,
+              "preco_total": 277.05,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/o-quinto-sol-townsend-camila-editora-vozes-capa-mole/up/MLBU5751320750#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=83fe9f14-dc16-42fa-859f-e1a4a4533369&overlay_label_capability=not_apply&wid=MLB7911300112&sid=search"
+            },
+            {
+              "titulo": "O Quinto Sol - Townsend, Camila - Editora Vozes - Capa Mole",
+              "valor_sem_frete": 277.05,
+              "preco_total": 277.05,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/o-quinto-sol-townsend-camila-editora-vozes-capa-mole/up/MLBU5726525116#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=83fe9f14-dc16-42fa-859f-e1a4a4533369&overlay_label_capability=not_apply&wid=MLB7899796798&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -770,6 +1327,7 @@
           "titulo": "O quinto sol",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
@@ -823,16 +1381,17 @@
       "comentario": "",
       "contador_falhas": 0,
       "metricas_atuais": {
-        "menor_preco_geral": 137.45,
-        "plataforma_vencedora": "amazon",
-        "media": 141.73,
-        "mediana": 141.73,
+        "menor_preco_geral": 63.08,
+        "plataforma_vencedora": "mercado_livre",
+        "media": 115.51,
+        "mediana": 137.45,
         "mediana_por_plataforma": {
           "amazon": 137.45,
+          "mercado_livre": 63.08,
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 137.45,
-        "mediana_amazon_referencia_em": "2026-11-02T10:23:18-03:00"
+        "mediana_amazon_referencia_em": "2026-11-02T11:47:47-03:00"
       },
       "links": [
         {
@@ -844,8 +1403,57 @@
           "titulo": "O coração do mundo: Uma nova história universal a partir da rota da seda: o encontro do oriente com o ocidente",
           "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null
+        },
+        {
+          "plataforma": "mercado_livre",
+          "url": "https://lista.mercadolivre.com.br/o-cora%C3%A7%C3%A3o-do-mundo-%E2%80%94-peter-frankopan",
+          "pesquisa": true,
+          "comentario": "",
+          "preco_atual": 63.08,
+          "titulo": "Chamados Pelo Coração Do Mundo",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
+          "coletado_nesta_execucao": true,
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 63.08,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
+          "top_n": 3,
+          "top_n_resultados": [
+            {
+              "titulo": "O coração do mundo - Frankopan, Peter - Crítica - Capa Mole",
+              "valor_sem_frete": 177.02,
+              "preco_total": 177.02,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/o-coracao-do-mundo-frankopan-peter-critica-capa-mole/p/MLB21578983#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=1dba1d53-ff59-4f26-ad42-3b5ef6295b60&overlay_label_capability=not_apply&wid=MLB6913388310&sid=search"
+            },
+            {
+              "titulo": "Coracao Do Mundo, O, De Frankopan, Peter. Editora Crítica",
+              "valor_sem_frete": 152.72,
+              "preco_total": 152.72,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/coracao-do-mundo-o-de-frankopan-peter-editora-critica/p/MLB72449429#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=1dba1d53-ff59-4f26-ad42-3b5ef6295b60&overlay_label_capability=not_apply&wid=MLB7169959898&sid=search"
+            },
+            {
+              "titulo": "Chamados Pelo Coração Do Mundo",
+              "valor_sem_frete": 63.08,
+              "preco_total": 63.08,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/chamados-pelo-coracao-do-mundo/p/MLB21572988#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=1dba1d53-ff59-4f26-ad42-3b5ef6295b60&overlay_label_capability=not_apply&wid=MLB3646105277&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -856,6 +1464,7 @@
           "titulo": "O coração do mundo",
           "capa_url": "/book/00/07Y-5190-000/07Y-5190-000_detail1.jpg?ts=1712766391377",
           "status": "sucesso",
+          "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
