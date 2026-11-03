@@ -51,6 +51,12 @@
       },
       {
         "preco": 51.0
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 51.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:51.00",
@@ -94,6 +100,9 @@
       },
       {
         "preco": 40.93
+      },
+      {
+        "preco": 44.1
       },
       {
         "preco": 44.1
@@ -183,6 +192,15 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 78.99
+      },
+      {
+        "preco": 84.75
+      },
+      {
+        "preco": 88.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:62.00"
@@ -236,8 +254,15 @@
       },
       {
         "preco": 126.94
+      },
+      {
+        "preco": 84.74
+      },
+      {
+        "preco": 126.94
       }
-    ]
+    ],
+    "alvo_real": "alvo_real:84.74"
   },
   "teogonia-hesiodo": {
     "coletas_validas": [
@@ -291,6 +316,12 @@
       },
       {
         "preco": 57.98
+      },
+      {
+        "preco": 48.86
+      },
+      {
+        "preco": 57.98
       }
     ]
   },
@@ -322,9 +353,12 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 30.85
       }
     ],
-    "novo_menor": "novo_menor:37.92"
+    "novo_menor": "novo_menor:30.85"
   },
   "o-que-e-a-filosofia-antiga-hadot": {
     "coletas_validas": [
@@ -378,6 +412,12 @@
       },
       {
         "preco": 98.5
+      },
+      {
+        "preco": 78.37
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -409,6 +449,12 @@
       },
       {
         "preco": 66.0
+      },
+      {
+        "preco": 66.0
+      },
+      {
+        "preco": 72.8
       },
       {
         "preco": 66.0
@@ -486,6 +532,12 @@
       },
       {
         "preco": 36.0
+      },
+      {
+        "preco": 84.35
+      },
+      {
+        "preco": 36.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:36.00",
@@ -522,6 +574,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 70.9
+      },
+      {
+        "preco": 53.48
       },
       {
         "preco": 70.9
@@ -598,6 +656,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 60.61
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -650,6 +714,12 @@
       },
       {
         "preco": 137.45
+      },
+      {
+        "preco": 146.0
+      },
+      {
+        "preco": 115.02
       },
       {
         "preco": 146.0
