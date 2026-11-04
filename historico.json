@@ -84,6 +84,12 @@
         "preco": 26.17,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6556405825"
+      },
+      {
+        "timestamp": "2026-11-04T13:30:28-03:00",
+        "preco": 46.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
       }
     ],
     "por_plataforma": {
@@ -113,6 +119,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 42.17,
+          "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+        },
+        {
+          "timestamp": "2026-11-04T13:30:28-03:00",
+          "preco": 46.0,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
       ]
@@ -144,6 +155,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 42.17,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-04T13:30:28-03:00",
+          "preco": 46.0,
           "plataforma": "estante_virtual"
         }
       ]
@@ -186,6 +202,12 @@
         "preco": 84.75,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
+      },
+      {
+        "timestamp": "2026-11-04T13:30:28-03:00",
+        "preco": 79.49,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8527302829"
       }
     ],
     "por_plataforma": {
@@ -198,6 +220,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 90.13,
+          "url": "https://www.amazon.com.br/dp/8527302829"
+        },
+        {
+          "timestamp": "2026-11-04T13:30:28-03:00",
+          "preco": 79.49,
           "url": "https://www.amazon.com.br/dp/8527302829"
         }
       ],
@@ -239,6 +266,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 90.13,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-04T13:30:28-03:00",
+          "preco": 79.49,
           "plataforma": "amazon"
         }
       ],
