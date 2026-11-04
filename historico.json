@@ -78,6 +78,12 @@
         "preco": 44.1,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+      },
+      {
+        "timestamp": "2026-11-03T21:07:36-03:00",
+        "preco": 26.17,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6556405825"
       }
     ],
     "por_plataforma": {
@@ -91,12 +97,22 @@
           "timestamp": "2026-11-02T12:10:54-03:00",
           "preco": 40.93,
           "url": "https://www.amazon.com.br/dp/6556405825"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 26.17,
+          "url": "https://www.amazon.com.br/dp/6556405825"
         }
       ],
       "estante_virtual": [
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
+          "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 42.17,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
       ]
@@ -112,12 +128,22 @@
           "timestamp": "2026-11-02T12:10:54-03:00",
           "preco": 40.93,
           "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 26.17,
+          "plataforma": "amazon"
         }
       ],
       "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK": [
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 44.1,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 42.17,
           "plataforma": "estante_virtual"
         }
       ]
@@ -154,6 +180,12 @@
         "preco": 78.99,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8527302829"
+      },
+      {
+        "timestamp": "2026-11-03T21:07:36-03:00",
+        "preco": 84.75,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
       }
     ],
     "por_plataforma": {
@@ -161,6 +193,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 78.99,
+          "url": "https://www.amazon.com.br/dp/8527302829"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 90.13,
           "url": "https://www.amazon.com.br/dp/8527302829"
         }
       ],
@@ -197,6 +234,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 78.99,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 90.13,
           "plataforma": "amazon"
         }
       ],
@@ -561,6 +603,12 @@
         "preco": 66.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
+      },
+      {
+        "timestamp": "2026-11-03T21:07:36-03:00",
+        "preco": 71.5,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
       }
     ],
     "por_plataforma": {
@@ -575,6 +623,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 66.0,
+          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 71.5,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
         }
       ]
@@ -591,6 +644,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 66.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 71.5,
           "plataforma": "estante_virtual"
         }
       ]
@@ -622,6 +680,11 @@
           "timestamp": "2026-11-03T13:26:17-03:00",
           "preco": 84.35,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 75.22,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -642,6 +705,11 @@
         {
           "timestamp": "2026-11-03T13:26:17-03:00",
           "preco": 84.35,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 75.22,
           "plataforma": "amazon"
         }
       ],
@@ -689,6 +757,13 @@
           "preco": 70.9,
           "url": "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"
         }
+      ],
+      "mercado_livre": [
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 64.8,
+          "url": "https://lista.mercadolivre.com.br/os-mitos-maias-%E2%80%94-cole%C3%A7%C3%A3o-editora-vozes"
+        }
       ]
     },
     "por_link": {
@@ -704,6 +779,13 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 70.9,
           "plataforma": "estante_virtual"
+        }
+      ],
+      "https://lista.mercadolivre.com.br/os-mitos-maias-%E2%80%94-cole%C3%A7%C3%A3o-editora-vozes": [
+        {
+          "timestamp": "2026-11-03T21:07:36-03:00",
+          "preco": 64.8,
+          "plataforma": "mercado_livre"
         }
       ]
     }

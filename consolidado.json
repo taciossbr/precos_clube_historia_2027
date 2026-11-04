@@ -1,9 +1,9 @@
 {
-  "ultima_atualizacao": "2026-11-03T13:26:17-03:00",
+  "ultima_atualizacao": "2026-11-03T21:07:36-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
-    "produtos_com_falha": 12
+    "produtos_com_falha": 11
   },
   "produtos": [
     {
@@ -14,7 +14,7 @@
       "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
@@ -25,7 +25,7 @@
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -51,7 +51,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -135,19 +135,20 @@
       "prioridade": 3,
       "porcentagem_alvo": 0.15,
       "alvo_real": 29,
-      "capa_url": "/book/00/0B0-5297-000/0B0-5297-000_detail1.jpg?ts=1777269130495",
+      "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
-        "menor_preco_geral": 44.1,
-        "plataforma_vencedora": "estante_virtual",
-        "media": 44.1,
-        "mediana": 44.1,
+        "menor_preco_geral": 26.17,
+        "plataforma_vencedora": "amazon",
+        "media": 34.17,
+        "mediana": 34.17,
         "mediana_por_plataforma": {
-          "estante_virtual": 44.1
+          "amazon": 26.17,
+          "estante_virtual": 42.17
         },
-        "mediana_amazon_referencia": 40.93,
-        "mediana_amazon_referencia_em": "2026-11-02T13:30:09-03:00"
+        "mediana_amazon_referencia": 26.17,
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -155,13 +156,13 @@
           "url": "https://www.amazon.com.br/dp/6556405825",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
-          "status": "erro",
+          "preco_atual": 26.17,
+          "titulo": "Alexandre e César: As vidas comparadas dos maiores guerreiros da Antiguidade",
+          "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
+          "status": "sucesso",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 3,
-          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
+          "erros_consecutivos": 0,
+          "erro": null
         },
         {
           "plataforma": "mercado_livre",
@@ -173,7 +174,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -183,7 +184,7 @@
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 44.1,
+          "preco_atual": 42.17,
           "titulo": "Alexandre e César",
           "capa_url": "/book/00/0B0-5297-000/0B0-5297-000_detail1.jpg?ts=1777269130495",
           "status": "sucesso",
@@ -191,7 +192,7 @@
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 28.1,
+            "valor_sem_frete": 26.17,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           }
@@ -206,18 +207,18 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
-        "menor_preco_geral": 78.99,
-        "plataforma_vencedora": "amazon",
-        "media": 83.91,
-        "mediana": 84.75,
+        "menor_preco_geral": 84.75,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 87.63,
+        "mediana": 88.0,
         "mediana_por_plataforma": {
-          "amazon": 78.99,
+          "amazon": 90.13,
           "estante_virtual": 86.38
         },
-        "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia": 90.13,
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -225,7 +226,7 @@
           "url": "https://www.amazon.com.br/dp/8527302829",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 78.99,
+          "preco_atual": 90.13,
           "titulo": "Jesus",
           "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
           "status": "sucesso",
@@ -243,7 +244,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
@@ -327,7 +328,7 @@
       "alvo_real": 90,
       "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 84.74,
         "plataforma_vencedora": "amazon",
@@ -338,7 +339,7 @@
           "estante_virtual": 126.94
         },
         "mediana_amazon_referencia": 84.74,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -364,7 +365,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -397,7 +398,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 48.86,
         "plataforma_vencedora": "amazon",
@@ -408,7 +409,7 @@
           "estante_virtual": 57.98
         },
         "mediana_amazon_referencia": 48.86,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -434,7 +435,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -467,7 +468,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 30.85,
         "plataforma_vencedora": "amazon",
@@ -477,7 +478,7 @@
           "amazon": 30.85
         },
         "mediana_amazon_referencia": 30.85,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -503,7 +504,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -518,7 +519,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 78.37,
         "plataforma_vencedora": "amazon",
@@ -529,7 +530,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 78.37,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -555,7 +556,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 7,
           "top_n_resultados": []
@@ -588,18 +589,18 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
-        "menor_preco_geral": 66.0,
+        "menor_preco_geral": 71.5,
         "plataforma_vencedora": "estante_virtual",
-        "media": 69.4,
-        "mediana": 69.4,
+        "media": 72.15,
+        "mediana": 72.15,
         "mediana_por_plataforma": {
           "amazon": 72.8,
-          "estante_virtual": 66.0
+          "estante_virtual": 71.5
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -625,7 +626,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -635,30 +636,20 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 66.0,
-          "titulo": "O Anticristo: Uma Biografia",
+          "preco_atual": 71.5,
+          "titulo": "O Anticristo uma Biografia",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 50.0,
+            "valor_sem_frete": 55.5,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
           "top_n": 5,
           "top_n_resultados": [
-            {
-              "titulo": "O Anticristo: Uma Biografia",
-              "autor": "Philip C. Almond",
-              "valor_sem_frete": 50.0,
-              "preco_total": 66.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
-            },
             {
               "titulo": "O Anticristo uma Biografia",
               "autor": "Philip C. Almond",
@@ -666,7 +657,7 @@
               "preco_total": 71.5,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
-              "escolhido": false,
+              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
             },
             {
@@ -698,6 +689,16 @@
               "frete_presumido": true,
               "escolhido": false,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
+            },
+            {
+              "titulo": "O Anticristo : Uma biografia",
+              "autor": "Philip C. Almond",
+              "valor_sem_frete": 83.9,
+              "preco_total": 99.9,
+              "frete_aplicado": 16.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
             }
           ]
         }
@@ -711,18 +712,18 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 60.18,
-        "mediana": 60.18,
+        "media": 55.61,
+        "mediana": 55.61,
         "mediana_por_plataforma": {
-          "amazon": 84.35,
+          "amazon": 75.22,
           "estante_virtual": 36.0
         },
-        "mediana_amazon_referencia": 84.35,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia": 75.22,
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -730,7 +731,7 @@
           "url": "https://www.amazon.com.br/dp/8525058270",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 84.35,
+          "preco_atual": 75.22,
           "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
           "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
           "status": "sucesso",
@@ -748,7 +749,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -774,7 +775,7 @@
           "top_n_resultados": [
             {
               "titulo": "Piratas no Brasil",
-              "autor": "Jean Marcel Carvalho Franca / Sheila Hue",
+              "autor": "Jean Marcel Carvalho França; Sheila Hue",
               "valor_sem_frete": 20.0,
               "preco_total": 36.0,
               "frete_aplicado": 16.0,
@@ -834,18 +835,19 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 0,
       "metricas_atuais": {
         "menor_preco_geral": 53.48,
         "plataforma_vencedora": "amazon",
-        "media": 62.19,
-        "mediana": 62.19,
+        "media": 63.06,
+        "mediana": 64.8,
         "mediana_por_plataforma": {
           "amazon": 53.48,
+          "mercado_livre": 64.8,
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -866,15 +868,57 @@
           "url": "https://lista.mercadolivre.com.br/os-mitos-maias-%E2%80%94-cole%C3%A7%C3%A3o-editora-vozes",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": null,
-          "titulo": null,
-          "capa_url": null,
-          "status": "erro",
+          "preco_atual": 64.8,
+          "titulo": "Mitos Maias (os)   Um Guia Para Os Deuses, Herois E Ancentrais",
+          "capa_url": "https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom_v2.png",
+          "status": "sucesso",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
-          "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
+          "erros_consecutivos": 0,
+          "erro": null,
+          "extras": {
+            "valor_sem_frete": 64.8,
+            "frete_aplicado": 0.0,
+            "frete_presumido": true
+          },
           "top_n": 5,
-          "top_n_resultados": []
+          "top_n_resultados": [
+            {
+              "titulo": "Os mitos maias - Matsumoto, Mallory - Editora Vozes - Capa Dura",
+              "valor_sem_frete": 75.0,
+              "preco_total": 75.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/os-mitos-maias-matsumoto-mallory-editora-vozes-capa-dura/p/MLB66802032#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=1&type=product&tracking_id=a13d399e-c455-485c-b782-b547657f8d8a&overlay_label_capability=not_apply&wid=MLB6587861830&sid=search"
+            },
+            {
+              "titulo": "Mitos Maias (os)   Um Guia Para Os Deuses, Herois E Ancentrais",
+              "valor_sem_frete": 64.8,
+              "preco_total": 64.8,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": true,
+              "url": "https://www.mercadolivre.com.br/mitos-maias-os-um-guia-para-os-deuses-herois-e-ancentrais/up/MLBU4583528947#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=2&type=product&tracking_id=a13d399e-c455-485c-b782-b547657f8d8a&overlay_label_capability=not_apply&wid=MLB7338278054&sid=search"
+            },
+            {
+              "titulo": "Os mitos astecas - CamillaTownsend - Editora Vozes - Capa Dura",
+              "valor_sem_frete": 75.0,
+              "preco_total": 75.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/os-mitos-astecas-camillatownsend-editora-vozes-capa-dura/p/MLB45298875#polycard_client=search-desktop&float_highlight=last_units&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=3&type=product&tracking_id=a13d399e-c455-485c-b782-b547657f8d8a&overlay_label_capability=not_apply&wid=MLB4111442205&sid=search"
+            },
+            {
+              "titulo": "Popol Vuh: O Esplendor Da Palavra Antiga Dos Maias-quiché De Quauhtlemallan: Aurora Sangrenta, História E Mito, De Recinos, Ádrian. Editora Ubu, Capa Mole, Edição 1ª Edição - 2019 Em Português",
+              "valor_sem_frete": 169.0,
+              "preco_total": 169.0,
+              "frete_aplicado": 0.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.mercadolivre.com.br/popol-vuh-o-esplendor-da-palavra-antiga-dos-maias-quiche-de-quauhtlemallan-aurora-sangrenta-historia-e-mito-de-recinos-adrian-editora-ubu-capa-mole-edicao-1-edicao-2019-em-portugues/p/MLB30234501#polycard_client=search-desktop&be_origin=backend&overlay_label=not_apply&search_layout=grid&position=5&type=product&tracking_id=a13d399e-c455-485c-b782-b547657f8d8a&overlay_label_capability=not_apply&wid=MLB3580856271&sid=search"
+            }
+          ]
         },
         {
           "plataforma": "estante_virtual",
@@ -904,7 +948,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 60.61,
         "plataforma_vencedora": "amazon",
@@ -915,7 +959,7 @@
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -941,7 +985,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -967,7 +1011,7 @@
           "top_n_resultados": [
             {
               "titulo": "O quinto sol",
-              "autor": "Camilla Townsend",
+              "autor": "Townsend, Camila",
               "valor_sem_frete": 63.75,
               "preco_total": 79.75,
               "frete_aplicado": 16.0,
@@ -987,7 +1031,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 7,
+      "contador_falhas": 8,
       "metricas_atuais": {
         "menor_preco_geral": 115.02,
         "plataforma_vencedora": "amazon",
@@ -998,7 +1042,7 @@
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 115.02,
-        "mediana_amazon_referencia_em": "2026-11-03T13:26:17-03:00"
+        "mediana_amazon_referencia_em": "2026-11-03T21:07:36-03:00"
       },
       "links": [
         {
@@ -1024,7 +1068,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 7,
+          "erros_consecutivos": 8,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
