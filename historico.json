@@ -577,6 +577,12 @@
         "preco": 78.37,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8515017857"
+      },
+      {
+        "timestamp": "2026-11-05T21:30:25-03:00",
+        "preco": 98.5,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"
       }
     ],
     "por_plataforma": {
@@ -589,6 +595,11 @@
         {
           "timestamp": "2026-11-03T13:26:17-03:00",
           "preco": 78.37,
+          "url": "https://www.amazon.com.br/dp/8515017857"
+        },
+        {
+          "timestamp": "2026-11-05T21:30:25-03:00",
+          "preco": 102.57,
           "url": "https://www.amazon.com.br/dp/8515017857"
         }
       ],
@@ -610,6 +621,11 @@
         {
           "timestamp": "2026-11-03T13:26:17-03:00",
           "preco": 78.37,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-05T21:30:25-03:00",
+          "preco": 102.57,
           "plataforma": "amazon"
         }
       ],
