@@ -754,6 +754,11 @@
           "timestamp": "2026-11-04T21:32:21-03:00",
           "preco": 93.14,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-07T03:16:01-03:00",
+          "preco": 98.0,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -784,6 +789,11 @@
         {
           "timestamp": "2026-11-04T21:32:21-03:00",
           "preco": 93.14,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-07T03:16:01-03:00",
+          "preco": 98.0,
           "plataforma": "amazon"
         }
       ],
