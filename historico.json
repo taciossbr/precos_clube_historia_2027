@@ -963,6 +963,11 @@
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 146.0,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
+        },
+        {
+          "timestamp": "2026-11-06T21:14:08-03:00",
+          "preco": 140.72,
+          "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
       ]
     },
@@ -983,6 +988,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 146.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-06T21:14:08-03:00",
+          "preco": 140.72,
           "plataforma": "estante_virtual"
         }
       ]
