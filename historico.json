@@ -214,6 +214,12 @@
         "preco": 68.4,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8527302829"
+      },
+      {
+        "timestamp": "2026-11-08T03:22:18-03:00",
+        "preco": 78.99,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8527302829"
       }
     ],
     "por_plataforma": {
@@ -236,6 +242,11 @@
         {
           "timestamp": "2026-11-06T04:09:52-03:00",
           "preco": 68.4,
+          "url": "https://www.amazon.com.br/dp/8527302829"
+        },
+        {
+          "timestamp": "2026-11-08T03:22:18-03:00",
+          "preco": 78.99,
           "url": "https://www.amazon.com.br/dp/8527302829"
         }
       ],
@@ -287,6 +298,11 @@
         {
           "timestamp": "2026-11-06T04:09:52-03:00",
           "preco": 68.4,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-08T03:22:18-03:00",
+          "preco": 78.99,
           "plataforma": "amazon"
         }
       ],
