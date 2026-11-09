@@ -90,6 +90,12 @@
         "preco": 46.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+      },
+      {
+        "timestamp": "2026-11-09T03:55:05-03:00",
+        "preco": 47.3,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
       }
     ],
     "por_plataforma": {
@@ -124,6 +130,11 @@
         {
           "timestamp": "2026-11-04T13:30:28-03:00",
           "preco": 46.0,
+          "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+        },
+        {
+          "timestamp": "2026-11-09T03:55:05-03:00",
+          "preco": 47.3,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
       ]
@@ -160,6 +171,11 @@
         {
           "timestamp": "2026-11-04T13:30:28-03:00",
           "preco": 46.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-09T03:55:05-03:00",
+          "preco": 47.3,
           "plataforma": "estante_virtual"
         }
       ]
@@ -790,6 +806,11 @@
           "timestamp": "2026-11-08T20:03:50-03:00",
           "preco": 93.1,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-09T03:55:05-03:00",
+          "preco": 98.0,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -840,6 +861,11 @@
         {
           "timestamp": "2026-11-08T20:03:50-03:00",
           "preco": 93.1,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-09T03:55:05-03:00",
+          "preco": 98.0,
           "plataforma": "amazon"
         }
       ],
