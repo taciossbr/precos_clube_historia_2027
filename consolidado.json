@@ -1,8 +1,8 @@
 {
-  "ultima_atualizacao": "2026-11-10T21:12:16-03:00",
+  "ultima_atualizacao": "2026-11-11T03:46:33-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
-    "produtos_com_preco": 12,
+    "produtos_com_preco": 11,
     "produtos_com_falha": 12
   },
   "produtos": [
@@ -12,16 +12,15 @@
       "prioridade": 1,
       "porcentagem_alvo": 0.1,
       "alvo_real": 55,
-      "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 51.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 56.99,
-        "mediana": 56.99,
+        "media": 51.0,
+        "mediana": 51.0,
         "mediana_por_plataforma": {
-          "amazon": 62.98,
           "estante_virtual": 51.0
         },
         "mediana_amazon_referencia": 62.98,
@@ -33,13 +32,13 @@
           "url": "https://www.amazon.com.br/dp/8531613930",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 62.98,
-          "titulo": "Roma: A história de um império",
-          "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -51,7 +50,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -137,7 +136,7 @@
       "alvo_real": 29,
       "capa_url": "/book/00/0B0-5297-000/0B0-5297-000_detail1.jpg?ts=1777269130495",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 47.3,
         "plataforma_vencedora": "estante_virtual",
@@ -160,7 +159,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 18,
+          "erros_consecutivos": 19,
           "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
@@ -173,7 +172,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -206,7 +205,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 78.99,
         "plataforma_vencedora": "amazon",
@@ -217,7 +216,7 @@
           "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-10T21:12:16-03:00"
+        "mediana_amazon_referencia_em": "2026-11-11T03:46:33-03:00"
       },
       "links": [
         {
@@ -243,7 +242,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
@@ -325,16 +324,15 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": 90,
-      "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
+      "capa_url": "/book/00/06V-7741-000/06V-7741-000_detail1.jpg?ts=1712765208705",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
-        "menor_preco_geral": 84.74,
-        "plataforma_vencedora": "amazon",
-        "media": 105.84,
-        "mediana": 105.84,
+        "menor_preco_geral": 126.94,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 126.94,
+        "mediana": 126.94,
         "mediana_por_plataforma": {
-          "amazon": 84.74,
           "estante_virtual": 126.94
         },
         "mediana_amazon_referencia": 84.74,
@@ -346,13 +344,13 @@
           "url": "https://www.amazon.com.br/dp/8501092215",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 84.74,
-          "titulo": "Pompeia: A vida de uma cidade romana",
-          "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -364,7 +362,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -395,16 +393,15 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
+      "capa_url": "/book/00/0GH-2736-000/0GH-2736-000_detail1.jpg?ts=1776951601101",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
-        "menor_preco_geral": 48.86,
-        "plataforma_vencedora": "amazon",
-        "media": 53.88,
-        "mediana": 53.88,
+        "menor_preco_geral": 58.9,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 58.9,
+        "mediana": 58.9,
         "mediana_por_plataforma": {
-          "amazon": 48.86,
           "estante_virtual": 58.9
         },
         "mediana_amazon_referencia": 48.86,
@@ -416,13 +413,13 @@
           "url": "https://www.amazon.com.br/dp/6589705585",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 48.86,
-          "titulo": "Teogonia",
-          "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -434,7 +431,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -465,17 +462,15 @@
       "prioridade": 5,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
+      "capa_url": null,
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
-        "menor_preco_geral": 30.85,
-        "plataforma_vencedora": "amazon",
-        "media": 30.85,
-        "mediana": 30.85,
-        "mediana_por_plataforma": {
-          "amazon": 30.85
-        },
+        "menor_preco_geral": null,
+        "plataforma_vencedora": null,
+        "media": null,
+        "mediana": null,
+        "mediana_por_plataforma": {},
         "mediana_amazon_referencia": 30.85,
         "mediana_amazon_referencia_em": "2026-11-10T21:12:16-03:00"
       },
@@ -485,13 +480,13 @@
           "url": "https://www.amazon.com.br/dp/6589705577",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 30.85,
-          "titulo": "Trabalhos e dias",
-          "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -503,7 +498,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -518,7 +513,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 76.28,
         "plataforma_vencedora": "amazon",
@@ -529,7 +524,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 76.28,
-        "mediana_amazon_referencia_em": "2026-11-10T21:12:16-03:00"
+        "mediana_amazon_referencia_em": "2026-11-11T03:46:33-03:00"
       },
       "links": [
         {
@@ -555,7 +550,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 7,
           "top_n_resultados": []
@@ -588,7 +583,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
@@ -599,7 +594,7 @@
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-10T21:12:16-03:00"
+        "mediana_amazon_referencia_em": "2026-11-11T03:46:33-03:00"
       },
       "links": [
         {
@@ -625,7 +620,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -709,16 +704,15 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 67.0,
-        "mediana": 67.0,
+        "media": 36.0,
+        "mediana": 36.0,
         "mediana_por_plataforma": {
-          "amazon": 98.0,
           "estante_virtual": 36.0
         },
         "mediana_amazon_referencia": 98.0,
@@ -730,13 +724,13 @@
           "url": "https://www.amazon.com.br/dp/8525058270",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 98.0,
-          "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
-          "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -748,7 +742,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -774,7 +768,7 @@
           "top_n_resultados": [
             {
               "titulo": "Piratas no Brasil",
-              "autor": "Jean Marcel Carvalho Franca / Sheila Hue",
+              "autor": "Jean Marcel Carvalho França, Sheila Moura Hue",
               "valor_sem_frete": 20.0,
               "preco_total": 36.0,
               "frete_aplicado": 16.0,
@@ -832,16 +826,15 @@
       "prioridade": 9,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
+      "capa_url": "/book/00/NVV-7604-000/NVV-7604-000_detail1.jpg?ts=1769117700502",
       "comentario": "",
-      "contador_falhas": 19,
+      "contador_falhas": 20,
       "metricas_atuais": {
-        "menor_preco_geral": 53.48,
-        "plataforma_vencedora": "amazon",
-        "media": 62.19,
-        "mediana": 62.19,
+        "menor_preco_geral": 70.9,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 70.9,
+        "mediana": 70.9,
         "mediana_por_plataforma": {
-          "amazon": 53.48,
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 53.48,
@@ -853,13 +846,13 @@
           "url": "https://www.amazon.com.br/dp/B0GH289VSL",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 53.48,
-          "titulo": "Os mitos maias: Um guia para os deuses, heróis e ancestrais",
-          "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -871,7 +864,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 19,
+          "erros_consecutivos": 20,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -902,16 +895,15 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
-        "menor_preco_geral": 60.61,
-        "plataforma_vencedora": "amazon",
-        "media": 70.18,
-        "mediana": 70.18,
+        "menor_preco_geral": 79.75,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 79.75,
+        "mediana": 79.75,
         "mediana_por_plataforma": {
-          "amazon": 60.61,
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 60.61,
@@ -923,13 +915,13 @@
           "url": "https://www.amazon.com.br/dp/8532674275",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 60.61,
-          "titulo": "O quinto sol: Uma nova história dos astecas",
-          "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -941,7 +933,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -985,16 +977,15 @@
       "prioridade": 3,
       "porcentagem_alvo": 0.2,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
+      "capa_url": "/book/00/07Y-5190-000/07Y-5190-000_detail1.jpg?ts=1712766391377",
       "comentario": "",
-      "contador_falhas": 27,
+      "contador_falhas": 28,
       "metricas_atuais": {
-        "menor_preco_geral": 115.02,
-        "plataforma_vencedora": "amazon",
-        "media": 130.51,
-        "mediana": 130.51,
+        "menor_preco_geral": 146.0,
+        "plataforma_vencedora": "estante_virtual",
+        "media": 146.0,
+        "mediana": 146.0,
         "mediana_por_plataforma": {
-          "amazon": 115.02,
           "estante_virtual": 146.0
         },
         "mediana_amazon_referencia": 115.02,
@@ -1006,13 +997,13 @@
           "url": "https://www.amazon.com.br/dp/8542217497",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 115.02,
-          "titulo": "O coração do mundo: Uma nova história universal a partir da rota da seda: o encontro do oriente com o ocidente",
-          "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
-          "status": "sucesso",
+          "preco_atual": null,
+          "titulo": null,
+          "capa_url": null,
+          "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 0,
-          "erro": null
+          "erros_consecutivos": 1,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -1024,7 +1015,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 27,
+          "erros_consecutivos": 28,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
