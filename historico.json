@@ -96,6 +96,12 @@
         "preco": 47.3,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 33.14,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6556405825"
       }
     ],
     "por_plataforma": {
@@ -113,6 +119,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 26.17,
+          "url": "https://www.amazon.com.br/dp/6556405825"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 33.14,
           "url": "https://www.amazon.com.br/dp/6556405825"
         }
       ],
@@ -154,6 +165,11 @@
         {
           "timestamp": "2026-11-03T21:07:36-03:00",
           "preco": 26.17,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 33.14,
           "plataforma": "amazon"
         }
       ],
@@ -389,6 +405,12 @@
         "preco": 126.94,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 84.74,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8501092215"
       }
     ],
     "por_plataforma": {
@@ -413,6 +435,11 @@
         {
           "timestamp": "2026-11-02T19:56:39-03:00",
           "preco": 126.94,
+          "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 148.72,
           "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
         }
       ]
@@ -439,6 +466,11 @@
         {
           "timestamp": "2026-11-02T19:56:39-03:00",
           "preco": 126.94,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 148.72,
           "plataforma": "estante_virtual"
         }
       ]
@@ -469,6 +501,12 @@
         "preco": 58.9,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 48.86,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6589705585"
       }
     ],
     "por_plataforma": {
@@ -865,6 +903,11 @@
           "timestamp": "2026-11-09T03:55:05-03:00",
           "preco": 98.0,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 47.5,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -921,6 +964,11 @@
           "timestamp": "2026-11-09T03:55:05-03:00",
           "preco": 98.0,
           "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 47.5,
+          "plataforma": "amazon"
         }
       ],
       "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Piratas%20no%20Brasil%20%E2%80%94%20Jean%20Marcel%20Carvalho&searchField=titulo-autor&sort=lowest-first": [
@@ -957,6 +1005,12 @@
         "preco": 70.9,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 53.48,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/B0GH289VSL"
       }
     ],
     "por_plataforma": {
@@ -1031,6 +1085,12 @@
         "preco": 79.75,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 50.7,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8532674275"
       }
     ],
     "por_plataforma": {
@@ -1038,6 +1098,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 60.61,
+          "url": "https://www.amazon.com.br/dp/8532674275"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 50.7,
           "url": "https://www.amazon.com.br/dp/8532674275"
         }
       ],
@@ -1054,6 +1119,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 60.61,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 50.7,
           "plataforma": "amazon"
         }
       ],
@@ -1097,6 +1167,12 @@
         "preco": 146.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
+      },
+      {
+        "timestamp": "2026-11-11T22:41:29-03:00",
+        "preco": 115.02,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8542217497"
       }
     ],
     "por_plataforma": {
@@ -1126,6 +1202,11 @@
         {
           "timestamp": "2026-11-09T23:21:23-03:00",
           "preco": 146.0,
+          "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 140.72,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
       ]
@@ -1157,6 +1238,11 @@
         {
           "timestamp": "2026-11-09T23:21:23-03:00",
           "preco": 146.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-11T22:41:29-03:00",
+          "preco": 140.72,
           "plataforma": "estante_virtual"
         }
       ]
