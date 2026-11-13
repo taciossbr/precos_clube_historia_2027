@@ -192,11 +192,17 @@
       },
       {
         "preco": 51.0
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 54.0
       }
     ],
-    "abaixo_mediana": "abaixo_mediana:51.00",
+    "abaixo_mediana": "abaixo_mediana:54.00",
     "novo_menor": "novo_menor:51.00",
-    "alvo_real": "alvo_real:51.00"
+    "alvo_real": "alvo_real:54.00"
   },
   "alexandre-e-cesar-plutarco": {
     "coletas_validas": [
@@ -325,6 +331,12 @@
       },
       {
         "preco": 36.21
+      },
+      {
+        "preco": 47.3
+      },
+      {
+        "preco": 34.9
       },
       {
         "preco": 47.3
@@ -625,6 +637,15 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 78.99
+      },
+      {
+        "preco": 84.75
+      },
+      {
+        "preco": 88.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:62.00"
@@ -810,6 +831,12 @@
       },
       {
         "preco": 84.74
+      },
+      {
+        "preco": 148.72
+      },
+      {
+        "preco": 120.16
       },
       {
         "preco": 148.72
@@ -1016,6 +1043,12 @@
       },
       {
         "preco": 58.9
+      },
+      {
+        "preco": 48.86
+      },
+      {
+        "preco": 58.9
       }
     ]
   },
@@ -1047,6 +1080,9 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 30.85
       },
       {
         "preco": 30.85
@@ -1316,6 +1352,12 @@
       },
       {
         "preco": 98.5
+      },
+      {
+        "preco": 76.28
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -1476,6 +1518,12 @@
       },
       {
         "preco": 71.5
+      },
+      {
+        "preco": 72.8
+      },
+      {
+        "preco": 66.0
       },
       {
         "preco": 72.8
@@ -1709,6 +1757,12 @@
       },
       {
         "preco": 36.0
+      },
+      {
+        "preco": 58.59
+      },
+      {
+        "preco": 36.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:36.00",
@@ -1895,6 +1949,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 70.9
+      },
+      {
+        "preco": 53.48
       },
       {
         "preco": 70.9
@@ -2106,6 +2166,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 50.7
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -2290,6 +2356,12 @@
       },
       {
         "preco": 146.0
+      },
+      {
+        "preco": 115.02
+      },
+      {
+        "preco": 140.72
       },
       {
         "preco": 115.02

@@ -12,6 +12,12 @@
         "preco": 51.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
+      },
+      {
+        "timestamp": "2026-11-12T21:39:33-03:00",
+        "preco": 54.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
       }
     ],
     "por_plataforma": {
@@ -26,6 +32,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
+          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 54.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
         }
       ]
@@ -42,6 +53,11 @@
         {
           "timestamp": "2026-11-01T19:41:25-03:00",
           "preco": 51.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 54.0,
           "plataforma": "estante_virtual"
         }
       ]
@@ -108,6 +124,12 @@
         "preco": 36.21,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6556405825"
+      },
+      {
+        "timestamp": "2026-11-12T21:39:33-03:00",
+        "preco": 34.9,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6556405825"
       }
     ],
     "por_plataforma": {
@@ -135,6 +157,11 @@
         {
           "timestamp": "2026-11-12T13:59:46-03:00",
           "preco": 36.21,
+          "url": "https://www.amazon.com.br/dp/6556405825"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 34.9,
           "url": "https://www.amazon.com.br/dp/6556405825"
         }
       ],
@@ -186,6 +213,11 @@
         {
           "timestamp": "2026-11-12T13:59:46-03:00",
           "preco": 36.21,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 34.9,
           "plataforma": "amazon"
         }
       ],
@@ -940,6 +972,11 @@
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 47.5,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 58.59,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -1000,6 +1037,11 @@
         {
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 47.5,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-12T21:39:33-03:00",
+          "preco": 58.59,
           "plataforma": "amazon"
         }
       ],
