@@ -185,6 +185,11 @@
           "timestamp": "2026-11-09T03:55:05-03:00",
           "preco": 47.3,
           "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 44.1,
+          "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
         }
       ]
     },
@@ -240,6 +245,11 @@
         {
           "timestamp": "2026-11-09T03:55:05-03:00",
           "preco": 47.3,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 44.1,
           "plataforma": "estante_virtual"
         }
       ]
@@ -465,6 +475,12 @@
         "preco": 120.16,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-13T21:29:21-03:00",
+        "preco": 129.86,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8501092215"
       }
     ],
     "por_plataforma": {
@@ -482,6 +498,11 @@
         {
           "timestamp": "2026-11-12T13:59:46-03:00",
           "preco": 120.16,
+          "url": "https://www.amazon.com.br/dp/8501092215"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 129.86,
           "url": "https://www.amazon.com.br/dp/8501092215"
         }
       ],
@@ -518,6 +539,11 @@
         {
           "timestamp": "2026-11-12T13:59:46-03:00",
           "preco": 120.16,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 129.86,
           "plataforma": "amazon"
         }
       ],
@@ -1085,6 +1111,12 @@
         "preco": 53.48,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/B0GH289VSL"
+      },
+      {
+        "timestamp": "2026-11-13T21:29:21-03:00",
+        "preco": 44.82,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/B0GH289VSL"
       }
     ],
     "por_plataforma": {
@@ -1092,6 +1124,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 53.48,
+          "url": "https://www.amazon.com.br/dp/B0GH289VSL"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 44.82,
           "url": "https://www.amazon.com.br/dp/B0GH289VSL"
         }
       ],
@@ -1115,6 +1152,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 53.48,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-13T21:29:21-03:00",
+          "preco": 44.82,
           "plataforma": "amazon"
         }
       ],
