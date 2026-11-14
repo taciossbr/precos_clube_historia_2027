@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-13T21:29:21-03:00",
+  "ultima_atualizacao": "2026-11-14T03:52:29-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
@@ -14,7 +14,7 @@
       "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 54.0,
         "plataforma_vencedora": "estante_virtual",
@@ -25,7 +25,7 @@
           "estante_virtual": 54.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -51,7 +51,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -137,7 +137,7 @@
       "alvo_real": 29,
       "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 34.9,
         "plataforma_vencedora": "amazon",
@@ -148,7 +148,7 @@
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 34.9,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -174,7 +174,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -207,7 +207,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 78.99,
         "plataforma_vencedora": "amazon",
@@ -218,7 +218,7 @@
           "estante_virtual": 86.38
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -244,7 +244,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
@@ -328,7 +328,7 @@
       "alvo_real": 90,
       "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 129.86,
         "plataforma_vencedora": "amazon",
@@ -339,7 +339,7 @@
           "estante_virtual": 148.72
         },
         "mediana_amazon_referencia": 129.86,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -365,7 +365,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -398,7 +398,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 48.86,
         "plataforma_vencedora": "amazon",
@@ -409,7 +409,7 @@
           "estante_virtual": 58.9
         },
         "mediana_amazon_referencia": 48.86,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -435,7 +435,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -468,7 +468,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 30.85,
         "plataforma_vencedora": "amazon",
@@ -478,7 +478,7 @@
           "amazon": 30.85
         },
         "mediana_amazon_referencia": 30.85,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -504,7 +504,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -519,7 +519,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 76.28,
         "plataforma_vencedora": "amazon",
@@ -530,7 +530,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 76.28,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -556,7 +556,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 7,
           "top_n_resultados": []
@@ -589,7 +589,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 66.0,
         "plataforma_vencedora": "estante_virtual",
@@ -600,7 +600,7 @@
           "estante_virtual": 66.0
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -626,7 +626,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -710,9 +710,9 @@
       "prioridade": 2,
       "porcentagem_alvo": 0.15,
       "alvo_real": null,
-      "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+      "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 36.0,
         "plataforma_vencedora": "estante_virtual",
@@ -731,12 +731,12 @@
           "pesquisa": false,
           "comentario": "",
           "preco_atual": null,
-          "titulo": "Piratas no Brasil: As incríveis histórias dos ladrões dos mares que pilharam nosso litoral",
-          "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
+          "titulo": null,
+          "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 1,
-          "erro": "Preço não encontrado na página do produto"
+          "erros_consecutivos": 2,
+          "erro": "Amazon retornou uma página de verificação anti-bot (CAPTCHA/Robot Check)"
         },
         {
           "plataforma": "mercado_livre",
@@ -748,7 +748,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -774,7 +774,7 @@
           "top_n_resultados": [
             {
               "titulo": "Piratas no Brasil",
-              "autor": "FRANÇA, JEAN MARCEL CARVALHO, HUE, SHEILA",
+              "autor": "Jean Marcel Carvalho França; Sheila Hue",
               "valor_sem_frete": 20.0,
               "preco_total": 36.0,
               "frete_aplicado": 16.0,
@@ -834,7 +834,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 24,
+      "contador_falhas": 25,
       "metricas_atuais": {
         "menor_preco_geral": 44.82,
         "plataforma_vencedora": "amazon",
@@ -845,7 +845,7 @@
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 44.82,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -871,7 +871,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 24,
+          "erros_consecutivos": 25,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -904,7 +904,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 50.7,
         "plataforma_vencedora": "amazon",
@@ -915,7 +915,7 @@
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 50.7,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -941,7 +941,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -987,7 +987,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 32,
+      "contador_falhas": 33,
       "metricas_atuais": {
         "menor_preco_geral": 115.02,
         "plataforma_vencedora": "amazon",
@@ -998,7 +998,7 @@
           "estante_virtual": 140.72
         },
         "mediana_amazon_referencia": 115.02,
-        "mediana_amazon_referencia_em": "2026-11-13T21:29:21-03:00"
+        "mediana_amazon_referencia_em": "2026-11-14T03:52:29-03:00"
       },
       "links": [
         {
@@ -1024,7 +1024,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 32,
+          "erros_consecutivos": 33,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
