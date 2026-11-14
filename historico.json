@@ -130,6 +130,12 @@
         "preco": 34.9,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6556405825"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 44.1,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
       }
     ],
     "por_plataforma": {
@@ -310,6 +316,12 @@
         "preco": 78.99,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8527302829"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 84.75,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
       }
     ],
     "por_plataforma": {
@@ -481,6 +493,12 @@
         "preco": 129.86,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 148.72,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
       }
     ],
     "por_plataforma": {
@@ -597,6 +615,12 @@
         "preco": 48.86,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6589705585"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 58.9,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"
       }
     ],
     "por_plataforma": {
@@ -787,6 +811,12 @@
         "preco": 76.28,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8515017857"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 98.5,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"
       }
     ],
     "por_plataforma": {
@@ -1117,6 +1147,12 @@
         "preco": 44.82,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/B0GH289VSL"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 70.9,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"
       }
     ],
     "por_plataforma": {
@@ -1207,6 +1243,12 @@
         "preco": 50.7,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8532674275"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 79.75,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Quinto%20Sol%3A%20Uma%20Nova%20Hist%C3%B3ria%20dos%20Astecas%20%E2%80%94%20Camilla%20Townsend&searchField=titulo-autor"
       }
     ],
     "por_plataforma": {
@@ -1289,6 +1331,12 @@
         "preco": 115.02,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8542217497"
+      },
+      {
+        "timestamp": "2026-11-14T12:18:44-03:00",
+        "preco": 140.72,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
       }
     ],
     "por_plataforma": {
