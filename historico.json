@@ -523,6 +523,12 @@
         "preco": 133.64,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-15T20:32:13-03:00",
+        "preco": 122.82,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8501092215"
       }
     ],
     "por_plataforma": {
@@ -550,6 +556,11 @@
         {
           "timestamp": "2026-11-15T12:50:20-03:00",
           "preco": 133.64,
+          "url": "https://www.amazon.com.br/dp/8501092215"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 122.82,
           "url": "https://www.amazon.com.br/dp/8501092215"
         }
       ],
@@ -596,6 +607,11 @@
         {
           "timestamp": "2026-11-15T12:50:20-03:00",
           "preco": 133.64,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 122.82,
           "plataforma": "amazon"
         }
       ],
@@ -889,6 +905,12 @@
         "preco": 76.28,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8515017857"
+      },
+      {
+        "timestamp": "2026-11-15T20:32:13-03:00",
+        "preco": 78.37,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8515017857"
       }
     ],
     "por_plataforma": {
@@ -921,6 +943,11 @@
         {
           "timestamp": "2026-11-15T12:50:20-03:00",
           "preco": 76.28,
+          "url": "https://www.amazon.com.br/dp/8515017857"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 78.37,
           "url": "https://www.amazon.com.br/dp/8515017857"
         }
       ],
@@ -962,6 +989,11 @@
         {
           "timestamp": "2026-11-15T12:50:20-03:00",
           "preco": 76.28,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 78.37,
           "plataforma": "amazon"
         }
       ],
@@ -1482,6 +1514,11 @@
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 140.72,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 126.0,
+          "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
       ]
     },
@@ -1517,6 +1554,11 @@
         {
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 140.72,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-15T20:32:13-03:00",
+          "preco": 126.0,
           "plataforma": "estante_virtual"
         }
       ]
