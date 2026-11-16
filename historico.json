@@ -1173,6 +1173,11 @@
           "timestamp": "2026-11-12T21:39:33-03:00",
           "preco": 58.59,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-16T15:45:59-03:00",
+          "preco": 98.0,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -1238,6 +1243,11 @@
         {
           "timestamp": "2026-11-12T21:39:33-03:00",
           "preco": 58.59,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-16T15:45:59-03:00",
+          "preco": 98.0,
           "plataforma": "amazon"
         }
       ],
@@ -1495,6 +1505,12 @@
         "preco": 115.02,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8542217497"
+      },
+      {
+        "timestamp": "2026-11-16T15:45:59-03:00",
+        "preco": 111.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
       }
     ],
     "por_plataforma": {
@@ -1534,6 +1550,11 @@
         {
           "timestamp": "2026-11-15T20:32:13-03:00",
           "preco": 126.0,
+          "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
+        },
+        {
+          "timestamp": "2026-11-16T15:45:59-03:00",
+          "preco": 111.0,
           "url": "https://www.estantevirtual.com.br/livro/o-coracao-do-mundo-07Y-5190-000-BK"
         }
       ]
@@ -1575,6 +1596,11 @@
         {
           "timestamp": "2026-11-15T20:32:13-03:00",
           "preco": 126.0,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-16T15:45:59-03:00",
+          "preco": 111.0,
           "plataforma": "estante_virtual"
         }
       ]
