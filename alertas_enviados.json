@@ -249,6 +249,12 @@
       },
       {
         "preco": 54.0
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 54.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:54.00",
@@ -442,6 +448,12 @@
       },
       {
         "preco": 44.1
+      },
+      {
+        "preco": 34.9
+      },
+      {
+        "preco": 44.1
       }
     ],
     "abaixo_mediana": "abaixo_mediana:32.22",
@@ -449,15 +461,6 @@
   },
   "o-jesus-historico-david-flusser": {
     "coletas_validas": [
-      {
-        "preco": 84.75
-      },
-      {
-        "preco": 88.0
-      },
-      {
-        "preco": 90.13
-      },
       {
         "preco": 84.75
       },
@@ -688,6 +691,15 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 84.75
+      },
+      {
+        "preco": 88.0
+      },
+      {
+        "preco": 78.99
       },
       {
         "preco": 84.75
@@ -999,6 +1011,12 @@
       },
       {
         "preco": 148.72
+      },
+      {
+        "preco": 119.17
+      },
+      {
+        "preco": 148.72
       }
     ],
     "alvo_real": "alvo_real:84.74"
@@ -1256,6 +1274,12 @@
       },
       {
         "preco": 58.9
+      },
+      {
+        "preco": 43.97
+      },
+      {
+        "preco": 58.9
       }
     ]
   },
@@ -1287,6 +1311,9 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 30.85
       },
       {
         "preco": 30.85
@@ -1640,6 +1667,12 @@
       },
       {
         "preco": 98.5
+      },
+      {
+        "preco": 78.37
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -1854,6 +1887,12 @@
       },
       {
         "preco": 66.0
+      },
+      {
+        "preco": 66.0
+      },
+      {
+        "preco": 72.8
       },
       {
         "preco": 66.0
@@ -2126,10 +2165,16 @@
       },
       {
         "preco": 36.0
+      },
+      {
+        "preco": 98.0
+      },
+      {
+        "preco": 35.89
       }
     ],
-    "abaixo_mediana": "abaixo_mediana:36.00",
-    "novo_menor": "novo_menor:36.00"
+    "abaixo_mediana": "abaixo_mediana:35.89",
+    "novo_menor": "novo_menor:35.89"
   },
   "os-mitos-maias-vozes": {
     "coletas_validas": [
@@ -2345,6 +2390,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 70.9
+      },
+      {
+        "preco": 44.82
       },
       {
         "preco": 70.9
@@ -2637,6 +2688,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 50.7
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -2884,6 +2941,12 @@
       },
       {
         "preco": 126.0
+      },
+      {
+        "preco": 115.02
+      },
+      {
+        "preco": 111.0
       },
       {
         "preco": 115.02

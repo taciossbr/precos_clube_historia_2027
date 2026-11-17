@@ -535,6 +535,12 @@
         "preco": 129.86,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-16T23:37:42-03:00",
+        "preco": 119.17,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8501092215"
       }
     ],
     "por_plataforma": {
@@ -572,6 +578,11 @@
         {
           "timestamp": "2026-11-16T03:50:57-03:00",
           "preco": 129.86,
+          "url": "https://www.amazon.com.br/dp/8501092215"
+        },
+        {
+          "timestamp": "2026-11-16T23:37:42-03:00",
+          "preco": 119.17,
           "url": "https://www.amazon.com.br/dp/8501092215"
         }
       ],
@@ -628,6 +639,11 @@
         {
           "timestamp": "2026-11-16T03:50:57-03:00",
           "preco": 129.86,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-16T23:37:42-03:00",
+          "preco": 119.17,
           "plataforma": "amazon"
         }
       ],
@@ -693,6 +709,12 @@
         "preco": 48.86,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6589705585"
+      },
+      {
+        "timestamp": "2026-11-16T23:37:42-03:00",
+        "preco": 43.97,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6589705585"
       }
     ],
     "por_plataforma": {
@@ -700,6 +722,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 48.86,
+          "url": "https://www.amazon.com.br/dp/6589705585"
+        },
+        {
+          "timestamp": "2026-11-16T23:37:42-03:00",
+          "preco": 43.97,
           "url": "https://www.amazon.com.br/dp/6589705585"
         }
       ],
@@ -728,6 +755,11 @@
         {
           "timestamp": "2026-11-01T15:08:20-03:00",
           "preco": 48.86,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-16T23:37:42-03:00",
+          "preco": 43.97,
           "plataforma": "amazon"
         }
       ],
