@@ -1,5 +1,5 @@
 {
-  "ultima_atualizacao": "2026-11-18T14:40:58-03:00",
+  "ultima_atualizacao": "2026-11-18T22:23:47-03:00",
   "estatisticas_gerais": {
     "total_produtos": 12,
     "produtos_com_preco": 12,
@@ -14,18 +14,18 @@
       "alvo_real": 55,
       "capa_url": "https://m.media-amazon.com/images/I/91xZ3sxU5jL._SL1500_.jpg",
       "comentario": "É o primeiro, prioridade máxima antes da viagem",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
-        "menor_preco_geral": 54.0,
+        "menor_preco_geral": 56.0,
         "plataforma_vencedora": "estante_virtual",
-        "media": 58.49,
-        "mediana": 58.49,
+        "media": 59.49,
+        "mediana": 59.49,
         "mediana_por_plataforma": {
           "amazon": 62.98,
-          "estante_virtual": 54.0
+          "estante_virtual": 56.0
         },
         "mediana_amazon_referencia": 62.98,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -51,7 +51,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -61,30 +61,20 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 54.0,
-          "titulo": "Roma a História de um Império",
+          "preco_atual": 56.0,
+          "titulo": "Roma A História de Um Império",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
           "coletado_nesta_execucao": true,
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 38.0,
+            "valor_sem_frete": 40.0,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
           "top_n": 5,
           "top_n_resultados": [
-            {
-              "titulo": "Roma a História de um Império",
-              "autor": "Greg Woolf",
-              "valor_sem_frete": 38.0,
-              "preco_total": 54.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
-            },
             {
               "titulo": "Roma A História de Um Império",
               "autor": "Greg Woolf",
@@ -92,7 +82,7 @@
               "preco_total": 56.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
-              "escolhido": false,
+              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
             },
             {
@@ -124,6 +114,16 @@
               "frete_presumido": true,
               "escolhido": false,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
+            },
+            {
+              "titulo": "Roma - a História de um Império",
+              "autor": "Greg Woolf",
+              "valor_sem_frete": 49.0,
+              "preco_total": 65.0,
+              "frete_aplicado": 16.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
             }
           ]
         }
@@ -137,7 +137,7 @@
       "alvo_real": 29,
       "capa_url": "https://m.media-amazon.com/images/I/71F6mcw5PbL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 34.9,
         "plataforma_vencedora": "amazon",
@@ -148,7 +148,7 @@
           "estante_virtual": 44.1
         },
         "mediana_amazon_referencia": 34.9,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -174,7 +174,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -207,18 +207,18 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/51CG8vlUHBL._SL1275_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 78.99,
         "plataforma_vencedora": "amazon",
-        "media": 83.91,
+        "media": 86.91,
         "mediana": 84.75,
         "mediana_por_plataforma": {
           "amazon": 78.99,
-          "estante_virtual": 86.38
+          "estante_virtual": 90.88
         },
         "mediana_amazon_referencia": 78.99,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -244,7 +244,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []
@@ -271,8 +271,8 @@
             {
               "titulo": "Jesus",
               "autor": "David Flusser",
-              "valor_sem_frete": 72.0,
-              "preco_total": 88.0,
+              "valor_sem_frete": 81.0,
+              "preco_total": 97.0,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
               "escolhido": false,
@@ -305,7 +305,7 @@
           "url": "https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK",
           "pesquisa": false,
           "comentario": "",
-          "preco_atual": 88.0,
+          "preco_atual": 97.0,
           "titulo": "Jesus",
           "capa_url": "/book/00/04G-7460-000/04G-7460-000_detail1.jpg?ts=1715021775686",
           "status": "sucesso",
@@ -313,7 +313,7 @@
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 72.0,
+            "valor_sem_frete": 81.0,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           }
@@ -328,7 +328,7 @@
       "alvo_real": 90,
       "capa_url": "https://m.media-amazon.com/images/I/91GdEQ+oqwL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 119.17,
         "plataforma_vencedora": "amazon",
@@ -339,7 +339,7 @@
           "estante_virtual": 148.72
         },
         "mediana_amazon_referencia": 119.17,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -365,7 +365,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -398,7 +398,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61nsRKGQN4L._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 9,
+      "contador_falhas": 10,
       "metricas_atuais": {
         "menor_preco_geral": 43.97,
         "plataforma_vencedora": "amazon",
@@ -409,7 +409,7 @@
           "estante_virtual": 58.9
         },
         "mediana_amazon_referencia": 43.97,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -435,7 +435,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 9,
+          "erros_consecutivos": 10,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -468,7 +468,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61eiqe-LPUL._SL1213_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 30.85,
         "plataforma_vencedora": "amazon",
@@ -478,7 +478,7 @@
           "amazon": 30.85
         },
         "mediana_amazon_referencia": 30.85,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -504,7 +504,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -519,7 +519,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/719cFbD39oL._SL1066_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 78.37,
         "plataforma_vencedora": "amazon",
@@ -530,7 +530,7 @@
           "estante_virtual": 98.5
         },
         "mediana_amazon_referencia": 78.37,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -556,7 +556,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 7,
           "top_n_resultados": []
@@ -589,18 +589,18 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/61Hl3zfqRDL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
-        "menor_preco_geral": 66.0,
+        "menor_preco_geral": 71.5,
         "plataforma_vencedora": "estante_virtual",
-        "media": 69.4,
-        "mediana": 69.4,
+        "media": 72.15,
+        "mediana": 72.15,
         "mediana_por_plataforma": {
           "amazon": 72.8,
-          "estante_virtual": 66.0
+          "estante_virtual": 71.5
         },
         "mediana_amazon_referencia": 72.8,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -626,7 +626,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -636,7 +636,7 @@
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first",
           "pesquisa": true,
           "comentario": "",
-          "preco_atual": 66.0,
+          "preco_atual": 71.5,
           "titulo": "O Anticristo uma Biografia",
           "capa_url": "https://static.estantevirtual.com.br/bnn/l_estantevirtual/2024-10-08/9793_estante-virtual-share.png",
           "status": "sucesso",
@@ -644,7 +644,7 @@
           "erros_consecutivos": 0,
           "erro": null,
           "extras": {
-            "valor_sem_frete": 50.0,
+            "valor_sem_frete": 55.5,
             "frete_aplicado": 16.0,
             "frete_presumido": true
           },
@@ -653,21 +653,11 @@
             {
               "titulo": "O Anticristo uma Biografia",
               "autor": "Philip C. Almond",
-              "valor_sem_frete": 50.0,
-              "preco_total": 66.0,
-              "frete_aplicado": 16.0,
-              "frete_presumido": true,
-              "escolhido": true,
-              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
-            },
-            {
-              "titulo": "O Anticristo uma Biografia",
-              "autor": "Philip C. Almond",
               "valor_sem_frete": 55.5,
               "preco_total": 71.5,
               "frete_aplicado": 16.0,
               "frete_presumido": true,
-              "escolhido": false,
+              "escolhido": true,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
             },
             {
@@ -699,6 +689,16 @@
               "frete_presumido": true,
               "escolhido": false,
               "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
+            },
+            {
+              "titulo": "O Anticristo : Uma biografia",
+              "autor": "Philip C. Almond",
+              "valor_sem_frete": 83.9,
+              "preco_total": 99.9,
+              "frete_aplicado": 16.0,
+              "frete_presumido": true,
+              "escolhido": false,
+              "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
             }
           ]
         }
@@ -712,7 +712,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71uNlUhq8jL._SL1360_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 35.89,
         "plataforma_vencedora": "estante_virtual",
@@ -723,7 +723,7 @@
           "estante_virtual": 35.89
         },
         "mediana_amazon_referencia": 98.0,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -749,7 +749,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -775,7 +775,7 @@
           "top_n_resultados": [
             {
               "titulo": "Piratas no Brasil",
-              "autor": "Jean Marcel Carvalho França e Sheila Hue",
+              "autor": "Vários Autores",
               "valor_sem_frete": 19.89,
               "preco_total": 35.89,
               "frete_aplicado": 16.0,
@@ -835,7 +835,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/81Z6L62tmZL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 36,
+      "contador_falhas": 37,
       "metricas_atuais": {
         "menor_preco_geral": 44.82,
         "plataforma_vencedora": "amazon",
@@ -846,7 +846,7 @@
           "estante_virtual": 70.9
         },
         "mediana_amazon_referencia": 44.82,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -872,7 +872,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 36,
+          "erros_consecutivos": 37,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -905,7 +905,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/71cHMhsOG7L._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 50.7,
         "plataforma_vencedora": "amazon",
@@ -916,7 +916,7 @@
           "estante_virtual": 79.75
         },
         "mediana_amazon_referencia": 50.7,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -942,7 +942,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 5,
           "top_n_resultados": []
@@ -988,7 +988,7 @@
       "alvo_real": null,
       "capa_url": "https://m.media-amazon.com/images/I/A17XoJv2qjL._SL1500_.jpg",
       "comentario": "",
-      "contador_falhas": 44,
+      "contador_falhas": 45,
       "metricas_atuais": {
         "menor_preco_geral": 111.0,
         "plataforma_vencedora": "estante_virtual",
@@ -999,7 +999,7 @@
           "estante_virtual": 111.0
         },
         "mediana_amazon_referencia": 115.02,
-        "mediana_amazon_referencia_em": "2026-11-18T14:40:58-03:00"
+        "mediana_amazon_referencia_em": "2026-11-18T22:23:47-03:00"
       },
       "links": [
         {
@@ -1025,7 +1025,7 @@
           "capa_url": null,
           "status": "erro",
           "coletado_nesta_execucao": true,
-          "erros_consecutivos": 44,
+          "erros_consecutivos": 45,
           "erro": "Tentativa desktop: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado.. Tentativa móvel: A busca carregou, mas nenhum card de anúncio foi encontrado. Os resultados podem estar vazios, bloqueados ou com o layout alterado..",
           "top_n": 3,
           "top_n_resultados": []

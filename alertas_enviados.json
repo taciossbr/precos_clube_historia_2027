@@ -273,9 +273,15 @@
       },
       {
         "preco": 54.0
+      },
+      {
+        "preco": 62.98
+      },
+      {
+        "preco": 56.0
       }
     ],
-    "abaixo_mediana": "abaixo_mediana:54.00",
+    "abaixo_mediana": "abaixo_mediana:56.00",
     "novo_menor": "novo_menor:51.00",
     "alvo_real": "alvo_real:54.00"
   },
@@ -490,6 +496,12 @@
       },
       {
         "preco": 44.1
+      },
+      {
+        "preco": 34.9
+      },
+      {
+        "preco": 44.1
       }
     ],
     "abaixo_mediana": "abaixo_mediana:32.22",
@@ -497,15 +509,6 @@
   },
   "o-jesus-historico-david-flusser": {
     "coletas_validas": [
-      {
-        "preco": 84.75
-      },
-      {
-        "preco": 88.0
-      },
-      {
-        "preco": 78.99
-      },
       {
         "preco": 84.75
       },
@@ -796,6 +799,15 @@
       },
       {
         "preco": 88.0
+      },
+      {
+        "preco": 78.99
+      },
+      {
+        "preco": 84.75
+      },
+      {
+        "preco": 97.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:62.00"
@@ -1044,6 +1056,12 @@
       },
       {
         "preco": 129.86
+      },
+      {
+        "preco": 148.72
+      },
+      {
+        "preco": 119.17
       },
       {
         "preco": 148.72
@@ -1352,6 +1370,12 @@
       },
       {
         "preco": 58.9
+      },
+      {
+        "preco": 43.97
+      },
+      {
+        "preco": 58.9
       }
     ]
   },
@@ -1383,6 +1407,9 @@
       },
       {
         "preco": 49.9
+      },
+      {
+        "preco": 30.85
       },
       {
         "preco": 30.85
@@ -1772,6 +1799,12 @@
       },
       {
         "preco": 98.5
+      },
+      {
+        "preco": 78.37
+      },
+      {
+        "preco": 98.5
       }
     ]
   },
@@ -2049,6 +2082,12 @@
       },
       {
         "preco": 66.0
+      },
+      {
+        "preco": 72.8
+      },
+      {
+        "preco": 71.5
       }
     ],
     "novo_menor": "novo_menor:66.00"
@@ -2306,6 +2345,12 @@
       },
       {
         "preco": 35.89
+      },
+      {
+        "preco": 98.0
+      },
+      {
+        "preco": 35.89
       }
     ],
     "abaixo_mediana": "abaixo_mediana:35.89",
@@ -2525,6 +2570,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 70.9
+      },
+      {
+        "preco": 44.82
       },
       {
         "preco": 70.9
@@ -2865,6 +2916,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 50.7
+      },
+      {
+        "preco": 79.75
       }
     ]
   },
@@ -3112,6 +3169,12 @@
       },
       {
         "preco": 126.0
+      },
+      {
+        "preco": 115.02
+      },
+      {
+        "preco": 111.0
       },
       {
         "preco": 115.02
