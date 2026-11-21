@@ -626,6 +626,12 @@
         "preco": 118.36,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8501092215"
+      },
+      {
+        "timestamp": "2026-11-21T13:19:28-03:00",
+        "preco": 105.0,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
       }
     ],
     "por_plataforma": {
@@ -690,6 +696,11 @@
         {
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 148.72,
+          "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
+        },
+        {
+          "timestamp": "2026-11-21T13:19:28-03:00",
+          "preco": 105.0,
           "url": "https://www.estantevirtual.com.br/livro/pompeia-a-vida-de-uma-cidade-romana-06V-7741-000-BK"
         }
       ]
@@ -756,6 +767,11 @@
         {
           "timestamp": "2026-11-11T22:41:29-03:00",
           "preco": 148.72,
+          "plataforma": "estante_virtual"
+        },
+        {
+          "timestamp": "2026-11-21T13:19:28-03:00",
+          "preco": 105.0,
           "plataforma": "estante_virtual"
         }
       ]
