@@ -450,6 +450,12 @@
         "preco": 78.99,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8527302829"
+      },
+      {
+        "timestamp": "2026-11-23T05:02:07-03:00",
+        "preco": 84.75,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
       }
     ],
     "por_plataforma": {
@@ -742,6 +748,11 @@
           "timestamp": "2026-11-19T14:33:00-03:00",
           "preco": 118.36,
           "url": "https://www.amazon.com.br/dp/8501092215"
+        },
+        {
+          "timestamp": "2026-11-23T05:02:07-03:00",
+          "preco": 140.9,
+          "url": "https://www.amazon.com.br/dp/8501092215"
         }
       ],
       "estante_virtual": [
@@ -812,6 +823,11 @@
         {
           "timestamp": "2026-11-19T14:33:00-03:00",
           "preco": 118.36,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-23T05:02:07-03:00",
+          "preco": 140.9,
           "plataforma": "amazon"
         }
       ],
@@ -1172,6 +1188,12 @@
         "preco": 76.28,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/8515017857"
+      },
+      {
+        "timestamp": "2026-11-23T05:02:07-03:00",
+        "preco": 98.5,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"
       }
     ],
     "por_plataforma": {
