@@ -204,6 +204,12 @@
         "preco": 36.47,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/6556405825"
+      },
+      {
+        "timestamp": "2026-11-22T21:29:21-03:00",
+        "preco": 44.1,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
       }
     ],
     "por_plataforma": {
@@ -438,6 +444,12 @@
         "preco": 97.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"
+      },
+      {
+        "timestamp": "2026-11-22T21:29:21-03:00",
+        "preco": 78.99,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8527302829"
       }
     ],
     "por_plataforma": {
@@ -498,6 +510,11 @@
           "timestamp": "2026-11-22T13:29:09-03:00",
           "preco": 97.0,
           "url": "https://www.estantevirtual.com.br/livro/jesus-04G-7460-000-BK"
+        },
+        {
+          "timestamp": "2026-11-22T21:29:21-03:00",
+          "preco": 84.75,
+          "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
         }
       ]
     },
@@ -1149,6 +1166,12 @@
         "preco": 98.5,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/o-que-e-a-filosofia-antiga-08V-7398-000-BK"
+      },
+      {
+        "timestamp": "2026-11-22T21:29:21-03:00",
+        "preco": 76.28,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8515017857"
       }
     ],
     "por_plataforma": {
@@ -1303,6 +1326,12 @@
         "preco": 36.4,
         "plataforma": "amazon",
         "url": "https://www.amazon.com.br/dp/B0D4WQ179K"
+      },
+      {
+        "timestamp": "2026-11-22T21:29:21-03:00",
+        "preco": 71.5,
+        "plataforma": "estante_virtual",
+        "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
       }
     ],
     "por_plataforma": {
