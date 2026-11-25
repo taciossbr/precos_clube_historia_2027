@@ -128,12 +128,6 @@
         "preco": 51.0
       },
       {
-        "preco": 62.98
-      },
-      {
-        "preco": 51.0
-      },
-      {
         "preco": 51.0
       },
       {
@@ -300,6 +294,12 @@
       },
       {
         "preco": 56.0
+      },
+      {
+        "preco": 46.26
+      },
+      {
+        "preco": 51.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:56.00",
@@ -595,6 +595,12 @@
       },
       {
         "preco": 42.17
+      },
+      {
+        "preco": 35.31
+      },
+      {
+        "preco": 42.17
       }
     ],
     "abaixo_mediana": "abaixo_mediana:32.22",
@@ -681,15 +687,6 @@
         "preco": 88.0
       },
       {
-        "preco": 78.99
-      },
-      {
-        "preco": 84.75
-      },
-      {
-        "preco": 88.0
-      },
-      {
         "preco": 84.75
       },
       {
@@ -895,6 +892,15 @@
       },
       {
         "preco": 66.0
+      },
+      {
+        "preco": 66.0
+      },
+      {
+        "preco": 66.0
+      },
+      {
+        "preco": 78.99
       },
       {
         "preco": 66.0
@@ -907,12 +913,6 @@
   },
   "pompeia-mary-beard": {
     "coletas_validas": [
-      {
-        "preco": 84.74
-      },
-      {
-        "preco": 126.94
-      },
       {
         "preco": 84.74
       },
@@ -1206,6 +1206,12 @@
       },
       {
         "preco": 105.0
+      },
+      {
+        "preco": 133.64
+      },
+      {
+        "preco": 105.0
       }
     ],
     "alvo_real": "alvo_real:84.74",
@@ -1213,12 +1219,6 @@
   },
   "teogonia-hesiodo": {
     "coletas_validas": [
-      {
-        "preco": 57.98
-      },
-      {
-        "preco": 48.86
-      },
       {
         "preco": 57.98
       },
@@ -1512,6 +1512,12 @@
       },
       {
         "preco": 58.9
+      },
+      {
+        "preco": 34.0
+      },
+      {
+        "preco": 58.9
       }
     ]
   },
@@ -1681,18 +1687,15 @@
       },
       {
         "preco": 30.85
+      },
+      {
+        "preco": 30.85
       }
     ],
     "novo_menor": "novo_menor:30.85"
   },
   "o-que-e-a-filosofia-antiga-hadot": {
     "coletas_validas": [
-      {
-        "preco": 98.5
-      },
-      {
-        "preco": 78.37
-      },
       {
         "preco": 98.5
       },
@@ -1986,8 +1989,16 @@
       },
       {
         "preco": 99.53
+      },
+      {
+        "preco": 110.0
+      },
+      {
+        "preco": 75.0
       }
-    ]
+    ],
+    "abaixo_mediana": "abaixo_mediana:75.00",
+    "novo_menor": "novo_menor:75.00"
   },
   "o-anticristo-biografia-almond": {
     "coletas_validas": [
@@ -1995,12 +2006,6 @@
         "preco": 72.8
       },
       {
-        "preco": 66.0
-      },
-      {
-        "preco": 72.8
-      },
-      {
         "preco": 71.5
       },
       {
@@ -2287,6 +2292,12 @@
       },
       {
         "preco": 71.5
+      },
+      {
+        "preco": 71.5
+      },
+      {
+        "preco": 36.4
       },
       {
         "preco": 71.5
@@ -2296,12 +2307,6 @@
   },
   "piratas-no-brasil-carvalho": {
     "coletas_validas": [
-      {
-        "preco": 76.17
-      },
-      {
-        "preco": 36.0
-      },
       {
         "preco": 36.0
       },
@@ -2595,6 +2600,12 @@
       },
       {
         "preco": 35.89
+      },
+      {
+        "preco": 42.27
+      },
+      {
+        "preco": 35.89
       }
     ],
     "abaixo_mediana": "abaixo_mediana:35.89",
@@ -2602,12 +2613,6 @@
   },
   "os-mitos-maias-vozes": {
     "coletas_validas": [
-      {
-        "preco": 70.9
-      },
-      {
-        "preco": 53.48
-      },
       {
         "preco": 70.9
       },
@@ -2901,6 +2906,12 @@
       },
       {
         "preco": 70.9
+      },
+      {
+        "preco": 44.82
+      },
+      {
+        "preco": 70.9
       }
     ]
   },
@@ -3030,12 +3041,6 @@
         "preco": 79.75
       },
       {
-        "preco": 60.61
-      },
-      {
-        "preco": 79.75
-      },
-      {
         "preco": 79.75
       },
       {
@@ -3202,6 +3207,12 @@
       },
       {
         "preco": 79.75
+      },
+      {
+        "preco": 79.75
+      },
+      {
+        "preco": 50.7
       },
       {
         "preco": 79.75
@@ -3259,12 +3270,6 @@
         "preco": 115.02
       },
       {
-        "preco": 146.0
-      },
-      {
-        "preco": 115.02
-      },
-      {
         "preco": 140.72
       },
       {
@@ -3494,6 +3499,12 @@
       },
       {
         "preco": 111.0
+      },
+      {
+        "preco": 111.0
+      },
+      {
+        "preco": 115.02
       },
       {
         "preco": 111.0
