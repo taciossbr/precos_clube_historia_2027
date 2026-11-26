@@ -2,9 +2,6 @@
   "roma-greg-woolf": {
     "coletas_validas": [
       {
-        "preco": 62.98
-      },
-      {
         "preco": 51.0
       },
       {
@@ -297,6 +294,9 @@
       },
       {
         "preco": 46.26
+      },
+      {
+        "preco": 51.0
       },
       {
         "preco": 51.0
@@ -304,13 +304,10 @@
     ],
     "abaixo_mediana": "abaixo_mediana:56.00",
     "novo_menor": "novo_menor:51.00",
-    "alvo_real": "alvo_real:46.26"
+    "alvo_real": "alvo_real:51.00"
   },
   "alexandre-e-cesar-plutarco": {
     "coletas_validas": [
-      {
-        "preco": 32.22
-      },
       {
         "preco": 32.22
       },
@@ -607,6 +604,9 @@
       },
       {
         "preco": 42.17
+      },
+      {
+        "preco": 42.17
       }
     ],
     "abaixo_mediana": "abaixo_mediana:32.22",
@@ -615,12 +615,6 @@
   "o-jesus-historico-david-flusser": {
     "coletas_validas": [
       {
-        "preco": 84.75
-      },
-      {
-        "preco": 88.0
-      },
-      {
         "preco": 78.99
       },
       {
@@ -907,6 +901,12 @@
       },
       {
         "preco": 78.99
+      },
+      {
+        "preco": 66.0
+      },
+      {
+        "preco": 66.0
       },
       {
         "preco": 66.0
@@ -919,9 +919,6 @@
   },
   "pompeia-mary-beard": {
     "coletas_validas": [
-      {
-        "preco": 84.74
-      },
       {
         "preco": 126.94
       },
@@ -1218,6 +1215,9 @@
       },
       {
         "preco": 76.0
+      },
+      {
+        "preco": 76.0
       }
     ],
     "alvo_real": "alvo_real:76.00",
@@ -1226,9 +1226,6 @@
   },
   "teogonia-hesiodo": {
     "coletas_validas": [
-      {
-        "preco": 57.98
-      },
       {
         "preco": 48.86
       },
@@ -1525,6 +1522,9 @@
       },
       {
         "preco": 58.9
+      },
+      {
+        "preco": 58.9
       }
     ]
   },
@@ -1706,12 +1706,6 @@
   },
   "o-que-e-a-filosofia-antiga-hadot": {
     "coletas_validas": [
-      {
-        "preco": 98.5
-      },
-      {
-        "preco": 78.37
-      },
       {
         "preco": 98.5
       },
@@ -2005,6 +1999,12 @@
       },
       {
         "preco": 75.0
+      },
+      {
+        "preco": 110.0
+      },
+      {
+        "preco": 75.0
       }
     ],
     "abaixo_mediana": "abaixo_mediana:75.00",
@@ -2013,9 +2013,6 @@
   "o-anticristo-biografia-almond": {
     "coletas_validas": [
       {
-        "preco": 72.8
-      },
-      {
         "preco": 71.5
       },
       {
@@ -2308,6 +2305,9 @@
       },
       {
         "preco": 36.4
+      },
+      {
+        "preco": 71.5
       },
       {
         "preco": 71.5
@@ -2317,9 +2317,6 @@
   },
   "piratas-no-brasil-carvalho": {
     "coletas_validas": [
-      {
-        "preco": 36.0
-      },
       {
         "preco": 76.17
       },
@@ -2616,6 +2613,9 @@
       },
       {
         "preco": 35.89
+      },
+      {
+        "preco": 35.89
       }
     ],
     "abaixo_mediana": "abaixo_mediana:35.89",
@@ -2624,9 +2624,6 @@
   "os-mitos-maias-vozes": {
     "coletas_validas": [
       {
-        "preco": 64.8
-      },
-      {
         "preco": 70.9
       },
       {
@@ -2919,6 +2916,9 @@
       },
       {
         "preco": 44.82
+      },
+      {
+        "preco": 70.9
       },
       {
         "preco": 70.9
@@ -2928,9 +2928,6 @@
   "o-quinto-sol-camilla-townsend": {
     "coletas_validas": [
       {
-        "preco": 79.75
-      },
-      {
         "preco": 60.61
       },
       {
@@ -3223,6 +3220,9 @@
       },
       {
         "preco": 50.7
+      },
+      {
+        "preco": 79.75
       },
       {
         "preco": 79.75
@@ -3232,9 +3232,6 @@
   "o-coracao-do-mundo-peter-frankopan": {
     "coletas_validas": [
       {
-        "preco": 146.0
-      },
-      {
         "preco": 115.02
       },
       {
@@ -3527,6 +3524,9 @@
       },
       {
         "preco": 115.02
+      },
+      {
+        "preco": 111.0
       },
       {
         "preco": 111.0
