@@ -72,6 +72,12 @@
         "preco": 51.0,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 46.26,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8531613930"
       }
     ],
     "por_plataforma": {
@@ -108,6 +114,13 @@
           "preco": 51.0,
           "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=Roma%3A%20A%20Hist%C3%B3ria%20de%20um%20Imp%C3%A9rio&searchField=titulo-autor&sort=lowest-first"
         }
+      ],
+      "mercado_livre": [
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 50.0,
+          "url": "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf"
+        }
       ]
     },
     "por_link": {
@@ -143,6 +156,13 @@
           "timestamp": "2026-11-25T15:48:52-03:00",
           "preco": 51.0,
           "plataforma": "estante_virtual"
+        }
+      ],
+      "https://lista.mercadolivre.com.br/roma%3A-a-hist%C3%B3ria-de-um-imp%C3%A9rio-%E2%80%94-greg-woolf": [
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 50.0,
+          "plataforma": "mercado_livre"
         }
       ]
     }
@@ -298,6 +318,12 @@
         "preco": 42.17,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/alexandre-e-cesar-0B0-5297-000-BK"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 24.85,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6556405825"
       }
     ],
     "por_plataforma": {
@@ -360,6 +386,11 @@
         {
           "timestamp": "2026-11-26T23:23:41-03:00",
           "preco": 36.47,
+          "url": "https://www.amazon.com.br/dp/6556405825"
+        },
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 24.85,
           "url": "https://www.amazon.com.br/dp/6556405825"
         }
       ],
@@ -456,6 +487,11 @@
         {
           "timestamp": "2026-11-26T23:23:41-03:00",
           "preco": 36.47,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 24.85,
           "plataforma": "amazon"
         }
       ],
@@ -614,6 +650,12 @@
         "preco": 84.75,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Jesus%20Hist%C3%B3rico%20%E2%80%94%20David%20Flusser&searchField=titulo-autor&sort=relevance"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 78.99,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/8527302829"
       }
     ],
     "por_plataforma": {
@@ -1176,6 +1218,12 @@
         "preco": 58.9,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/teogonia-0GH-2736-000-BK"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 34.0,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/6589705585"
       }
     ],
     "por_plataforma": {
@@ -1740,6 +1788,12 @@
         "preco": 71.5,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/busca?nsCat=Natural&q=O%20Anticristo%3A%20Uma%20Biografia%20%E2%80%94%20Philip%20C.%20Almond&searchField=titulo-autor&sort=lowest-first"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 36.4,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/B0D4WQ179K"
       }
     ],
     "por_plataforma": {
@@ -1911,6 +1965,11 @@
           "timestamp": "2026-11-26T23:23:41-03:00",
           "preco": 91.8,
           "url": "https://www.amazon.com.br/dp/8525058270"
+        },
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 58.59,
+          "url": "https://www.amazon.com.br/dp/8525058270"
         }
       ],
       "estante_virtual": [
@@ -2001,6 +2060,11 @@
         {
           "timestamp": "2026-11-26T23:23:41-03:00",
           "preco": 91.8,
+          "plataforma": "amazon"
+        },
+        {
+          "timestamp": "2026-11-27T23:09:09-03:00",
+          "preco": 58.59,
           "plataforma": "amazon"
         }
       ],
@@ -2104,6 +2168,12 @@
         "preco": 70.9,
         "plataforma": "estante_virtual",
         "url": "https://www.estantevirtual.com.br/livro/os-mitos-maias-NVV-7604-000-BK"
+      },
+      {
+        "timestamp": "2026-11-27T23:09:09-03:00",
+        "preco": 44.82,
+        "plataforma": "amazon",
+        "url": "https://www.amazon.com.br/dp/B0GH289VSL"
       }
     ],
     "por_plataforma": {
